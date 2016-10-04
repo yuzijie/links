@@ -44,14 +44,73 @@ ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF S
 DAMAGE.
 " />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>Learn — ZAC’S NOTEBOOK</title>
+<title>圣经研究 — Study of Bible</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~--><!--~~ Raw markup ~~-->
 
 </head>
 <body class="tc-body">
 <!--~~ Static styles ~~-->
 <div id="styleArea">
-<style data-tiddler-title="$:/boot/boot.css" data-tiddler-type="text/css" type="text/css">.tc-password-wrapper,.tc-error-form{font-family:sans-serif;z-index:20000;position:fixed;text-align:center;width:200px;top:4em;left:50%;margin-left:-144px;padding:16px 16px 16px 16px;border-radius:8px;}.tc-error-form{color:#fff;text-shadow:0 1px 0 rgba(0,0,0,0.5);background-color:rgb(255,75,75);border:8px solid rgb(255,0,0);width:480px;margin-left:-244px;}.tc-error-form div{padding-bottom:1em;}.tc-error-prompt{color:#000;text-shadow:none;}.tc-password-wrapper{color:#000;text-shadow:0 1px 0 rgba(255,255,255,0.5);background-color:rgb(197,235,183);border:8px solid rgb(164,197,152);}.tc-password-wrapper form{text-align:left;}.tc-password-wrapper h1{font-size:16px;line-height:20px;padding-bottom:16px;}.tc-password-wrapper input{width:100%;}</style>
+<style data-tiddler-title="$:/boot/boot.css" data-tiddler-type="text/css" type="text/css">/*
+Basic styles used before we boot up the parsing engine
+*/
+
+/*
+Error message and password prompt
+*/
+
+.tc-password-wrapper, .tc-error-form {
+    font-family: sans-serif;
+	z-index: 20000;
+	position: fixed;
+	text-align: center;
+	width: 200px;
+	top: 4em;
+    left: 50%;
+    margin-left: -144px; /* - width/2 - paddingHorz/2 - border */
+	padding: 16px 16px 16px 16px;
+	border-radius: 8px;
+}
+
+.tc-error-form {
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+	background-color: rgb(255, 75, 75);
+	border: 8px solid rgb(255, 0, 0);
+	width: 480px;
+    margin-left: -244px; /* - width/2 - paddingHorz/2 - border */
+}
+
+.tc-error-form div {
+	padding-bottom: 1em;
+}
+
+.tc-error-prompt {
+	color: #000;
+	text-shadow: none;
+}
+
+.tc-password-wrapper {
+	color: #000;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	background-color: rgb(197, 235, 183);
+	border: 8px solid rgb(164, 197, 152);
+}
+
+.tc-password-wrapper form {
+	text-align: left;
+}
+
+.tc-password-wrapper h1 {
+	font-size: 16px;
+	line-height: 20px;
+	padding-bottom: 16px;
+}
+
+.tc-password-wrapper input {
+	width: 100%;
+}
+</style>
 </div>
 <!--~~ Static content for Google and browsers without JavaScript ~~-->
 <noscript>
@@ -60,15 +119,7 @@ DAMAGE.
 
 <p>This <a class="tc-tiddlylink-external" href="http://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
-<li>-are</li>
-
-<li>-ere</li>
-
-<li>-ire</li>
-
 <li>$:/config/AnimationDuration</li>
-
-<li>$:/config/DefaultSidebarTab</li>
 
 <li>$:/config/EditorToolbarButtons/Visibility/$:/core/ui/EditorToolbar/heading-1</li>
 
@@ -80,11 +131,17 @@ DAMAGE.
 
 <li>$:/config/shortcuts/excise</li>
 
+<li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/edit</li>
+
 <li>$:/core</li>
 
 <li>$:/core/macros/toc</li>
 
+<li>$:/core/ui/Buttons/clone</li>
+
 <li>$:/core/ui/PageTemplate/pagecontrols</li>
+
+<li>$:/core/ui/SideBar/Open</li>
 
 <li>$:/core/ui/SideBar/Tools</li>
 
@@ -93,6 +150,8 @@ DAMAGE.
 <li>$:/custom/macro/pop</li>
 
 <li>$:/custom/macro/presentation</li>
+
+<li>$:/custom/macro/random.js</li>
 
 <li>$:/custom/style/body</li>
 
@@ -116,7 +175,11 @@ DAMAGE.
 
 <li>$:/SiteTitle</li>
 
-<li>$:/state/index--912040644</li>
+<li>$:/state/sidebar</li>
+
+<li>$:/state/tab/moresidebar-401116514</li>
+
+<li>$:/state/tab/sidebar--1835078512</li>
 
 <li>$:/status/IsLoggedIn</li>
 
@@ -124,383 +187,29 @@ DAMAGE.
 
 <li>$:/StoryList</li>
 
+<li>$:/temp/advancedsearch</li>
+
 <li>$:/temp/info-plugin</li>
 
 <li>$:/themes/tiddlywiki/snowwhite</li>
 
 <li>$:/themes/tiddlywiki/vanilla</li>
 
-<li>01. Strade. Veicoli</li>
+<li>Discussion</li>
 
-<li>02. Segnali di pericolo</li>
+<li>Esodo 3:13-14 TRADUZIONE DEL NUOVO MONDO DELLE SACRE SCRITTURE</li>
 
-<li>03. Segnali di precedenza</li>
+<li>Exodus 3:13-14 King James Version</li>
 
-<li>04. Segnali di divieto</li>
+<li>Exodus 3:13-14 The Bible in Living English</li>
 
-<li>05. Segnali di obbligo</li>
-
-<li>06. Segnali di indicazione</li>
-
-<li>07. Segnali temporanei e di cantiere. Segnali complementari</li>
-
-<li>08. Pannelli integrativi</li>
-
-<li>09. Segnaletica luminosa e manuale</li>
-
-<li>10. Segnaletica orizzontale</li>
-
-<li>11. Luci, specchi, dispositivi del veicolo. Posizione di guida</li>
-
-<li>12. Regolazione e limiti di velocità. Distanza di sicurezza</li>
-
-<li>13. Posizione dei veicoli sulla carreggiata, svolte e manovre varie</li>
-
-<li>14. Precedenze</li>
-
-<li>15. Sorpasso</li>
-
-<li>16. Fermata e sosta dei veicoli</li>
-
-<li>17. Trasporto di persone, carico, ingombro della carreggiata, ecc. Autostrade</li>
-
-<li>18. Comportamento corretto del conducente</li>
-
-<li>19. Cause più frequenti di incidenti. Primo soccorso. RCA</li>
-
-<li>20. Patenti e documenti</li>
-
-<li>21. Tenuta di strada e manutenzione del veicolo</li>
-
-<li>22. Inquinamento e spie</li>
-
-<li>23. Veicoli a due ruote</li>
-
-<li>24. Veicoli con rimorchi</li>
-
-<li>A</li>
-
-<li>a + 冠词</li>
-
-<li>AppsScript</li>
-
-<li>AppsScript 内置方法</li>
-
-<li>AppsScript 方法</li>
-
-<li>Area pedonale</li>
-
-<li>Attraversamento ciclabile</li>
-
-<li>Attraversamento pedonale</li>
-
-<li>Autostrade e strade extraurbane principali</li>
-
-<li>avere</li>
-
-<li>Banchina</li>
-
-<li>Carreggiata</li>
-
-<li>Centro abitato</li>
-
-<li>Che Cosa</li>
-
-<li>Che cosa hai fatto ieri?</li>
-
-<li>Chi</li>
-
-<li>Classificazione delle strade</li>
-
-<li>Come</li>
-
-<li>Con</li>
-
-<li>condizionale presente</li>
-
-<li>Congiuntivo</li>
-
-<li>CongiuntivoPassato</li>
-
-<li>CongiuntivoPassato 例句</li>
-
-<li>CongiuntivoPresente</li>
-
-<li>CongiuntivoPresente 动词变位</li>
-
-<li>ContextualEscaping</li>
-
-<li>Corsia</li>
-
-<li>Da</li>
-
-<li>da + 冠词</li>
-
-<li>Di</li>
-
-<li>di + 冠词</li>
-
-<li>Dove</li>
-
-<li>Driving license</li>
-
-<li>essere</li>
-
-<li>Force-printing scriptlets</li>
-
-<li>gerundio</li>
-
-<li>Golfo di fermata</li>
-
-<li>Grammar</li>
-
-<li>HTML Service</li>
-
-<li>imperativo</li>
-
-<li>Imperfetto</li>
-
-<li>Imperfetto + PassatoProssimo</li>
-
-<li>Imperfetto 动词变位</li>
-
-<li>Imperfetto 助动词变位</li>
-
-<li>Imperfetto 单独使用场景</li>
-
-<li>In</li>
-
-<li>in + 冠词</li>
-
-<li>Index</li>
-
-<li>Intersezione a livelli sfalsati</li>
-
-<li>Intersezione a raso</li>
-
-<li>Isola di traffico</li>
-
-<li>Italiano</li>
-
-<li>Itinerari ciclopedonali</li>
-
-<li>La strada</li>
-
-<li>Marciapiede</li>
-
-<li>Parcheggio</li>
-
-<li>Passaggio a livello</li>
-
-<li>PassatoProssimo</li>
-
-<li>PassatoProssimo 例句</li>
-
-<li>PassatoProssimo 助动词</li>
-
-<li>PassatoRemoto</li>
-
-<li>Passo carrabile</li>
-
-<li>PastParticiple</li>
-
-<li>Per</li>
-
-<li>Perché</li>
-
-<li>Piazzola di sosta</li>
-
-<li>Pista ciclabile</li>
-
-<li>Printing scriptlets</li>
-
-<li>Programming</li>
-
-<li>Qual è il tuo piatto forte?</li>
-
-<li>Quale</li>
-
-<li>Quando</li>
-
-<li>Quanto</li>
-
-<li>Question Words in Italian</li>
-
-<li>reflexive pronoun</li>
-
-<li>reflexive verbs</li>
-
-<li>Riflessivi</li>
-
-<li>Run Code in Scriptlets</li>
-
-<li>Salvagente</li>
-
-<li>Scriptlets</li>
-
-<li>Sede tranviaria</li>
-
-<li>Spartitraffico</li>
-
-<li>Standard scriptlets</li>
-
-<li>Strade e definizioni stradali</li>
-
-<li>Strade extraurbane secondarie</li>
-
-<li>Strade locali</li>
-
-<li>Strade urbane di quartiere</li>
-
-<li>Strade urbane di scorrimento</li>
-
-<li>Su</li>
-
-<li>su + 冠词</li>
-
-<li>Tra/Fra</li>
-
-<li>trapassato</li>
-
-<li>TrapassatoProssimo</li>
-
-<li>TrapassatoProssimo 例句</li>
-
-<li>Unità 00 Introduttiva</li>
-
-<li>Unità 01</li>
-
-<li>Unità 02</li>
-
-<li>Unità 03</li>
-
-<li>Unità 04</li>
-
-<li>Unità 05</li>
-
-<li>Unità 06</li>
-
-<li>Unità 07</li>
-
-<li>Unità 08</li>
-
-<li>Unità 09</li>
-
-<li>Unità 10</li>
-
-<li>Unità 11</li>
+<li>Tools</li>
 
 <li>yuzijie</li>
 
-<li>Zona a traffico limitato</li>
+<li>出埃及記 3:13-14</li>
 
-<li>Zona di preselezione e di attestamento</li>
-
-<li>三餐</li>
-
-<li>专题</li>
-
-<li>习惯用语</li>
-
-<li>习惯用语 - 住</li>
-
-<li>习惯用语 - 吃</li>
-
-<li>习惯用语 - 学习</li>
-
-<li>习惯用语 - 工作</li>
-
-<li>习惯用语 - 穿</li>
-
-<li>习惯用语 - 行</li>
-
-<li>习惯用语 - 遇见</li>
-
-<li>介词</li>
-
-<li>价格</li>
-
-<li>侧边栏</li>
-
-<li>做饭</li>
-
-<li>公交</li>
-
-<li>助动词虚拟语气现在时</li>
-
-<li>句子构成</li>
-
-<li>在模板里调用方法</li>
-
-<li>复习指南</li>
-
-<li>工具</li>
-
-<li>常用疑问句型</li>
-
-<li>常用语</li>
-
-<li>序数词</li>
-
-<li>引出虚拟语气的短语</li>
-
-<li>形容当前状态</li>
-
-<li>意大利人习惯用法</li>
-
-<li>推送变量到模板</li>
-
-<li>提问题</li>
-
-<li>数数</li>
-
-<li>新视线意大利语初级</li>
-
-<li>时态</li>
-
-<li>时间格式转换</li>
-
-<li>比较</li>
-
-<li>洗漱</li>
-
-<li>添加菜单</li>
-
-<li>爱情</li>
-
-<li>直接调用内置 APIs</li>
-
-<li>睡觉</li>
-
-<li>穿着</li>
-
-<li>穿衣</li>
-
-<li>第 7 单元听力练习</li>
-
-<li>第 7 单元听力练习 2</li>
-
-<li>练习</li>
-
-<li>组句子</li>
-
-<li>绑定文件</li>
-
-<li>翻译十句 1</li>
-
-<li>翻译十句 2</li>
-
-<li>翻译十句 3</li>
-
-<li>自反动词</li>
-
-<li>自反动词列表</li>
-
-<li>词汇</li>
-
-<li>购物</li>
-
-<li>转折</li>
+<li>出埃及记 3:13-14 新世界译本</li>
 
 </ul>
 </p>
@@ -512,37 +221,28 @@ DAMAGE.
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
-<div created="20160706204203051" creator="yuzijie" modified="20160706204216338" modifier="yuzijie" tags="Grammar" title="-are" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>First Conjugation Verbs</pre>
+<div bag="default" created="20160529162354163" creator="yuzijie" modified="20160929162306935" modifier="yuzijie" revision="0" title="$:/config/AnimationDuration" type="text/vnd.tiddlywiki">
+<pre>250</pre>
 </div>
-<div created="20160706204301914" creator="yuzijie" modified="20160706204310166" modifier="yuzijie" tags="Grammar" title="-ere" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>Second Conjugation Verbs</pre>
-</div>
-<div created="20160706204321761" creator="yuzijie" modified="20160706204328304" modifier="yuzijie" tags="Grammar" title="-ire" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>Third Conjugation Verbs</pre>
-</div>
-<div created="20160529162354163" creator="yuzijie" modified="20160529162356483" modifier="yuzijie" title="$:/config/AnimationDuration" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>200</pre>
-</div>
-<div created="20160815142832979" creator="yuzijie" modified="20160815142834081" modifier="yuzijie" title="$:/config/DefaultSidebarTab" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>Index</pre>
-</div>
-<div created="20160816130952090" creator="yuzijie" modified="20160816130953150" modifier="yuzijie" title="$:/config/EditorToolbarButtons/Visibility/$:/core/ui/EditorToolbar/heading-1" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20160816130952090" creator="yuzijie" modified="20160816130953150" modifier="yuzijie" revision="0" title="$:/config/EditorToolbarButtons/Visibility/$:/core/ui/EditorToolbar/heading-1" type="text/vnd.tiddlywiki">
 <pre>hide</pre>
 </div>
-<div created="20160816130953028" creator="yuzijie" modified="20160816130954676" modifier="yuzijie" title="$:/config/EditorToolbarButtons/Visibility/$:/core/ui/EditorToolbar/heading-2" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20160816130953028" creator="yuzijie" modified="20160816130954676" modifier="yuzijie" revision="0" title="$:/config/EditorToolbarButtons/Visibility/$:/core/ui/EditorToolbar/heading-2" type="text/vnd.tiddlywiki">
 <pre>hide</pre>
 </div>
-<div created="20160816130954694" creator="yuzijie" modified="20160816130956511" modifier="yuzijie" title="$:/config/EditorToolbarButtons/Visibility/$:/core/ui/EditorToolbar/heading-3" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20160816130954694" creator="yuzijie" modified="20160816130956511" modifier="yuzijie" revision="0" title="$:/config/EditorToolbarButtons/Visibility/$:/core/ui/EditorToolbar/heading-3" type="text/vnd.tiddlywiki">
 <pre>hide</pre>
 </div>
-<div created="20160715134057682" creator="yuzijie" modified="20160715134058787" modifier="yuzijie" title="$:/config/shortcuts-mac/excise" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20160715134057682" creator="yuzijie" modified="20160715134058787" modifier="yuzijie" revision="0" title="$:/config/shortcuts-mac/excise" type="text/vnd.tiddlywiki">
 <pre>cmd-E</pre>
 </div>
-<div created="20160715134102236" creator="yuzijie" modified="20160715134103334" modifier="yuzijie" title="$:/config/shortcuts/excise" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20160715134102236" creator="yuzijie" modified="20160715134103334" modifier="yuzijie" revision="0" title="$:/config/shortcuts/excise" type="text/vnd.tiddlywiki">
 <pre></pre>
 </div>
-<div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.13" revision="0" bag="default">
+<div bag="default" created="20161004090150867" modified="20161004090152188" revision="0" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/edit" type="text/vnd.tiddlywiki">
+<pre>hide</pre>
+</div>
+<div author="JeremyRuston" bag="default" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" plugin-priority="0" plugin-type="plugin" revision="0" title="$:/core" type="application/json" version="5.1.13">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/Acknowledgements&quot;: {
@@ -8190,7 +7890,7 @@ DAMAGE.
     }
 }</pre>
 </div>
-<div created="20160802112743771" creator="yuzijie" modified="20160802115121113" modifier="yuzijie" tags="$:/tags/Macro" title="$:/core/macros/toc" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20160802112743771" creator="yuzijie" modified="20160802115121113" modifier="yuzijie" revision="0" tags="$:/tags/Macro" title="$:/core/macros/toc" type="text/vnd.tiddlywiki">
 <pre>\define toc-caption()
 &lt;$set name=&quot;tv-wikilinks&quot; value=&quot;no&quot;&gt;
 &lt;$transclude field=&quot;caption&quot;&gt;
@@ -8387,10 +8087,36 @@ $unselectedText$
 &lt;/$linkcatcher&gt;
 \end</pre>
 </div>
-<div created="20160816130305765" creator="yuzijie" modified="20160816130320998" modifier="yuzijie" title="$:/core/ui/PageTemplate/pagecontrols" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" caption="{{$:/core/images/clone-button}} {{$:/language/Buttons/Clone/Caption}}" created="20160917130612805" creator="yuzijie" description="{{$:/language/Buttons/Clone/Hint}}" list-before="$:/core/ui/Buttons/delete" modified="20160917130642594" modifier="yuzijie" revision="0" tags="$:/tags/ViewToolbar $:/tags/EditToolbar" title="$:/core/ui/Buttons/clone" type="text/vnd.tiddlywiki">
+<pre>&lt;$button message=&quot;tm-new-tiddler&quot; param=&lt;&lt;currentTiddler&gt;&gt; tooltip={{$:/language/Buttons/Clone/Hint}} aria-label={{$:/language/Buttons/Clone/Caption}} class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-icons&gt;prefix[yes]]&quot;&gt;
+{{$:/core/images/clone-button}}
+&lt;/$list&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-text&gt;prefix[yes]]&quot;&gt;
+&lt;span class=&quot;tc-btn-text&quot;&gt;&lt;$text text={{$:/language/Buttons/Clone/Caption}}/&gt;&lt;/span&gt;
+&lt;/$list&gt;
+&lt;/$button&gt;</pre>
+</div>
+<div bag="default" created="20160816130305765" creator="yuzijie" modified="20160816130320998" modifier="yuzijie" revision="0" title="$:/core/ui/PageTemplate/pagecontrols" type="text/vnd.tiddlywiki">
 <pre></pre>
 </div>
-<div caption="{{$:/language/SideBar/Tools/Caption}}" created="20160814151447513" creator="yuzijie" list-after="$:/core/ui/MoreSideBar/All" modified="20160814151448752" modifier="yuzijie" tags="$:/tags/MoreSideBar" title="$:/core/ui/SideBar/Tools" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" caption="{{$:/language/SideBar/Open/Caption}}" created="20160917203805936" creator="yuzijie" modified="20160917204414901" modifier="yuzijie" revision="0" tags="$:/tags/SideBar" title="$:/core/ui/SideBar/Open" type="text/vnd.tiddlywiki">
+<pre>\define lingo-base() $:/language/CloseAll/
+
+&lt;$list filter=&quot;[list[$:/StoryList]]&quot; history=&quot;$:/HistoryList&quot; storyview=&quot;pop&quot;&gt;
+
+@@font-size:1.1em;padding-bottom:5px;
+&lt;$button message=&quot;tm-close-tiddler&quot; tooltip={{$:/language/Buttons/Close/Hint}} aria-label={{$:/language/Buttons/Close/Caption}} class=&quot;tc-btn-invisible tc-btn-mini&quot;&gt;&amp;times;&lt;/$button&gt;
+&lt;$link to={{!!title}}&gt;
+&lt;&lt;toc-caption&gt;&gt;&lt;$reveal type=&quot;nomatch&quot; state=&quot;!!caption&quot; text=&quot;&quot;&gt; ~ &lt;$view field=&quot;title&quot;/&gt;&lt;/$reveal&gt;
+&lt;/$link&gt;
+@@
+
+&lt;/$list&gt;
+
+&lt;$button message=&quot;tm-close-all-tiddlers&quot; class=&quot;tc-btn-invisible tc-btn-mini&quot;&gt;&lt;&lt;lingo Button&gt;&gt;&lt;/$button&gt;</pre>
+</div>
+<div bag="default" caption="{{$:/language/SideBar/Tools/Caption}}" created="20160814151447513" creator="yuzijie" list-after="$:/core/ui/MoreSideBar/All" modified="20160814151448752" modifier="yuzijie" revision="0" tags="$:/tags/MoreSideBar" title="$:/core/ui/SideBar/Tools" type="text/vnd.tiddlywiki">
 <pre>\define lingo-base() $:/language/ControlPanel/
 \define config-title()
 $:/config/PageControlButtons/Visibility/$(listItem)$
@@ -8421,13 +8147,13 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 &lt;/$set&gt;
 </pre>
 </div>
-<div created="20160727091554555" creator="yuzijie" modified="20160822215014827" modifier="yuzijie" tags="$:/tags/Macro" title="$:/custom/macro/accordion" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>\define accordion(name,class,heading,prefix,suffix)
+<div bag="default" created="20160727091554555" creator="yuzijie" modified="20161003215200317" modifier="yuzijie" revision="0" tags="$:/tags/Macro" title="$:/custom/macro/accordion" type="text/vnd.tiddlywiki">
+<pre>\define accordion(name,heading,prefix,suffix)
 &lt;$set name=&quot;ac-state&quot; value=&lt;&lt;qualify &quot;&quot;&quot;$:/state/accordion/$name$&quot;&quot;&quot;&gt;&gt;&gt;
-&lt;div class=&quot;$class$&quot;&gt;
+&lt;div class=&quot;ac-$heading$&quot;&gt;
 &lt;$reveal type=&quot;nomatch&quot; state=&lt;&lt;ac-state&gt;&gt; text=&quot;open&quot;&gt;
 &lt;$heading$ class=&quot;ac-heading&quot;&gt;
-&lt;$button class=&quot;tc-btn-invisible&quot;&gt;
+&lt;$button class=&quot;tc-btn-invisible fixed-width&quot;&gt;
 &lt;$action-setfield $tiddler=&lt;&lt;ac-state&gt;&gt; text=&quot;open&quot;/&gt;
 $prefix$ &lt;$transclude tiddler=&quot;$name$&quot; field=&quot;caption&quot;&gt;$name$&lt;/$transclude&gt; $suffix$
 &lt;/$button&gt;
@@ -8441,27 +8167,35 @@ $prefix$ &lt;$transclude tiddler=&quot;$name$&quot; field=&quot;caption&quot;&gt
 $prefix$ &lt;$transclude tiddler=&quot;$name$&quot; field=&quot;caption&quot;&gt;$name$&lt;/$transclude&gt; $suffix$
 &lt;/$button&gt;
 &lt;/$heading$&gt;
-&lt;p&gt;&lt;$transclude tiddler=&quot;$name$&quot; mode=&quot;block&quot;&gt;[[Missing: $name$|$name$]]&lt;/$transclude&gt;&lt;/p&gt;
+&lt;div class=&quot;ac-$heading$-content&quot;&gt;
+&lt;$transclude tiddler=&quot;$name$&quot; mode=&quot;block&quot;&gt;[[Missing: $name$|$name$]]&lt;/$transclude&gt;
+&lt;/div&gt;
 &lt;/$reveal&gt;
 &lt;/div&gt;
 &lt;/$set&gt;
 \end
 
 \define h1(name,prefix,suffix)
-&lt;&lt;accordion &quot;$name$&quot; &quot;ac-1&quot; &quot;h1&quot; &quot;$prefix$&quot; &quot;$suffix$&quot;&gt;&gt;
+&lt;&lt;accordion &quot;$name$&quot; &quot;h1&quot; &quot;$prefix$&quot; &quot;$suffix$&quot;&gt;&gt;
 \end
 
 \define h2(name,prefix,suffix)
-&lt;&lt;accordion &quot;$name$&quot; &quot;ac-2&quot; &quot;h2&quot; &quot;$prefix$&quot; &quot;$suffix$&quot;&gt;&gt;
+&lt;&lt;accordion &quot;$name$&quot; &quot;h2&quot; &quot;$prefix$&quot; &quot;$suffix$&quot;&gt;&gt;
 \end
 
 \define h3(name,prefix,suffix)
-&lt;&lt;accordion &quot;$name$&quot; &quot;ac-3&quot; &quot;h3&quot; &quot;$prefix$&quot; &quot;$suffix$&quot;&gt;&gt;
-\end</pre>
+&lt;&lt;accordion &quot;$name$&quot; &quot;h3&quot; &quot;$prefix$&quot; &quot;$suffix$&quot;&gt;&gt;
+\end
+
+&quot;&quot;&quot;
+使用方法：`&lt;&lt;h1 name:&quot;tiddler name&quot; prefix:&quot;前缀&quot; suffix:&quot;后缀&quot;&gt;&gt;`
+使用方法：`&lt;&lt;h2 name:&quot;tiddler name&quot; prefix:&quot;前缀&quot; suffix:&quot;后缀&quot;&gt;&gt;`
+使用方法：`&lt;&lt;h3 name:&quot;tiddler name&quot; prefix:&quot;前缀&quot; suffix:&quot;后缀&quot;&gt;&gt;`
+&quot;&quot;&quot;</pre>
 </div>
-<div created="20160803221342780" creator="yuzijie" modified="20160804223326724" modifier="yuzijie" tags="$:/tags/Macro" title="$:/custom/macro/pop" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>\define pop(name,prefix,suffix)
-&lt;$set name=&quot;pop-state&quot; value=&lt;&lt;qualify &quot;&quot;&quot;$:/state/pop/$name$&quot;&quot;&quot;&gt;&gt;&gt;
+<div bag="default" created="20160803221342780" creator="yuzijie" modified="20160912134844345" modifier="yuzijie" revision="0" tags="$:/tags/Macro" title="$:/custom/macro/pop" type="text/vnd.tiddlywiki">
+<pre>\define pop(name,prefix,suffix,id)
+&lt;$set name=&quot;pop-state&quot; value=&quot;&quot;&quot;$:/state/pop/$prefix$$name$$suffix$$id$&quot;&quot;&quot;&gt;
 &lt;$button popup=&lt;&lt;pop-state&gt;&gt; class=&quot;tc-btn-invisible tc-tiddlylink&quot;&gt;
 $prefix$ &lt;$transclude tiddler=&quot;$name$&quot; field=&quot;caption&quot;&gt;$name$&lt;/$transclude&gt; $suffix$
 &lt;/$button&gt; &lt;$reveal type=&quot;nomatch&quot; state=&lt;&lt;pop-state&gt;&gt; text=&quot;&quot;&gt;
@@ -8475,11 +8209,14 @@ $prefix$ &lt;$transclude tiddler=&quot;$name$&quot; field=&quot;caption&quot;&gt
 &lt;/div&gt;
 &lt;/$reveal&gt;
 &lt;/$set&gt;
-\end</pre>
-</div>
-<div created="20160626111722375" creator="yuzijie" modified="20160819110051955" modifier="yuzijie" tags="$:/tags/Macro" title="$:/custom/macro/presentation" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>\define presentation(tag,sort)
+\end
 
+使用方法：`&lt;&lt;pop name:&quot;tiddler name&quot; prefix:&quot;前缀&quot; suffix:&quot;后缀&quot; id:&quot;如果出现两个同样名字的 pop，要使用 id 来进行区分&quot;&gt;&gt;`</pre>
+</div>
+<div bag="default" created="20160626111722375" creator="yuzijie" modified="20160912134318735" modifier="yuzijie" revision="0" tags="$:/tags/Macro" title="$:/custom/macro/presentation" type="text/vnd.tiddlywiki">
+<pre>\define customState() $:/state/$(currentTiddler)$
+
+\define presentation(tag,sort)
 @@.single-level
 &lt;$macrocall $name=&quot;toc-tabbed-internal-nav&quot;
   tag=&quot;$tag$&quot; sort=&quot;$sort$&quot;
@@ -8488,53 +8225,115 @@ $prefix$ &lt;$transclude tiddler=&quot;$name$&quot; field=&quot;caption&quot;&gt
   missingText=&quot;&lt;p&gt;Missing tiddler.&lt;/p&gt;&quot;
 /&gt;
 @@
+\end
 
-\end</pre>
+&quot;&quot;&quot;
+使用方法：`&lt;&lt;presentation tag:&quot;标签&quot; sort:&quot;排列方式&quot;&gt;&gt;`
+使用方法：`&lt;&lt;customState&gt;&gt;`
+&quot;&quot;&quot;</pre>
 </div>
-<div created="20160605213910575" creator="yuzijie" modified="20160826020054707" modifier="yuzijie" tags="$:/tags/Stylesheet" title="$:/custom/style/body" type="text/css" revision="0" bag="default">
+<div bag="default" module-type="macro" revision="0" title="$:/custom/macro/random.js" type="application/javascript">
+<pre>/*\
+title: $:/custom/macro/random.js
+type: application/javascript
+module-type: macro
+
+Return a random number with given length.
+
+\*/
+
+(function(){
+
+/*jslint node: true, browser: true */
+/*global $tw: false */
+&quot;use strict&quot;;
+
+/*
+Information about this macro
+*/
+
+exports.name = &quot;random&quot;;
+
+exports.params = [
+    {name: &quot;prefix&quot;},  // Prefix string
+    {name: &quot;upper&quot;},   // The upper bound on the numbers
+    {name: &quot;lower&quot;},   // The lower bound of the numbers
+    {name: &quot;step&quot;}     // The step size of the random numbers generated
+];
+
+/*
+Run the macro
+*/
+
+exports.run = function(prefix, upper, lower, step) {
+    prefix = prefix || &quot;&quot;;
+    upper = Number(upper) || 9;
+    lower = Number(lower) || 1;
+    step = Number(step) || 1;
+
+    var randValue;
+    var numpts = (upper - lower) / step + 1;
+    var size = upper - lower;
+    var length = upper.toString().length;
+
+    if (numpts &lt;= 1) {
+        randValue = lower;
+    } else {
+        randValue = Math.floor(Math.random() * numpts) * step + lower;
+        if(randValue &gt; upper) randValue = upper;
+    }
+
+    return prefix + $tw.utils.pad(randValue,length);
+};
+
+})();
+</pre>
+</div>
+<div bag="default" created="20160605213910575" creator="yuzijie" modified="20161004085129832" modifier="yuzijie" revision="0" tags="$:/tags/Stylesheet" title="$:/custom/style/body" type="text/css">
 <pre>.tc-sidebar-lists .tc-tab-buttons button.tc-tab-selected, body.tc-body {background-color: #f9f9f9;}
 
 .tc-tiddler-frame .tc-tiddler-body {line-height: 24px;}
+.tc-tiddler-frame {box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08),0 0px 0px 1px rgba(0, 0, 0, 0.02); margin-bottom: 18px;}
+.tc-titlebar h2 {font-size: 0.95em;}
+.tc-subtitle {font-size: 0.8em; color: #666; text-transform: uppercase; border-bottom: 1px dashed #e8e8e8;}
 
 .tc-drop-down {border: none; margin-bottom: 20px;}
-
-.tc-drop-down.records {white-space: normal; line-height: 24px; padding: 3px 8px 20px 8px; min-width: 450px;}
-
-.tc-drop-down.records &gt; p p {padding: 0;}
-
-.tc-drop-down.records p a {display: inline; color: #5778d8; padding: 0;}
-
-.tc-drop-down.records p a:hover {color: #fff;}
-
 .tc-drop-down table a {display: inline;}
+.tc-drop-down table th {text-align: center;}
+
+.tc-drop-down.records {white-space: normal; line-height: 24px; padding: 3px 8px 10px 8px; min-width: 450px;}
+.tc-drop-down.records &gt; p p {padding: 0;}
+.tc-drop-down.records p a, .tc-drop-down.records p button {display: inline; color: #5778d8; padding: 0; width: auto;}
+.tc-drop-down.records p a:hover {color: #fff;}
+.tc-drop-down.records ul, .tc-drop-down.records ol {margin: 1em 0;}
+.tc-drop-down.records .info {font-size: 14px; padding: 0 14px;}
+.tc-drop-down.records h3.title a {font-size: 1.05em;}
 
 .tc-tab-buttons {margin-bottom: -1px;}
-
 .tc-tab-buttons button {padding: 4px 5px 5px 5px;}
-
 .tc-tab-buttons button:first-child {margin-top: 0;}
-
 .tc-tab-buttons.tc-vertical button {border-top-right-radius: 0;}
 
 .tc-drop-down.records .tc-tab-buttons button {padding: 4px 5px 3px 5px; background-color: #d8d8d8;}
-
 .tc-drop-down.records .tc-tab-buttons button.tc-tab-selected {background-color: #fff;}
 
-h1 &gt; .tc-btn-invisible, h2 &gt; .tc-btn-invisible, h3 &gt; .tc-btn-invisible {text-align:left;}
-
-.tc-tiddler-frame {box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08),0 0px 0px 1px rgba(0, 0, 0, 0.02); margin-bottom: 18px;}
+.tc-tags-wrapper .tc-drop-down hr {margin: 0.5em 0;}
 
 @media (min-width: 960px) {
-.tc-tiddler-frame {border-radius: 3px; padding: 24px 35px;}
+.tc-tiddler-frame {border-radius: 3px; padding: 22px 35px 20px 35px;}
 .tc-tiddler-info {margin: 0 -35px;}
 }
 
-.tc-subtitle {font-size: 0.8em; color: #666; text-transform: uppercase; border-bottom: 1px dashed #e8e8e8;}
+@media (max-width: 960px) {
+.tc-tiddler-frame {padding: 14px 14px 12px 14px;}
+}
 
-.tc-tags-wrapper .tc-drop-down hr {margin: 0.5em 0;}</pre>
+@media (max-width: 600px) {
+.tc-tiddler-controls button[title=&quot;More actions&quot;] {display: none;}
+}</pre>
 </div>
-<div created="20160822100026046" creator="yuzijie" modified="20160823091214742" modifier="yuzijie" tags="$:/tags/Stylesheet" title="$:/custom/style/default" type="text/css" revision="0" bag="default">
-<pre>h1, h2, h3, h4, h5, h6, p {margin-bottom: 0;}
+<div bag="default" created="20161004083139252" creator="yuzijie" modified="20161004083213119" modifier="yuzijie" revision="0" tags="$:/tags/Stylesheet" title="$:/custom/style/default" type="text/css">
+<pre>h1 &gt; .tc-btn-invisible, h2 &gt; .tc-btn-invisible, h3 &gt; .tc-btn-invisible {text-align:left;}
 
 hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
 
@@ -8546,11 +8345,13 @@ blockquote cite {text-align: right; margin-top: 0.4em; display: block;}
 
 textarea {font-family: Menlo, monospace; font-size: 1.05em;}</pre>
 </div>
-<div created="20160531100644222" creator="yuzijie" modified="20160817211656660" modifier="yuzijie" tags="$:/tags/Stylesheet" title="$:/custom/style/sidebar" type="text/css" revision="0" bag="default">
+<div bag="default" created="20160531100644222" creator="yuzijie" modified="20160922124255982" modifier="yuzijie" revision="0" tags="$:/tags/Stylesheet" title="$:/custom/style/sidebar" type="text/css">
 <pre>@media (max-width: 960px) {
 .tc-site-subtitle {display: none;}
 .tc-site-title {font-size: 1.9em; margin-bottom: -3px;}
 }
+
+.tc-search button {font-size: 1.2em;}
 
 .tc-block-dropdown {border: none; border-radius: 3px;}
 
@@ -8572,7 +8373,7 @@ textarea {font-family: Menlo, monospace; font-size: 1.05em;}</pre>
 
 .index .tc-table-of-contents &gt; ol {margin: -5px 0;}</pre>
 </div>
-<div created="20160604132557550" creator="yuzijie" modified="20160901122612228" modifier="yuzijie" tags="$:/tags/Stylesheet" title="$:/custom/style/toc" type="text/css" revision="0" bag="default">
+<div bag="default" created="20160604132557550" creator="yuzijie" modified="20160901122612228" modifier="yuzijie" revision="0" tags="$:/tags/Stylesheet" title="$:/custom/style/toc" type="text/css">
 <pre>.tc-table-of-contents li {padding-top: 0.2em; font-size: 1.1em;}
 
 .tc-table-of-contents button {color: #999; text-shadow: rgba(255, 255, 255, 0.8) 0px 1px 0px;}
@@ -8598,8 +8399,16 @@ textarea {font-family: Menlo, monospace; font-size: 1.05em;}</pre>
 
 .single-level .tc-table-of-contents .tc-toc li button svg {display: none;}</pre>
 </div>
-<div created="20160708093003717" creator="yuzijie" modified="20160822214741506" modifier="yuzijie" tags="$:/tags/Stylesheet" title="$:/custom/style/tools" type="text/css" revision="0" bag="default">
-<pre>.fontsmall {font-size: small; padding: 0; margin: 0; background: none; border: none;}
+<div bag="default" created="20160708093003717" creator="yuzijie" modified="20161003215647760" modifier="yuzijie" revision="0" tags="$:/tags/Stylesheet" title="$:/custom/style/tools" type="text/css">
+<pre>.section {border-bottom:1px solid #DDD; text-transform: uppercase; font-weight: bold;}
+
+label.checkbox {cursor: pointer;}
+label.checkbox input {display: none;}
+input[type=text].start {border: none; width: 44px; color: #dd1144; padding: 0; text-align: right;}
+input[type=text].end {border: none; width: 42px; color: #dd1144; padding: 0;}
+input[type=text].pay {border: none; border-bottom: 1px solid #333; width: 30px; background: transparent; text-align: center;}
+
+.fontsmall {font-size: small; padding: 0; margin: 0; background: none; border: none;}
 .fontsmall .text {display: none;}
 
 .fontmedium {font-size: medium; padding: 0; margin: 0; background: none; border: none;}
@@ -8608,17 +8417,26 @@ textarea {font-family: Menlo, monospace; font-size: 1.05em;}</pre>
 .fontnormal {padding: 0; margin: 0; background: none; border: none;}
 .fontnormal .icon {display: none;}
 
-.ac-heading &gt; a {font-size: 80%;}
+.ac-heading &gt; a {font-size: 70%;}
 .ac-heading &gt; a:hover {text-decoration: none;}
-.ac-1 .ac-1, .ac-2 .ac-2, .ac-2 .ac-1, .ac-3 .ac-3, .ac-3 .ac-2, .ac-3 .ac-1 {border-left: 5px solid #f6f6f6; padding-left: 20px;}</pre>
+.ac-heading .fixed-width {white-space: nowrap; overflow: hidden; max-width: 93%;}
+.ac-h2 .ac-h1, .ac-h3 .ac-h2, .ac-h3 .ac-h1, .ac-h3 .ac-h3, .ac-h1 .ac-h1 .ac-h1, .ac-h2 .ac-h2 .ac-h2, .ac-h2 .ac-h2 .ac-h3 {padding-left: 12px; border-left: 3px solid #eee;}
+.ac-h1-content h1.ac-heading {font-size: 1.5em;}
+.ac-h1-content .ac-h1-content h2.ac-heading {font-size: 1.17em;}
+.ac-h2-content h2.ac-heading {font-size: 1.17em;}
+.ac-h2-content h1.ac-heading {font-size: 1.5em;}
+.ac-h3-content h2.ac-heading, .ac-h3-content h1.ac-heading {font-size: 1.17em;}
+
+.taskControl {display: inline-block; float: right; font-size: smaller; padding-top: 3px;}
+@media (max-width: 600px) {.taskControl {display: none;}}</pre>
 </div>
-<div created="20160630175828211" creator="yuzijie" modified="20160630175829305" modifier="yuzijie" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20161004090136057" modified="20161004090137183" revision="0" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
 <pre>[list[$:/StoryList]]</pre>
 </div>
-<div title="$:/isEncrypted" revision="0" bag="default">
+<div bag="default" revision="0" title="$:/isEncrypted">
 <pre>no</pre>
 </div>
-<div created="20160816111640751" creator="yuzijie" description="Pale and unobtrusive" modified="20160816215838118" modifier="yuzijie" name="Vanilla" tags="$:/tags/Palette" title="$:/palettes/Vanilla" type="application/x-tiddler-dictionary" revision="0" bag="default">
+<div bag="default" created="20160816111640751" creator="yuzijie" description="Pale and unobtrusive" modified="20160816215838118" modifier="yuzijie" name="Vanilla" revision="0" tags="$:/tags/Palette" title="$:/palettes/Vanilla" type="application/x-tiddler-dictionary">
 <pre>alert-background: #ffe476
 alert-border: #b99e2f
 alert-highlight: #881122
@@ -8723,7 +8541,7 @@ toolbar-done-button:
 untagged-background: #999999
 very-muted-foreground: #888888</pre>
 </div>
-<div author="JoaoBolila" core-version="&gt;=5.0.0" dependents="" description="Highlight.js: syntax highlighting" list="readme usage license" plugin-type="plugin" title="$:/plugins/tiddlywiki/highlight" type="application/json" version="5.1.13" revision="0" bag="default">
+<div author="JoaoBolila" bag="default" core-version="&gt;=5.0.0" dependents="" description="Highlight.js: syntax highlighting" list="readme usage license" plugin-type="plugin" revision="0" title="$:/plugins/tiddlywiki/highlight" type="application/json" version="5.1.13">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/plugins/tiddlywiki/highlight/highlight.js&quot;: {
@@ -8765,25 +8583,34 @@ very-muted-foreground: #888888</pre>
     }
 }</pre>
 </div>
-<div created="20160609142155850" creator="yuzijie" modified="20160830142819867" modifier="yuzijie" title="$:/SiteSubtitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>ZAC’S NOTEBOOK</pre>
+<div bag="default" created="20161004090109838" modified="20161004090121372" revision="0" title="$:/SiteSubtitle" type="text/vnd.tiddlywiki">
+<pre>Study of Bible</pre>
 </div>
-<div created="20160609142145953" creator="yuzijie" modified="20160830142847985" modifier="yuzijie" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>Learn</pre>
+<div bag="default" created="20161004090102625" modified="20161004090105795" revision="0" title="$:/SiteTitle" type="text/vnd.tiddlywiki">
+<pre>圣经研究</pre>
 </div>
-<div created="20160901184132415" creator="yuzijie" modified="20160901184138990" modifier="yuzijie" title="$:/state/index--912040644" revision="3" bag="default">
-<pre>工具</pre>
-</div>
-<div title="$:/status/IsLoggedIn" revision="2" bag="default">
+<div created="20161004102035005" modified="20161004102217003" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
-<div title="$:/status/UserName" revision="1" bag="default">
-<pre>yuzijie</pre>
+<div bag="default" created="20161004101911419" modified="20161004101911419" revision="1" title="$:/state/tab/moresidebar-401116514">
+<pre>$:/core/ui/SideBar/Tools</pre>
 </div>
-<div list="复习指南" title="$:/StoryList" revision="9" bag="default">
+<div bag="default" created="20161004101909434" modified="20161004102136102" revision="1" title="$:/state/tab/sidebar--1835078512">
+<pre>Tools</pre>
+</div>
+<div bag="default" revision="2" title="$:/status/IsLoggedIn">
+<pre>yes</pre>
+</div>
+<div bag="default" revision="1" title="$:/status/UserName">
 <pre></pre>
 </div>
-<div plugin-type="info" title="$:/temp/info-plugin" type="application/json" revision="0" bag="default">
+<div list="Discussion" title="$:/StoryList">
+<pre></pre>
+</div>
+<div created="20161004102105433" modified="20161004102106145" title="$:/temp/advancedsearch">
+<pre>Tools</pre>
+</div>
+<div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/info/browser&quot;: {
@@ -8797,7 +8624,7 @@ very-muted-foreground: #888888</pre>
     }
 }</pre>
 </div>
-<div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.13" revision="0" bag="default">
+<div author="JeremyRuston" bag="default" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-type="theme" revision="0" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.13">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/themes/tiddlywiki/snowwhite/base&quot;: {
@@ -8808,7 +8635,7 @@ very-muted-foreground: #888888</pre>
     }
 }</pre>
 </div>
-<div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="Basic theme" name="Vanilla" plugin-type="theme" title="$:/themes/tiddlywiki/vanilla" type="application/json" version="5.1.13" revision="0" bag="default">
+<div author="JeremyRuston" bag="default" core-version="&gt;=5.0.0" dependents="" description="Basic theme" name="Vanilla" plugin-type="theme" revision="0" title="$:/themes/tiddlywiki/vanilla" type="application/json" version="5.1.13">
 <pre>{
     &quot;tiddlers&quot;: {
         &quot;$:/themes/tiddlywiki/vanilla/themetweaks&quot;: {
@@ -8906,1569 +8733,76 @@ very-muted-foreground: #888888</pre>
     }
 }</pre>
 </div>
-<div created="20160609142643800" creator="yuzijie" modified="20160706180512958" modifier="yuzijie" page="9" tags="[[Driving license]]" title="01. Strade. Veicoli" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>!! 街道；车辆 - Page {{!!page}}
-
-&lt;&lt;toc &quot;01. Strade. Veicoli&quot; &quot;sort[created]&quot;&gt;&gt;</pre>
-</div>
-<div created="20160609142946167" creator="yuzijie" modified="20160706180638504" modifier="yuzijie" page="33" tags="[[Driving license]]" title="02. Segnali di pericolo" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>! 危险标志 - Page {{!!page}}</pre>
-</div>
-<div created="20160609143002027" creator="yuzijie" modified="20160706180632941" modifier="yuzijie" page="61" tags="[[Driving license]]" title="03. Segnali di precedenza" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>! 优先标志 - Page {{!!page}}</pre>
-</div>
-<div created="20160609143115454" creator="yuzijie" modified="20160706180627244" modifier="yuzijie" page="72" tags="[[Driving license]]" title="04. Segnali di divieto" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>! 禁止标志 - Page {{!!page}}</pre>
-</div>
-<div created="20160609143213357" creator="yuzijie" modified="20160706180621451" modifier="yuzijie" page="96" tags="[[Driving license]]" title="05. Segnali di obbligo" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>! 强制性标志 - Page {{!!page}}</pre>
-</div>
-<div created="20160609143237338" creator="yuzijie" modified="20160706180615526" modifier="yuzijie" page="112" tags="[[Driving license]]" title="06. Segnali di indicazione" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>! 指示标志 - Page {{!!page}}</pre>
-</div>
-<div created="20160609143254211" creator="yuzijie" modified="20160706180608236" modifier="yuzijie" page="141" tags="[[Driving license]]" title="07. Segnali temporanei e di cantiere. Segnali complementari" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>! 临时标志和施工标志；补充标志 - Page {{!!page}}</pre>
-</div>
-<div created="20160609143357299" creator="yuzijie" modified="20160706180601335" modifier="yuzijie" page="152" tags="[[Driving license]]" title="08. Pannelli integrativi" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>! 附加标牌 - Page {{!!page}}</pre>
-</div>
-<div created="20160609143412035" creator="yuzijie" modified="20160706180555119" modifier="yuzijie" page="168" tags="[[Driving license]]" title="09. Segnaletica luminosa e manuale" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>! 交通信号灯与手势 - Page {{!!page}}</pre>
-</div>
-<div created="20160609143429582" creator="yuzijie" modified="20160706180548813" modifier="yuzijie" page="181" tags="[[Driving license]]" title="10. Segnaletica orizzontale" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>! 路面标志 - Page {{!!page}}</pre>
-</div>
-<div created="20160609143448558" creator="yuzijie" modified="20160706180821806" modifier="yuzijie" page="198" tags="[[Driving license]]" title="11. Luci, specchi, dispositivi del veicolo. Posizione di guida" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>! 车灯，后视镜，车载系统；驾驶员位置 - Page {{!!page}}</pre>
-</div>
-<div created="20160609143512724" creator="yuzijie" modified="20160706180816004" modifier="yuzijie" page="222" tags="[[Driving license]]" title="12. Regolazione e limiti di velocità. Distanza di sicurezza" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>! 车速限制；安全距离 - Page {{!!page}}</pre>
-</div>
-<div created="20160609143549179" creator="yuzijie" modified="20160706180809381" modifier="yuzijie" page="236" tags="[[Driving license]]" title="13. Posizione dei veicoli sulla carreggiata, svolte e manovre varie" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>! 机动车在行车道的位置，转弯及其他操作 - Page {{!!page}}</pre>
-</div>
-<div created="20160609143657832" creator="yuzijie" modified="20160706180803263" modifier="yuzijie" page="251" tags="[[Driving license]]" title="14. Precedenze" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>! 先行规则 - Page {{!!page}}</pre>
-</div>
-<div created="20160609143710944" creator="yuzijie" modified="20160706180755715" modifier="yuzijie" page="269" tags="[[Driving license]]" title="15. Sorpasso" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>! 超车 - Page {{!!page}}</pre>
-</div>
-<div created="20160609143726120" creator="yuzijie" modified="20160706180749512" modifier="yuzijie" page="279" tags="[[Driving license]]" title="16. Fermata e sosta dei veicoli" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>! 停车与泊车 - Page {{!!page}}</pre>
-</div>
-<div created="20160609143752123" creator="yuzijie" modified="20160706180741584" modifier="yuzijie" page="292" tags="[[Driving license]]" title="17. Trasporto di persone, carico, ingombro della carreggiata, ecc. Autostrade" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>! 搭载乘客，货物，阻塞道路；收费道路 - Page {{!!page}}</pre>
-</div>
-<div created="20160609143831014" creator="yuzijie" modified="20160706180734456" modifier="yuzijie" page="307" tags="[[Driving license]]" title="18. Comportamento corretto del conducente" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>! 司机正确行为 - Page {{!!page}}</pre>
-</div>
-<div created="20160609143902164" creator="yuzijie" modified="20160706180728450" modifier="yuzijie" page="328" tags="[[Driving license]]" title="19. Cause più frequenti di incidenti. Primo soccorso. RCA" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>! 交通事故与急救 - Page {{!!page}}</pre>
-</div>
-<div created="20160609144035671" creator="yuzijie" modified="20160706180721828" modifier="yuzijie" page="351" tags="[[Driving license]]" title="20. Patenti e documenti" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>! 驾驶执照 - Page {{!!page}}</pre>
-</div>
-<div created="20160609144055064" creator="yuzijie" modified="20160706180715751" modifier="yuzijie" page="371" tags="[[Driving license]]" title="21. Tenuta di strada e manutenzione del veicolo" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>! 道路摩擦力和汽车保养 - Page {{!!page}}</pre>
-</div>
-<div created="20160609144146514" creator="yuzijie" modified="20160706180708814" modifier="yuzijie" page="385" tags="[[Driving license]]" title="22. Inquinamento e spie" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>! 污染 - Page {{!!page}}</pre>
-</div>
-<div created="20160609144202196" creator="yuzijie" modified="20160706180702427" modifier="yuzijie" page="395" tags="[[Driving license]]" title="23. Veicoli a due ruote" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>! 两轮车 - Page {{!!page}}</pre>
-</div>
-<div created="20160609144231442" creator="yuzijie" modified="20160706180655099" modifier="yuzijie" page="403" tags="[[Driving license]]" title="24. Veicoli con rimorchi" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>! 挂车 - Page {{!!page}}</pre>
-</div>
-<div created="20160817201157281" creator="yuzijie" modified="20160817213855093" modifier="yuzijie" tags="介词" title="A" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>The word //a// in Italian means “to”, “at” and “with” in English.
-
-* 当和 cities or little islands 有关时候，相当于英语的 //to//
-** Vado ''a'' scuola. (I go to school.)
-** Tornate a Parigi? (Do you come back to Paris?)
-* 给某人，指向目的地
-** Ho scritto una lettera a Maria (I wrote a letter to Maria)
-* 当前时间
-** Alle 7 (At 7.00 a.m)
-* 具有形容词的含义，相当于英语的 //with//
-** Il maglione a righe (The striped pullover)
-* 连接两个动词，后一个通常是动词原形
-** Andiamo a ballare (We go to dance)
-
-''造句时请参考 [[a + 冠词]] 的组合''</pre>
-</div>
-<div created="20160817212600872" creator="yuzijie" modified="20160817212736538" modifier="yuzijie" tags="" title="a + 冠词" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>@@width:100%;
-|! |!冠词 |!组合 |
-|a |il |al |
-|~|lo |allo |
-|~|l’ |all’ |
-|~|la |alla |
-|~|i |ai |
-|~|gli |agli |
-|~|le |alle |
-@@
-
-例句
-
-* Vai al cinema? (Do you go to the cinema?)</pre>
-</div>
-<div created="20160823100225266" creator="yuzijie" modified="20160823104633186" modifier="yuzijie" tags="Programming" title="AppsScript" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>AppsScript 是 Google 开发的基于 Javascript 的脚本语言。这套语言最大的优点是可以直接操作 Google 的所有办公套件，使 Google 的办公套件功能更加灵活强大。
-
-!! 用脚本进行扩展
-
-首先，需要把脚本与一个 document，spreadsheet 或 form [[绑定|绑定文件]]。然后，把自己要做的事情写成[[方法|AppsScript 方法]]。最后给界面[[添加菜单]]，菜单的每一项对应一个方法。
-
-!! 输出内容
-
-如果需要输出内容，可以使用[[侧边栏]]显示[[动态页面|HTML Service]]。
-
-!! 代码测试
-
-最简单的方法是使用 `Logger.log()` 方法，然后在菜单 ''View &gt; Logs'' 查看信息。
-
-!! 常见问题
-
-* [[Spreadsheet 单元格里面是时间值，怎样得到我想要的格式的时间值？|时间格式转换]]</pre>
-</div>
-<div caption="内置方法" created="20160822101433050" creator="yuzijie" modified="20160822102938787" modifier="yuzijie" tags="AppsScript" title="AppsScript 内置方法" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;ul&gt;
-&lt;$list filter=&quot;[tag[AppsScript]tag[functions]]&quot;&gt;
-&lt;$set name=&quot;parent&quot; value={{!!title}}&gt;
-&lt;$list filter=&quot;[list[!!functions]]&quot; variable=&quot;funcName&quot;&gt;
-&lt;li&gt;&lt;$link to=&lt;&lt;parent&gt;&gt;&gt;&lt;&lt;funcName&gt;&gt;&lt;/$link&gt;&lt;/li&gt;
-&lt;/$list&gt;
-&lt;/$set&gt;
-&lt;/$list&gt;
-&lt;/ul&gt;</pre>
-</div>
-<div caption="所有方法" created="20160822092438388" creator="yuzijie" modified="20160822102510430" modifier="yuzijie" tags="AppsScript" title="AppsScript 方法" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;&lt;h2 &quot;AppsScript 内置方法&quot;&gt;&gt;</pre>
-</div>
-<div created="20160620191746444" creator="yuzijie" modified="20160620191819684" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Area pedonale" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>步行区</pre>
-</div>
-<div created="20160620194354831" creator="yuzijie" modified="20160620194541483" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Attraversamento ciclabile" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>自行车横行道</pre>
-</div>
-<div created="20160620192925805" creator="yuzijie" modified="20160620193042004" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Attraversamento pedonale" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>人行横道</pre>
-</div>
-<div created="20160620195950126" creator="yuzijie" modified="20160620200028183" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Autostrade e strade extraurbane principali" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>高速公路和郊区主干道</pre>
-</div>
-<div created="20160706204937293" creator="yuzijie" modified="20160817192542811" modifier="yuzijie" tags="Grammar" title="avere" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>have
-
-; 过去时什么时候使用 AVERE？
-: 除了使用 [[essere]] 的情况。</pre>
-</div>
-<div created="20160620185542216" creator="yuzijie" modified="20160620185605369" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Banchina" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>道路边缘</pre>
-</div>
-<div created="20160620185127383" creator="yuzijie" modified="20160620185453953" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Carreggiata" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>行车干道</pre>
-</div>
-<div created="20160620191556785" creator="yuzijie" modified="20160620191628257" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Centro abitato" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>居住中心</pre>
-</div>
-<div created="20160817122331410" creator="yuzijie" modified="20160817135201076" modifier="yuzijie" title="Che Cosa" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>''//Che cosa// means “what” and can only be used when referring to an object.''
-
-*  ''Che cosa'' c’è da visitare in Calabria? (What can we visit in Calabria?)
-* ''Che cosa'' mangiamo oggi? Vorrei una insalata.
-
-''However, we can use //che// or //cosa// in lieu of //che cosa//.''
-
-* ''Che'' mangiamo oggi?
-* ''Cosa'' mangiamo oggi?</pre>
-</div>
-<div created="20160706181047992" creator="yuzijie" date="20160705" modified="20160815223533349" modifier="yuzijie" tags="练习" title="Che cosa hai fatto ieri?" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>Mi sono svegliato alle 7.
-Mi sono alzato alle 7 e mezzo.
-Dopo, mi sono fatto il bagno alle 7 e tre quarti.
-Mi sono lavato alle 8.
-Mi sono raso alle 8 e 10.
-Mi sono spogliato la pigiama azzurra e mi sono messo la camicia and i pantaloni.
-Ho preso il bus alle 9 e mi sono seduto.
-Io ho mangiato a mezzogiorno.
-Sono giocato a calcio all 16 e mi sono divertito molto.
-Sono tornato a casa, e mi sono fatto la doccia.
-Sono cenato alle 20.
-Mi sono addormentato alle 23.</pre>
-</div>
-<div created="20160817121340896" creator="yuzijie" modified="20160817135434794" modifier="yuzijie" title="Chi" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>''1. //Chi// means “who” and can only be used when referring a person.''
-
-* ''Chi'' è quello ragazzo? È Carlo.
-* ''Chi'' era il Doge di Venezia? (Who was the Doge of Venice?)
-
-''2. //Chi// can also be used to mean “whose” when prefaced with the word //di//.''
-
-&lt;&lt;&lt;
-Literally, di chi means “of who?” The response to a di chi question also ''needs'' to have di before the subject to indicate ownership.
-&lt;&lt;&lt;
-
-* ''Di chi'' è questo libro? È ''di'' Isabella.</pre>
-</div>
-<div created="20160620195822347" creator="yuzijie" modified="20160620195849267" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Classificazione delle strade" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>道路的分类</pre>
-</div>
-<div created="20160817123837534" creator="yuzijie" modified="20160817134938855" modifier="yuzijie" title="Come" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>''Come means “how” in Italian, and can be used in two manners: how something is done or how someone feels.''
-
-For example:
-
-* ''Come'' va? (How are you?) ← an example of “how someone feels”
-* ''Come'' sei arrivata? (How did you arrive?) ← an example of “how something is done”
-* ''Come'' si arriva a Capri? (How do you get to Capri?)</pre>
-</div>
-<div created="20160817204357580" creator="yuzijie" modified="20160817204455323" modifier="yuzijie" tags="介词" title="Con" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>The word //con// in Italian means “with” in English.
-
-相当于中文的“和”。
-
-* Domani esco con Matteo. (I am going out with Matthew tomorrow.)</pre>
-</div>
-<div created="20160711145033014" creator="yuzijie" modified="20160711145227589" modifier="yuzijie" tags="时态" title="condizionale presente" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" created="20161004073851200" modified="20161004101810005" revision="0" tags="" title="Discussion" type="text/vnd.tiddlywiki">
 <pre>&lt;&lt;&lt;
-The present conditional tense (condizionale presente) is equivalent to the English constructions of &quot;would&quot; + verb (for example: I would never forget).
-&lt;&lt;&lt;about.com
+I AM THAT I AM
+&lt;&lt;&lt; Exodus 3:14
 
-Forming conditionals is easy: just take any verb, drop the final -e in its infinitive form, and add an appropriate ending -- endings are the same for all three conjugation groups of verbs. The only spelling change occurs with -are verbs, which change the a of the infinitive ending to e.</pre>
-</div>
-<div created="20160830162112545" creator="yuzijie" modified="20160830183839973" modifier="yuzijie" tags="时态" title="Congiuntivo" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>虚拟语气，用来表达自己的感情，推测，想法，可能性等。
-
-&lt;&lt;h2 &quot;CongiuntivoPresente&quot;&gt;&gt;
-&lt;&lt;h2 &quot;CongiuntivoPassato&quot;&gt;&gt;
-&lt;&lt;h2 &quot;CongiuntivoImperfetto&quot;&gt;&gt;
-&lt;&lt;h2 &quot;CongiuntivoTrapassato&quot;&gt;&gt;</pre>
-</div>
-<div caption="虚拟语气 过去时" created="20160901102838092" creator="yuzijie" modified="20160901124235280" modifier="yuzijie" tags="时态" title="CongiuntivoPassato" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>和 PassatoProssimo 很像，区别是助动词需要进行[[虚拟语气现在时变位|助动词虚拟语气现在时]]。构成形式是：
-
-''虚拟语气过去时 = [[助动词虚拟语气现在时]] + 动词过去分词''
-
-&lt;&lt;h3 &quot;CongiuntivoPassato 例句&quot;&gt;&gt;</pre>
-</div>
-<div caption="例句" created="20160901124159800" creator="yuzijie" modified="20160901125421469" modifier="yuzijie" tags="CongiuntivoPassato" title="CongiuntivoPassato 例句" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>* che io/tu/lui/lei abbia mangiato.
-* che loro abbiano mangiato.
-* Spero che tu non abbia venduto la tua macchina.
-* Credo che lui sia partito ieri.</pre>
-</div>
-<div caption="虚拟语气 现在时" created="20160830183958441" creator="yuzijie" modified="20160901102424232" modifier="yuzijie" tags="Congiuntivo" title="CongiuntivoPresente" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>{{CongiuntivoPresente 动词变位}}</pre>
-</div>
-<div caption="动词变位" created="20160901100849202" creator="yuzijie" modified="20160901101735473" modifier="yuzijie" tags="Congiuntivo" title="CongiuntivoPresente 动词变位" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>@@width:100%;
-|!规则 |!-are |!-ere |!-ire |
-|!io |-i |-a |-a/-isca |
-|!tu |~|~|~|
-|!lui/lei |~|~|~|
-|!noi |-iamo |&lt;|&lt;|
-|!voi |-iate |&lt;|&lt;|
-|!loro |-ino |-ano |-ano/iscano |
-@@</pre>
-</div>
-<div created="20160822182255801" creator="yuzijie" modified="20160822182344525" modifier="yuzijie" tags="Scriptlets" title="ContextualEscaping" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;&lt;&lt;
-''Contextual escaping'' means that AppsScript keeps track of the output’s context on the page — inside an HTML attribute, inside a client-side script tag, or anywhere else — and automatically adds escape characters to protect against cross-site scripting (XSS) attacks.
-&lt;&lt;&lt; https://developers.google.com/apps-script/guides/html/templates</pre>
-</div>
-<div created="20160620185640275" creator="yuzijie" modified="20160620185657218" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Corsia" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>车道</pre>
-</div>
-<div created="20160817201542609" creator="yuzijie" modified="20160817213728206" modifier="yuzijie" tags="介词" title="Da" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>The word //da// in Italian means “from”, “out of” and “by” in English. 
-
-中文译为：从，出自于。
-
-* Vengo da Roma (I come from Rome.)
-
-''造句时请参考 [[da + 冠词]] 的组合''</pre>
-</div>
-<div created="20160817212811632" creator="yuzijie" modified="20160817212906834" modifier="yuzijie" tags="" title="da + 冠词" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>@@width:100%;
-|! |!冠词 |!组合 |
-|da |il |dal |
-|~|lo |dallo |
-|~|l’ |dall’ |
-|~|la |dalla |
-|~|i |dai |
-|~|gli |dagli |
-|~|le |dalle |
-@@
-
-例句
-
-* Da dove vieni? (Where are you from?)
-* Dagli Stati Uniti. (I am from the United States.)</pre>
-</div>
-<div created="20160817194707519" creator="yuzijie" modified="20160817213811778" modifier="yuzijie" tags="介词" title="Di" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>The word //di// in Italian can mean “of”, “about”, “than” and “by” in English.
-
-主要表示从属关系。
-
-* Questo è il libro ''di'' Matteo. (This is Matthew's book.)
-
-''造句时请参考 [[di + 冠词]] 的组合''</pre>
-</div>
-<div created="20160817212913384" creator="yuzijie" modified="20160817213029696" modifier="yuzijie" tags="" title="di + 冠词" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>@@width:100%;
-|! |!冠词 |!组合 |
-|di |il |del |
-|~|lo |dello |
-|~|l’ |dell’ |
-|~|la |della |
-|~|i |dei |
-|~|gli |degli |
-|~|le |delle |
-@@
-
-例句
-
-* Matteo mi parle del suo videogioco.(Matthew talks to me about his video game.)</pre>
-</div>
-<div created="20160817132620732" creator="yuzijie" modified="20160817133507550" modifier="yuzijie" title="Dove" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>''Dove means “where” in Italian.''
-
-* ''Dove'' sei andata? (Where did you go?)
-
-''When we add //da// in front of //dove//, it means “where from”, and is used to ask a person's origin.''
-
-* ''Da dove'' vieni? (Where are you from?) Dagli Stati Uniti (I'm from the United States).
-
-To respond to a //da dove// question, it is //da// + the appropriate definite article, then the country.</pre>
-</div>
-<div caption="驾照" created="20160815142026116" creator="yuzijie" modified="20160830142246658" modifier="yuzijie" order="3" tags="Index" title="Driving license" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
-&lt;&lt;toc-selective-expandable &quot;Driving license&quot; &quot;sort[title]&quot;&gt;&gt;
-&lt;/div&gt;</pre>
-</div>
-<div created="20160706204951499" creator="yuzijie" modified="20160817192531358" modifier="yuzijie" tags="Grammar" title="essere" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>am, is, are
-
-! 过去时什么时候使用 ESSERE？
-
-# ''Verbi di movimento''
-#* Arrivare
-#* Partire
-# ''Verbi di stato''
-#* Stare
-#* Rimanere
-#* Restare
-# ''Verbi di Cambiamento''
-#* Diventare
-#* Nascere
-#* Morire
-#* Ingrassare 增胖
-#* Dimagrire 减肥
-# ''Verbi Riflessivi 所有自反动词''
-# 不规则动词的情况</pre>
-</div>
-<div caption="3. Force-printing scriptlets" created="20160822220112989" creator="yuzijie" modified="20160822221238830" modifier="yuzijie" tags="Scriptlets" title="Force-printing scriptlets" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>使用 `&lt;?!= ... ?&gt;`，输出没有经过 ContextualEscaping 的结果。</pre>
-</div>
-<div created="20160706203906311" creator="yuzijie" modified="20160710203053956" modifier="yuzijie" tags="Grammar" title="gerundio" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>!! 动名词形式
-
-!!! Simple gerund
-
-add `-ando` to the stem of [[-are]] verbs and `-endo` to the stem of [[-ere]] and [[-ire]] verbs. 
-
-!!! Il gerundio composto
-
-the gerund form of either [[avere]] or [[essere]] + PastParticiple of the action verb
-
-!!! Other
-
-* The [[imperfetto]] stems are used to form the gerunds of verbs such as dire (dicendo), fare (facendo), porre (ponendo), and tradurre (traducendo).
-* The [[reflexive verbs]] attach the [[reflexive pronoun]] to the end of the word: lavandosi, sedendosi, divertendosi.</pre>
-</div>
-<div created="20160620195739420" creator="yuzijie" modified="20160620195802907" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Golfo di fermata" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>暂停湾</pre>
-</div>
-<div created="20160706204226170" creator="yuzijie" modified="20160709220526006" modifier="yuzijie" tags="Italiano" title="Grammar" toc-link="no" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre></pre>
-</div>
-<div created="20160822221101367" creator="yuzijie" modified="20160822221104755" modifier="yuzijie" tags="AppsScript" title="HTML Service" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>将 AppsScript 和 HTML 混合使用可以生成动态页面。动态页面能够展示更加丰富的内容。不过模板里面的代码是在页面生成之前执行的，页面生成之后内容不可修改。
-
-&lt;&lt;h2 &quot;Scriptlets&quot;&gt;&gt;
-
-&lt;&lt;h2 &quot;Run Code in Scriptlets&quot;&gt;&gt;</pre>
-</div>
-<div caption="imperativo 命令式" created="20160710223132981" creator="yuzijie" modified="20160803182249298" modifier="yuzijie" tags="时态" title="imperativo" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>!! 命令式
-
-The imperative (l'imperativo) is used to give orders, advice, and exhortation: //be good//, //stay home//, //let's go//.
-
-!! 例子
-
-
-|!|!cantare |!vendere |!aprire |!finire |
-|(tu) |canta |vendi |apri |finisci |
-|(Lei) |canti |venda |apra |finisca |
-|(noi) |cantiamo |vendiamo |apriamo |finiamo |
-|(voi) |cantate |vendete |aprite |finite |
-|(Loro) |cantino |vendano |aprano |finiscano |</pre>
-</div>
-<div created="20160818133413460" creator="yuzijie" modified="20160821152328910" modifier="yuzijie" tags="时态" title="Imperfetto" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>中文译为：未完成过去时。在意大利语中十分重要，同样描述过去发生的事情，但是和 PassatoProssimo 使用场景不同，用于描述过去的一种状态或一种习惯，并不强调对于现在的影响。[[Imperfetto]] 和 PassatoProssimo 经常[[联合使用|Imperfetto + PassatoProssimo]]。
+来自出埃及记的这句话有些晦涩难懂。
 
 &lt;&lt;&lt;
-时态构成十分简单，''直接把动词结尾改为未完成过去时的形态即可。''
+''6'' Moreover he said, ''I am'' the God of thy father, the God of Abraham, the God of Isaac, and the God of Jacob. And Moses hid his face; for he was afraid to look upon God.
 &lt;&lt;&lt;
 
-&lt;&lt;h2 &quot;Imperfetto 单独使用场景&quot;&gt;&gt;
-&lt;&lt;h2 &quot;Imperfetto + PassatoProssimo&quot;&gt;&gt;
-&lt;&lt;h2 &quot;Imperfetto 动词变位&quot;&gt;&gt;
-&lt;&lt;h2 &quot;Imperfetto 助动词变位&quot;&gt;&gt;</pre>
-</div>
-<div caption="联合使用场景" created="20160802160726777" creator="yuzijie" modified="20160818223323748" modifier="yuzijie" tags="Imperfetto PassatoProssimo" title="Imperfetto + PassatoProssimo" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>; 1. [[Imperfetto]] × 2
-: 描述两个同时发生的动作，使用 mentre 来连接两个事件。
-: Io strillavo mentre Io ascoltavo la musica.
-: Mentre mangiavo, leggevo il giornale.
-: Quando parlava, era sempre nervoso.
-: Camminava e parlava al telefonino.
-; 2. PassatoProssimo × 2
-: 描述两个相继完成的动作。
-: Ha aperto il frigorifero e ha preso il latte.
-: Prima ho acceso la luce e poi la tv.
-: Ho chiamato Dino e abbiamo parlato a lungo.
-; 3. [[Imperfetto]] + PassatoProssimo
-: 描述一个正在进行中的动作被另一个动作从中插入或打断。其中，[[Imperfetto]] 用于描述正在进行中的动作。
-: Mentre camminavo, ho incontrato Livio.
-: Quando ero a Roma, ho visitato il Vaticano.
-: Mentre ero in macchina, è suonato il cellulare.
-: Ho conosciuto Angela quando aveva 16 anni.</pre>
-</div>
-<div caption="动词变位" created="20160818200707691" creator="yuzijie" modified="20160821152409774" modifier="yuzijie" tags="Imperfetto" title="Imperfetto 动词变位" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>@@width:100%;
-|!规则 |!-are |!-ere |!-ire |
-|!io |-avo |-evo |-ivo |
-|!tu |-avi |-evi |-ivi |
-|!lui/lei |-ava |-eva |-iva |
-|!noi |-avamo |-evamo |-ivamo |
-|!voi |-avate |-evate |-ivate |
-|!loro |-avano |-evano |-ivano |
-@@</pre>
-</div>
-<div caption="助动词变位" created="20160821152410491" creator="yuzijie" modified="20160821152430913" modifier="yuzijie" tags="Imperfetto" title="Imperfetto 助动词变位" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>@@width:100%;
-|!助动词 |!essere |!avere |
-|!io |ero |avevo |
-|!tu |eri |avevi |
-|!lui/lei |era |aveva |
-|!noi |eravamo |avevamo |
-|!voi |eravate |avevate |
-|!loro |erano |avevano |
-@@</pre>
-</div>
-<div caption="单独使用场景" created="20160818200737207" creator="yuzijie" modified="20160818222703137" modifier="yuzijie" tags="Imperfetto" title="Imperfetto 单独使用场景" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>; 1. 过去的某个时间点上，还未完成的事情
-: Ieri alle 10 dormivo.
-: Il 3 marzo ero già in Italia.
-: Tre anni fa lavoravo ancora in banca.
-; 2. 过去常常做的，习惯做的事情（habitually）或过去一段时间内的生活
-: 英语里用 “I used to” 或 “I would” 来表达，意大利语也可用 “Io ero solito/a” 表达。
-: L’anno scorso camminavo tutti i giorni.
-: L’anno scorso ero solita camminare tutti i giorni.
-: Quando ero piccolo, mangiavo sempre la cioccolata.
-: Quando abitavo in Cina, andavo a scuola tutti i gironi.
-; 3. 谈论过去的天气或时间
-: Erano le due di pomeriggio.
-: Ieri sera pioveva e faceva freddo.
-: Pioveva questa mattina!
-; 4. 谈论过去的精神或身体状况，包括年龄
-: Maria era bella quando era giovane.
-: Justin bieber aveva 15 anni, quando si è lasciato con Selena.
-: Ieri stavo male ed ero molto triste.</pre>
-</div>
-<div created="20160817202338707" creator="yuzijie" modified="20160901110411238" modifier="yuzijie" tags="介词" title="In" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>以下是使用 `in` 的场合。''造句时请参考 [[in + 冠词]] 的组合''
-
-# 在某个大概的地方。
-#* ''in'' centro (in the center)
-#* ''in'' montagna (in the mountains)
-# 在 countries, regions, continents, big islands, bank, mountain, library or church 前面表示：去，同英语的 //to//
-#* Vai ''in'' Francia? (Are you going to France?)
-# 在某个时间段、季节
-#* ''In'' estate (in Summer)
-# 使用某种交通方式
-#* Vado ''in'' treno (I go by train)</pre>
-</div>
-<div created="20160817213128026" creator="yuzijie" modified="20160817213351453" modifier="yuzijie" tags="" title="in + 冠词" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>@@width:100%;
-|! |!冠词 |!组合 |
-|in |il |nel |
-|~|lo |nello |
-|~|l’ |nell’ |
-|~|la |nella |
-|~|i |nei |
-|~|gli |negli |
-|~|le |nelle |
-@@
-
-例句
-
-* Nella tua borsa ci sono troppi libri. (There are too many books in your handbag.)</pre>
-</div>
-<div created="20160817211338221" creator="yuzijie" list-after="$:/core/ui/SideBar/Open" modified="20160818175145735" modifier="yuzijie" tags="$:/tags/SideBar" title="Index" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;div class=&quot;index tc-more-sidebar&quot;&gt;
-&lt;&lt;tabs &quot;[tag[Index]sort[order]]&quot; &quot;工具&quot; &quot;$:/state/index&quot; &quot;tc-vertical&quot;&gt;&gt;
-&lt;/div&gt;</pre>
-</div>
-<div created="20160620190617477" creator="yuzijie" modified="20160620190930386" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Intersezione a livelli sfalsati" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>立体交叉道路</pre>
-</div>
-<div created="20160620185942271" creator="yuzijie" modified="20160620190005650" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Intersezione a raso" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>平面交叉道路</pre>
-</div>
-<div created="20160620190954368" creator="yuzijie" modified="20160620191027568" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Isola di traffico" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>交通岛</pre>
-</div>
-<div caption="意语" created="20160802153415506" creator="yuzijie" modified="20160830142314722" modifier="yuzijie" order="1" tags="Index" title="Italiano" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
-&lt;&lt;toc-selective-expandable &quot;Italiano&quot; &quot;sort[title]&quot;&gt;&gt;
-&lt;/div&gt;</pre>
-</div>
-<div created="20160620200745396" creator="yuzijie" modified="20160620200846252" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Itinerari ciclopedonali" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>自行车和人的行进线路</pre>
-</div>
-<div created="20160620183914332" creator="yuzijie" modified="20160620185435582" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="La strada" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>道路</pre>
-</div>
-<div created="20160620191922198" creator="yuzijie" modified="20160620191951740" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Marciapiede" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>人行道</pre>
-</div>
-<div created="20160620195453475" creator="yuzijie" modified="20160620195533032" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Parcheggio" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>停车场</pre>
-</div>
-<div created="20160620195040288" creator="yuzijie" modified="20160620195135384" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Passaggio a livello" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>平面铁路交叉路口</pre>
-</div>
-<div created="20160818133422132" creator="yuzijie" modified="20160821152113589" modifier="yuzijie" tags="时态" title="PassatoProssimo" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>中文可以译为：近过去时。是意大利语最重要的时态之一，用来表述过去的一件事情，并且这件事已经结束。对应英语的''现在完成时''和''简单过去时''。这个时态常常和另一个过去时态 [[Imperfetto]] 进行比较。
-
-''构成形式是：近过去时 = [[助动词|PassatoProssimo 助动词]] + 动词过去分词''
-
-&lt;&lt;h2 &quot;PassatoProssimo 助动词&quot;&gt;&gt;
-&lt;&lt;h2 &quot;PassatoProssimo 例句&quot;&gt;&gt;
-&lt;&lt;h2 &quot;Imperfetto + PassatoProssimo&quot;&gt;&gt;</pre>
-</div>
-<div caption="例句" created="20160818215630883" creator="yuzijie" modified="20160818215751014" modifier="yuzijie" tags="PassatoProssimo" title="PassatoProssimo 例句" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>* Sono stato in Italia per una settimana.
-* Sono rimasto a casa tutto il giorno.
-* Ho studiato dalle cinque alle otto.
-* Ho dormito fino alle nove stamattina.</pre>
-</div>
-<div caption="助动词的使用" created="20160818135814876" creator="yuzijie" modified="20160822091528332" modifier="yuzijie" tags="PassatoProssimo" title="PassatoProssimo 助动词" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>进过去时的助动词有两个：essere 和 avere
-
-; avere
-: 1. 它的作用相当于英语完成时里的 //have//，强调了「完成」这一结果。
-: 2. 过去分词的结尾不需要变化。过去分词被看成类似于名词。
-: 3. 通常当动词是''及物动词''时，使用 avere.
-; essere
-: 1. 相当于英语的 //be// 动词，但是英语里把 //be// 动词作为助动词时表示被动。
-: 2. 过去分词的结尾必须根据主语性数来变化。过去分词被看成类似于形容词。
-: 3. 通常当动词是''不及物动词''时，使用 essere.
-
-!! The House of Essere
-
-助动词到底选用 essere 还是 avere 并不十分规律，所以通常情况下还是要靠死记硬背。好在使用 essere 的情况是少数，所以很多人使用下面的图片来帮助记忆。
-
-除下图外 piacere 的助动词也是 essere.
-
-[img[https://dl.dropbox.com/s/xd77r471u2onx1g/the%20house%20of%20essere.jpg]]</pre>
-</div>
-<div created="20160711200741153" creator="yuzijie" modified="20160803174805878" modifier="yuzijie" tags="时态" title="PassatoRemoto" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>It refers to the ''historical past'' or to events that have happened ''in the distant past'' relative to the speaker.
-
-很远的过去发生的事情，已经完全完成的事情。
-
-* For `-are` verbs, drop the infinitive ending and add one of these personal endings to the root: `-ai`, `-asti`, `-ò`, `-ammo`, `-aste`, `-arono`.
-* For `-ere` verbs, drop the infinitive ending and add these personal endings to the root: `-ei`, `-esti`, `-é`, `-emmo`, `-este`, `-erono`.
-* For `-ire` verbs, drop the infinitive ending and add these personal endings to the root: `-ii`, `-isti`, `-í`, `-immo`, `-iste`, `-irono`.</pre>
-</div>
-<div created="20160620195620776" creator="yuzijie" modified="20160620195719660" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Passo carrabile" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>行车通道</pre>
-</div>
-<div created="20160706204838180" creator="yuzijie" modified="20160710202639843" modifier="yuzijie" tags="时态" title="PastParticiple" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>dropping the infinitive ending [[-are]], [[-ere]], or [[-ire]] and adding the appropriate final ending: `-ato`, `-uto`, or `-ito`</pre>
-</div>
-<div created="20160817211755153" creator="yuzijie" modified="20160817211926158" modifier="yuzijie" tags="介词" title="Per" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>The word //per// in Italian means “in order to&quot; and “for&quot; in English.
-
-中文译为：为了……
-
-* Bisogna mangiare per vivere. (You need to eat in order to live.)
-
-''Per is also used in certain expressions''
-
-* per fortuna (fortunately)
-* per esempio (for example)
-* per caso (by chance)
-
-</pre>
-</div>
-<div created="20160817124156363" creator="yuzijie" modified="20160817135541123" modifier="yuzijie" title="Perché" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>''Perché is used to ask “why” in Italian.''
-
-* ''Perché'' non si vai a scuola oggi? (Why did you not go to school today?)
-* ''Perché'' il Colosseo è cosi rovinato? (Why is the Colosseum so damaged?)
-
-''Perché can also be used as a response.''
-
-* ''Perché'' sono malata. (Because I am sick)</pre>
-</div>
-<div created="20160620195351463" creator="yuzijie" modified="20160620195418353" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Piazzola di sosta" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>停车小广场</pre>
-</div>
-<div created="20160620194624477" creator="yuzijie" modified="20160620194711360" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Pista ciclabile" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>自行车车道</pre>
-</div>
-<div caption="2. Printing scriptlets" created="20160822220029262" creator="yuzijie" modified="20160822221223361" modifier="yuzijie" tags="Scriptlets" title="Printing scriptlets" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>代码包含在 `&lt;?= ... ?&gt;` 里面，使用 ContextualEscaping 输出执行后的结果。
-
-```php
-&lt;body&gt;
-  &lt;?= 'My favorite Google products:' ?&gt;
-  &lt;? var data = ['Gmail', 'Docs', 'Android'];
-     for (var i = 0; i &lt; data.length; i++) { ?&gt;
-       &lt;b&gt;&lt;?= data[i] ?&gt;&lt;/b&gt;
-  &lt;? } ?&gt;
-&lt;/body&gt;
-```</pre>
-</div>
-<div caption="编程" created="20160802154639520" creator="yuzijie" modified="20160830142303670" modifier="yuzijie" order="2" tags="Index" title="Programming" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
-&lt;&lt;toc-selective-expandable &quot;Programming&quot; &quot;sort[title]&quot;&gt;&gt;
-&lt;/div&gt;</pre>
-</div>
-<div created="20160709224944235" creator="yuzijie" modified="20160815223528758" modifier="yuzijie" tags="练习" title="Qual è il tuo piatto forte?" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>!! 中文
-
-准备一只大碗，放入面粉，一块黄油，糖和盐，放入切碎的西葫芦，然后加入牛奶不停搅拌。直到面粉和牛奶充分混合。把锅烧热，放入面糊，等到面糊成熟为止，盛出。
-
-把鸡蛋打碎在碗里，加入肉丁，菠菜和洋葱末不停搅拌。在锅里面放油，待油烧热以后，将鸡蛋糊倒入锅中，等待成熟。
-
-把鸡蛋饼放到面饼上，加上生菜，卷起，一起吃。
-
-!! Italiano
-</pre>
-</div>
-<div created="20160817122738216" creator="yuzijie" modified="20160817123038302" modifier="yuzijie" title="Quale" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>''//Quale// means both “which” and “what” in Italian; in plural, //quale// becomes //quali//.''
-
-* ''Quale'' libro stai leggendo?
-* ''Quali'' libri stai leggendo?
-
-''An alternative to //quale// is //che//.''
-
-* ''Che'' libro stai leggendo? </pre>
-</div>
-<div created="20160817130157328" creator="yuzijie" modified="20160817134838911" modifier="yuzijie" title="Quando" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>''//Quando// is the question word used to ask time.''
-
-* ''Quando'' sei tornata? (What time did you get back?)
-* ''Quando'' parte la gondola? (When does the gondola leave?)
-
-''However, if we need to ask the specific time, we use //che// instead.''
-
-* ''Che'' ore sono? (What time is it?)</pre>
-</div>
-<div created="20160817123321999" creator="yuzijie" modified="20160817143142979" modifier="yuzijie" title="Quanto" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>''Quanto is used when we want to ask “how much” or “how many”. Quanto can be used as either an adjective or a pronoun.''
-
-''当作为形容词使用时，结尾的字母要根据名词的性数变化。''
-
-* ''Quanto'' è alto il campanile di Giotto? (How tall is Giotto's bell tower?)
-*&gt; Giotto's bell tower (il campanile di Giotto) is masculine, and singular, so it uses quanto.
-* ''Quanta'' farina ti serve per fare la pizza? (How much flour do you need to make pizza?)
-*&gt; The flour (farina) in the pizza is feminine and singular, so it uses quanta.
-* ''Quanti'' posti ci sono nel teatro alla Scala di Milano? (How many seats are there in the Scala theater of Milan?)
-*&gt; The seats (posti) in the Scala theater are masculine, and there is definitely more than one of them, so it uses the masculine plural form quanti.
-* ''Quante'' persone visitano ogni anno Firenze? (How many people visit Florence every year?)
-*&gt; The Italian word for people (persone), regardless of their real gender, happens to be feminine. In this case we're talking about more than one person, so we use the feminine plural form quante.
-
-''当作为代词使用时，不需要根据性数变化。''不过目前只有询问价格的时候，用作代词。
-
-* ''Quanto'' costa la tua nuova vespa?</pre>
-</div>
-<div created="20160901104506975" creator="yuzijie" modified="20160901104550464" modifier="yuzijie" tags="提问题" title="Question Words in Italian" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre># [[Chi]]: who, whose
-# [[Che Cosa]]: what
-# [[Quale]]: which, what
-# [[Quanto]]: how much, how many
-# [[Come]]: how
-# [[Perché]]: why, because
-# [[Quando]]: when
-# [[Dove]]: where </pre>
-</div>
-<div created="20160706211527604" creator="yuzijie" modified="20160706211542416" modifier="yuzijie" tags="Grammar" title="reflexive pronoun" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>The reflexive pronouns (i pronomi reflessivi) mi, ti, si, ci, vi, and si are identical in form to direct object pronouns, except for the third-person form si (which is the same in the singular and in the plural).</pre>
-</div>
-<div created="20160706211611915" creator="yuzijie" modified="20160706211616941" modifier="yuzijie" tags="Grammar" title="reflexive verbs" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>A reflexive verb is one when the action carried out by the subject is performed on the same subject. So for example, “I wash myself” or “I sit myself in the chair”. The subject, “I”, am doing the washing and the sitting.</pre>
-</div>
-<div caption="riflessivi 自反动词" created="20160706200604865" creator="yuzijie" modified="20160817192607077" modifier="yuzijie" tags="Grammar" title="Riflessivi" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>!! 形态
-
-* 自反动词 = 及物动词 + 自反代词
-* 在不定式的情况下，由动词不定式 + 自反代词 si 组成的，例如：alzarsi = alzare + si
-* 自反代词 si 的意义相当于汉语中的“某人自己”
-** 例如 chiamare 意为“称呼”，chiamarsi 意为“称呼自己”
-** Si chiama Livio 他自己称呼自己利维奥
-
-!! 变位
-
-* 变位时，……
-
-* http://www.for68.com/new/2009/4/li20842049281014900211240-8.htm
-* http://px.iqilu.com/d/2f3fd.html
-* http://www.huarenjie.com/thread-538939-1-1.html</pre>
-</div>
-<div caption="在 Scriptlets 里执行代码" created="20160822204358610" creator="yuzijie" modified="20160823085135669" modifier="yuzijie" tags="[[HTML Service]]" title="Run Code in Scriptlets" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>有三种方法可以让代码运行在 [[Scriptlets]] 里面。下面的三组代码目的一样，都是把表格里面的内容显示在侧栏网页里。
-
-&lt;&lt;h3 &quot;在模板里调用方法&quot;&gt;&gt;
-&lt;&lt;h3 &quot;直接调用内置 APIs&quot;&gt;&gt;
-&lt;&lt;h3 &quot;推送变量到模板&quot;&gt;&gt;</pre>
-</div>
-<div created="20160620192835289" creator="yuzijie" modified="20160620192916024" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Salvagente" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>安全岛</pre>
-</div>
-<div caption="什么是 Scriptlets" created="20160822175748716" creator="yuzijie" modified="20160823092009180" modifier="yuzijie" tags="[[HTML Service]]" title="Scriptlets" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>类似于 PHP，''Scriptlets'' 是 AppsScript 特有标签的统称，里面可以存放可执行代码。
-
-&lt;&lt;&lt;
-Scriptlets can call functions defined in other code files, reference global variables, or use any of the Apps Script APIs.
-&lt;&lt;&lt; [[Google Apps Script Guides|https://developers.google.com/apps-script/guides/html/templates]]
-
-&lt;&lt;h3 &quot;Standard scriptlets&quot;&gt;&gt;
-&lt;&lt;h3 &quot;Printing scriptlets&quot;&gt;&gt;
-&lt;&lt;h3 &quot;Force-printing scriptlets&quot;&gt;&gt;</pre>
-</div>
-<div created="20160620194812253" creator="yuzijie" modified="20160620194854827" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Sede tranviaria" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>有轨电车车道</pre>
-</div>
-<div created="20160620191229491" creator="yuzijie" modified="20160620191311427" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Spartitraffico" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>交通分隔墙</pre>
-</div>
-<div caption="1. Standard scriptlets" created="20160822215949413" creator="yuzijie" modified="20160822221206738" modifier="yuzijie" tags="Scriptlets" title="Standard scriptlets" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>代码包含在 `&lt;? ... ?&gt;` 里面，没有内容输出。
-
-```php
-&lt;body&gt;
-  &lt;? if (true) { ?&gt;
-    &lt;p&gt;This will always be served!&lt;/p&gt;
-  &lt;? } else  { ?&gt;
-    &lt;p&gt;This will never be served.&lt;/p&gt;
-  &lt;? } ?&gt;
-&lt;/body&gt;
-```</pre>
-</div>
-<div created="20160620184846690" creator="yuzijie" modified="20160620185047813" modifier="yuzijie" tags="[[01. Strade. Veicoli]]" title="Strade e definizioni stradali" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre></pre>
-</div>
-<div created="20160620200414979" creator="yuzijie" modified="20160620200500111" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Strade extraurbane secondarie" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>郊区次干道</pre>
-</div>
-<div created="20160620200725792" creator="yuzijie" modified="20160620200745699" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Strade locali" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>支路</pre>
-</div>
-<div created="20160620200623750" creator="yuzijie" modified="20160620200708589" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Strade urbane di quartiere" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>城市中的街区道路</pre>
-</div>
-<div created="20160620200531547" creator="yuzijie" modified="20160620200557770" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Strade urbane di scorrimento" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>城市中的快速路</pre>
-</div>
-<div created="20160817210645084" creator="yuzijie" modified="20160817213934277" modifier="yuzijie" tags="介词" title="Su" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>The word //su// in Italian means “about” and “on” in English.
-
-可以解释为：关于，或在……的上面。
-
-* Un libro su Roberto Benigni. (A book about Roberto Benigni.)
-
-''造句时请参考 [[su + 冠词]] 的组合''</pre>
-</div>
-<div created="20160817213314233" creator="yuzijie" modified="20160817213447006" modifier="yuzijie" tags="" title="su + 冠词" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>@@width:100%;
-|! |!冠词 |!组合 |
-|su |il |sul |
-|~|lo |sullo |
-|~|l’ |sull’ |
-|~|la |sulla |
-|~|i |sui |
-|~|gli |sugli |
-|~|le |sulle |
-@@
-
-例句
-
-* Il gatto è sulla sedia. (The cat is on the chair.)</pre>
-</div>
-<div caption="Tra" created="20160817211805886" creator="yuzijie" modified="20160817212121083" modifier="yuzijie" tags="介词" title="Tra/Fra" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>The words //tra// and //fra// in Italian mean “among”, “between” and “out of” in English.
-
-* Il gatto dorme tra le piante. (The cat sleeps between the plants.)
-* Il gatto dorme fra le piante. (The cat sleeps among the plants.)</pre>
-</div>
-<div created="20160710203139360" creator="yuzijie" modified="20160710204418295" modifier="yuzijie" tags="时态" title="trapassato" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>The past perfect tense (trapassato prossimo) is used when two actions happened at different times in the past.
-
-!! 例子
-
-; Già erano partiti quando sono arrivato.
-: They had already left when I arrived.
-; Avevo chiuso le finestre quando è cominciato a piovere.
-: I had shut the windows when it started to rain.
-; La macchina sbandava perché aveva piovuto.
-: The car was sliding because it had rained.</pre>
-</div>
-<div created="20160803182300800" creator="yuzijie" modified="20160821153715332" modifier="yuzijie" tags="时态" title="TrapassatoProssimo" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>中文翻译：“近愈过去时”，相当于英语里面的过去完成时。描述过去一个动作之前发生的动作。常常在助动词之后加上 //già// 强调“已经”。
-
-&lt;&lt;&lt;
-Usiamo il trapassato prossimo per un’azione passata che avviene prima di un’altra azione passata. Per quest’ultima usiamo il passato prossimo o l’imperfetto.
-&lt;&lt;&lt;
-
-''构成形式是：近愈过去时 = [[助动词的未完成时|Imperfetto 助动词变位]] + 动词过去分词''
-
-&lt;&lt;h2 &quot;TrapassatoProssimo 例句&quot;&gt;&gt;</pre>
-</div>
-<div caption="例句" created="20160821153346564" creator="yuzijie" modified="20160821153648422" modifier="yuzijie" tags="TrapassatoProssimo" title="TrapassatoProssimo 例句" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>* ''Erano già partiti'', quando siamo arrivati.
-* ''Avevo dormito'' poco e quindi ero stanco.
-* Quando avevo 5 anni, ''avevo già imparato'' a leggere.
-* La mia mamma ''aveva preparato'' cena quando sono venuto a casa.</pre>
-</div>
-<div created="20160711182821155" creator="yuzijie" modified="20160711183550515" modifier="yuzijie" tags="新视线意大利语初级" title="Unità 00 Introduttiva" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>* 字母
-* essere
-* avere
-* 阴阳性
-* 冠词 Articoli</pre>
-</div>
-<div created="20160711182856839" creator="yuzijie" modified="20160711183951436" modifier="yuzijie" tags="新视线意大利语初级" title="Unità 01" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>* 动词变位
-* presente indicativo
-* 形容词根据名词变换词尾
-* Di dove sei?
-* Di dov’è?
-* Com’è? (how?)
-* L’aspetto e il carattere (描述人的外观和五官）
-* L’italia: Regioni e Città</pre>
-</div>
-<div created="20160711182917361" creator="yuzijie" modified="20160711184344091" modifier="yuzijie" tags="新视线意大利语初级" title="Unità 02" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>* presente indicativo (Verbi irregolari)
-** andare
-** venire
-** dare
-** sapere
-** stare
-** uscire
-** fare
-** giocare
-* Invitare / Accettare un invito / Rifiutare un invito
-* 情态动词 i verbi modali
-* Dove abiti
-* 数字，序数
-* ……</pre>
-</div>
-<div created="20160711182931421" creator="yuzijie" modified="20160712201700967" modifier="yuzijie" tags="新视线意大利语初级" title="Unità 03" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>!! 听力部分总结
-
-; raccontare
-: describe 描述
-: tell 告诉
-; Ho tanto da raccontare alla mia famiglia
-: 我有好多事情要告诉家里人
-; dagli
-: ''da + gli'' from the
-; chiamano
-: They call
-; proprio
-: Exactly, really, truly
-: È ''proprio'' accanto all’Odeon
-; appunto
-: indeed, exactly
-; forse
-: maybe, perhaps</pre>
-</div>
-<div created="20160711183007392" creator="yuzijie" modified="20160711183017089" modifier="yuzijie" tags="新视线意大利语初级" title="Unità 04" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre></pre>
-</div>
-<div created="20160711183020600" creator="yuzijie" modified="20160711183024735" modifier="yuzijie" tags="新视线意大利语初级" title="Unità 05" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre></pre>
-</div>
-<div created="20160711183027694" creator="yuzijie" modified="20160711183031764" modifier="yuzijie" tags="新视线意大利语初级" title="Unità 06" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre></pre>
-</div>
-<div created="20160711183033808" creator="yuzijie" modified="20160711183037889" modifier="yuzijie" tags="新视线意大利语初级" title="Unità 07" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre></pre>
-</div>
-<div created="20160711183040164" creator="yuzijie" modified="20160711183044283" modifier="yuzijie" tags="新视线意大利语初级" title="Unità 08" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre></pre>
-</div>
-<div created="20160711183046744" creator="yuzijie" modified="20160711183050878" modifier="yuzijie" tags="新视线意大利语初级" title="Unità 09" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre></pre>
-</div>
-<div created="20160711183118647" creator="yuzijie" modified="20160711183124465" modifier="yuzijie" tags="新视线意大利语初级" title="Unità 10" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre></pre>
-</div>
-<div created="20160711182910558" creator="yuzijie" modified="20160711182914359" modifier="yuzijie" tags="新视线意大利语初级" title="Unità 11" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre></pre>
-</div>
-<div created="20160601080354556" creator="yuzijie" modified="20160601080406056" modifier="yuzijie" title="yuzijie" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>作者：于子杰</pre>
-</div>
-<div created="20160620191634571" creator="yuzijie" modified="20160620191723656" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Zona a traffico limitato" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>交通限制区域</pre>
-</div>
-<div created="20160620191315224" creator="yuzijie" modified="20160620191522065" modifier="yuzijie" tags="[[Strade e definizioni stradali]]" title="Zona di preselezione e di attestamento" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>预选和等待区域</pre>
-</div>
-<div created="20160708194452339" creator="yuzijie" modified="20160709221233597" modifier="yuzijie" tags="常用语" title="三餐" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>* 早饭：Fare colazione
-* 午饭：Pranzare / Fare preno
-* 晚饭：Cenare / Fare cena
-
-!! 例句
-
-; 如何描述我早饭吃了什么？
-: Ho mangiato una brioche e ho bevuto un cappuccino per colazione.
-: Ho fatto colazione con una brioche.
-
-!! 注意
-
-* `Mangiare` 后面必须加具体食物</pre>
-</div>
-<div created="20160709222240278" creator="yuzijie" modified="20160709222301841" modifier="yuzijie" tags="Italiano" title="专题" toc-link="no" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre></pre>
-</div>
-<div created="20160821155922603" creator="yuzijie" modified="20160821163905092" modifier="yuzijie" tags="复习指南" title="习惯用语" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>总结习惯用语用途是：方便说话时可以不假思索同时又可以比较地道。
-
-* 生活方面包括[[吃|习惯用语 - 吃]]、[[穿|习惯用语 - 穿]]、[[住|习惯用语 - 住]]和[[行|习惯用语 - 行]]。
-
-* [[遇到朋友|习惯用语 - 遇见]]了怎么说？
-
-* 除了生活，还有[[学习|习惯用语 - 学习]]和[[工作|习惯用语 - 工作]]。</pre>
-</div>
-<div created="20160821161458804" creator="yuzijie" modified="20160821161500074" modifier="yuzijie" tags="习惯用语" title="习惯用语 - 住" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre></pre>
-</div>
-<div created="20160821161512445" creator="yuzijie" modified="20160821163958690" modifier="yuzijie" tags="习惯用语" title="习惯用语 - 吃" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>; My mom had cooked dinner.
-: La mia mamma aveva ''preparato'' cena.
-: 晚饭一般是准备的，不要轻易使用 cucinare 或 cuocere.</pre>
-</div>
-<div created="20160821161919068" creator="yuzijie" modified="20160821163928339" modifier="yuzijie" tags="习惯用语" title="习惯用语 - 学习" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>; 我已经学会了阅读。
-: Avevo già ''imparato'' a leggere.
-: 使用正确的动词，不要使用 studiare.
-</pre>
-</div>
-<div created="20160821161937018" creator="yuzijie" modified="20160821161938167" modifier="yuzijie" tags="习惯用语" title="习惯用语 - 工作" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre></pre>
-</div>
-<div created="20160821161505575" creator="yuzijie" modified="20160821161506746" modifier="yuzijie" tags="习惯用语" title="习惯用语 - 穿" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre></pre>
-</div>
-<div created="20160821161451876" creator="yuzijie" modified="20160821161453015" modifier="yuzijie" tags="习惯用语" title="习惯用语 - 行" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre></pre>
-</div>
-<div created="20160821163914123" creator="yuzijie" modified="20160821163920343" modifier="yuzijie" tags="习惯用语" title="习惯用语 - 遇见" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>; I met Adam
-: Ho incontrato Adam，表示我见到了 Adam.
-: Ho conosciuto Adam，表示我''第一次''见到了 Adam.</pre>
-</div>
-<div created="20160817193441684" creator="yuzijie" modified="20160901110441117" modifier="yuzijie" tags="sentence" title="介词" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>意大利语的介词有 ''8'' 个：
+但是如果联系到第六节的经文，也许那句话并不算深奥，上帝可能只是不想重复自己说过的话罢了。
 
-&lt;&lt;presentation &quot;介词&quot;&gt;&gt;
+我摘抄了四篇译文，每篇译文的用词都各有不同，''所以可以想到，不同译本的读者也会对圣经的理解产生差别''。这四篇译文里面，我认为[[新世界译本|出埃及记 3:13-14 新世界译本]]对于圣经的翻译最为&lt;mark&gt;''离谱''&lt;/mark&gt;，原文哪里提到「必能成事」了？[[King James Version|Exodus 3:13-14 King James Version]] 我认为翻译得最为谨慎，难怪被定为美国的标准版本。通过这个研究我发现[[新世界译本|出埃及记 3:13-14 新世界译本]]的翻译不谨慎，夹杂着译者自己的理解和引申意思，我认为需要小心。
 
-介词后面往往跟随者冠词，为了表达的顺畅，会把介词和冠词连起来用，比如：
-
-* [[a + 冠词]]
-* [[da + 冠词]]
-* [[di + 冠词]]
-* [[in + 冠词]]
-* [[su + 冠词]]</pre>
-</div>
-<div created="20160709223147709" creator="yuzijie" modified="20160709224918099" modifier="yuzijie" tags="常用语" title="价格" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>; 价格高
-: caro
-: costoso
-: più caro
-: meno economico
-: il prezzo è alto
-: costa di più
-: costa tanto
-; 价格低
-: economico
-: conveniente
-: meno caro
-: più economico
-: il prezzo è buono
-: costa di meno
-: costa poco
-
-!! 例句
-
-* I biscotti costano poco / tanto</pre>
-</div>
-<div created="20160822174712411" creator="yuzijie" functions="showSidebar(html)" modified="20160823092858242" modifier="yuzijie" tags="AppsScript functions" title="侧边栏" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>侧边栏可以显示[[动态 HTML 模板|HTML Service]]生成的信息。使用 `Ui.showSidebar(html)` 打开侧边栏。
-
-Code.gs
-
-```javascript
-function showSidebar() {
-  var html = HtmlService.createHtmlOutputFromFile('Page')
-             .setTitle('My custom sidebar').setWidth(300);
-  SpreadsheetApp.getUi().showSidebar(html);
-}
-```
-
-Page.html
-
-```html
-Hello, world! &lt;br&gt;
-&lt;input onclick=&quot;google.script.host.close()&quot; type=&quot;button&quot; value=&quot;Close&quot;/&gt;
-```</pre>
-</div>
-<div created="20160709222304682" creator="yuzijie" modified="20160710220425335" modifier="yuzijie" tags="专题" title="做饭" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>! Piatto Forte (Strong Dish 擅长的菜肴)
-
-; Qual è il tuo piatto forte? / La tua specialità?
-: La mia specialità è ...
-: Per me, i tutti piatti sul maiale è mio piatto forte.
-: Sono bravo/a a cucinare la carne di maiale.
-
-! 例句
-
-Perché Ilaria compra sempre quello che piace a Sergio. Anche se non è economico ma è meglio, la qualità è più alta.
-
-! 词汇
-
-* Mescolare 搅拌
-* Impasto 面团
-* Impastare 揉（面团）
-* Padella 平底锅
-* Pronto 完成
-* Cotto 熟了</pre>
+&lt;&lt;h3 &quot;Exodus 3:13-14 King James Version&quot;&gt;&gt;
+&lt;&lt;h3 &quot;Exodus 3:13-14 The Bible in Living English&quot;&gt;&gt;
+&lt;&lt;h3 &quot;出埃及記 3:13-14&quot;&gt;&gt;
+&lt;&lt;h3 &quot;出埃及记 3:13-14 新世界译本&quot;&gt;&gt;</pre>
 </div>
-<div created="20160708201323201" creator="yuzijie" modified="20160709221316777" modifier="yuzijie" tags="常用语" title="公交" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>!! 公共交通用意大利语怎么说
+<div bag="default" caption="TRADUZIONE DEL NUOVO MONDO DELLE SACRE SCRITTURE" created="20161004093954335" modified="20161004094110122" revision="0" title="Esodo 3:13-14 TRADUZIONE DEL NUOVO MONDO DELLE SACRE SCRITTURE" type="text/vnd.tiddlywiki">
+<pre>''13'' Tuttavia, Mosè disse al [vero] Dio: “Supponiamo che ora io sia andato dai figli d’Israele e realmente dica loro: ‘L’Iddio dei vostri antenati mi ha mandato a voi’, ed essi realmente mi dicano: ‘Qual è il suo nome?’ Che dirò loro?”
 
-* `i mezzi pubblici`
-* `i trasporti pubblici`</pre>
+''14'' A ciò Dio disse a Mosè: “IO MOSTRERÒ D’ESSERE CIÒ CHE MOSTRERÒ D’ESSERE”. E aggiunse: “Devi dire questo ai figli d’Israele: ‘IO MOSTRERÒ D’ESSERE mi ha mandato a voi’”.</pre>
 </div>
-<div created="20160901123258872" creator="yuzijie" modified="20160901124144491" modifier="yuzijie" tags="CongiuntivoPassato" title="助动词虚拟语气现在时" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>@@width:100%;
-|!助动词 |!avere |!essere |
-|!io |abbia |sia |
-|!tu |abbia |sia |
-|!lui/lei |abbia |sia |
-|!noi |abbiamo |siamo |
-|!voi |abbiate |siate |
-|!loro |abbiano |siano |
-@@</pre>
-</div>
-<div created="20160709220300077" creator="yuzijie" modified="20160709220456051" modifier="yuzijie" tags="Grammar" title="句子构成" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>* Verbo ''a'' verbo. 动词接动词，中间使用 `a`
-** Sono andata a fare la spesa.</pre>
-</div>
-<div caption="1. 在模板里调用方法" created="20160822205314852" creator="yuzijie" modified="20160823085114033" modifier="yuzijie" tags="[[Run Code in Scriptlets]]" title="在模板里调用方法" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>code.gs
-
-```javascript
-function doGet() {
-  return HtmlService
-        .createTemplateFromFile('Index')
-        .evaluate();
-}
+<div bag="default" caption="King James Version" created="20161004093337671" modified="20161004093408539" revision="0" title="Exodus 3:13-14 King James Version" type="text/vnd.tiddlywiki">
+<pre>''13'' And Moses said unto God, Behold, when I come unto the children of Israel, and shall say unto them, The God of your fathers hath sent me unto you; and they shall say to me, What is his name? what shall I say unto them?
 
-function getData() {
-  return SpreadsheetApp
-        .openById('1234567890abcdefghijklmnopqrstuvwxyz')
-        .getActiveSheet()
-        .getDataRange()
-        .getValues();
-}
-```
-
-index.html
-
-```php
-&lt;body&gt;
-  &lt;? var data = getData(); ?&gt;
-  &lt;table&gt;
-  &lt;? for (var i = 0; i &lt; data.length; i++) { ?&gt;
-     &lt;tr&gt;
-       &lt;? for (var j = 0; j &lt; data[i].length; j++) { ?&gt;
-          &lt;td&gt;&lt;?= data[i][j] ?&gt;&lt;/td&gt;
-       &lt;? } ?&gt;
-     &lt;/tr&gt;
-  &lt;? } ?&gt;
-  &lt;/table&gt;
-&lt;/body&gt;
-```</pre>
+''14'' And God said unto Moses, I AM THAT I AM: and he said, Thus shalt thou say unto the children of Israel, I AM hath sent me unto you.</pre>
 </div>
-<div created="20160817125328313" creator="yuzijie" modified="20160901150917274" modifier="yuzijie" tags="Italiano" title="复习指南" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;&lt;h2 &quot;提问题&quot;&gt;&gt;
-&lt;&lt;h2 &quot;数数&quot;&gt;&gt;
-&lt;&lt;h2 &quot;组句子&quot;&gt;&gt;
-&lt;&lt;h2 &quot;时态&quot;&gt;&gt;
-&lt;&lt;h2 &quot;自反动词&quot;&gt;&gt;
-&lt;&lt;h2 &quot;习惯用语&quot;&gt;&gt;
-
-!! Todo
+<div bag="default" caption="The Bible in Living English" created="20161004093221503" modified="20161004093250222" revision="0" title="Exodus 3:13-14 The Bible in Living English" type="text/vnd.tiddlywiki">
+<pre>''13'' And Moses said to God “Suppose I come to the sons of Israel and say to them ‘Your fathers’ God has sent me to you,’ and they say to me ‘What is his name?’ what shall I say to them?”
 
-* imperativo
-* passato remoto
-* condizionale
-* Congiuntivo Trapassato
-* Congiuntivo Imperfetto</pre>
+''14'' And God said to Moses “I will be what I will be”; and he said “You are to say to the sons of Israel ‘Will Be has sent me to you.’”</pre>
 </div>
-<div caption="工具" created="20160815141838237" creator="yuzijie" modified="20160830142234110" modifier="yuzijie" order="4" tags="Index" title="工具" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div bag="default" caption="{{$:/language/SideBar/Tools/Caption}}" created="20161004102110719" creator="yuzijie" list-after="$:/core/ui/MoreSideBar/All" modified="20161004102215788" modifier="yuzijie" revision="0" tags="$:/tags/SideBar" title="Tools" type="text/vnd.tiddlywiki">
 <pre>&lt;$set name=&quot;tv-config-toolbar-icons&quot; value=&quot;yes&quot;&gt;
-&lt;$set name=&quot;tv-config-toolbar-class&quot; value=&quot;borderless&quot;&gt;
+
 &lt;$set name=&quot;tv-config-toolbar-text&quot; value=&quot;yes&quot;&gt;
 
-&lt;div style=&quot;margin-top:-3px;&quot;&gt;
+&lt;$set name=&quot;tv-config-toolbar-class&quot; value=&quot;&quot;&gt;
 
-&lt;$transclude tiddler=&quot;$:/core/ui/Buttons/new-tiddler&quot;/&gt;
+&lt;$list filter=&quot;[all[shadows+tiddlers]tag[$:/tags/PageControls]!has[draft.of]]&quot; variable=&quot;listItem&quot;&gt;
 
-&lt;$transclude tiddler=&quot;$:/core/ui/Buttons/new-journal&quot;/&gt;
+&lt;div style=&quot;position:relative;&quot;&gt;
 
-&lt;$transclude tiddler=&quot;$:/core/ui/Buttons/import&quot;/&gt;
-
-&lt;$transclude tiddler=&quot;$:/core/ui/Buttons/export-page&quot;/&gt;
-
-&lt;$transclude tiddler=&quot;$:/core/ui/Buttons/permaview&quot;/&gt;
+&lt;$transclude tiddler=&lt;&lt;listItem&gt;&gt;/&gt; &lt;i class=&quot;tc-muted&quot;&gt;&lt;$transclude tiddler=&lt;&lt;listItem&gt;&gt; field=&quot;description&quot;/&gt;&lt;/i&gt;
 
 &lt;/div&gt;
+
+&lt;/$list&gt;
 
 &lt;/$set&gt;
 
-&lt;$set name=&quot;tv-config-toolbar-text&quot; value=&quot;no&quot;&gt;
+&lt;/$set&gt;
 
-&lt;div style=&quot;margin-top:10px;&quot;&gt;
-
-&lt;$transclude tiddler=&quot;$:/core/ui/Buttons/full-screen&quot;/&gt;
-&lt;$transclude tiddler=&quot;$:/core/ui/Buttons/close-all&quot;/&gt;
-&lt;$transclude tiddler=&quot;$:/core/ui/Buttons/control-panel&quot;/&gt;
-&lt;$transclude tiddler=&quot;$:/core/ui/Buttons/save-wiki&quot;/&gt;
-
-&lt;/div&gt;
-
-&lt;/$set&gt;&lt;/$set&gt;&lt;/$set&gt;</pre>
+&lt;/$set&gt;</pre>
 </div>
-<div created="20160821154509242" creator="yuzijie" modified="20160821161206743" modifier="yuzijie" tags="提问题 习惯用语" title="常用疑问句型" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>@@width:100%;
-|!英语 |!中文 |!意大利语 |
-|Did you hear that… |你听说…… |Sapevi che… |
-@@</pre>
+<div bag="default" created="20160601080354556" creator="yuzijie" modified="20160601080406056" modifier="yuzijie" revision="0" title="yuzijie" type="text/vnd.tiddlywiki">
+<pre>作者：于子杰</pre>
 </div>
-<div created="20160708194415609" creator="yuzijie" modified="20160708194446150" modifier="yuzijie" tags="Italiano" title="常用语" toc-link="no" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre></pre>
+<div bag="default" caption="繁体字译本" created="20161004094513090" modified="20161004094840259" revision="0" title="出埃及記 3:13-14" type="text/vnd.tiddlywiki">
+<pre>''13'' 摩西對''神''說、我到以色列人那裡、對他們說、你們祖宗的''神''打發我到你們這裡來．他們若問我說、他叫甚麼名字、我要對他們說甚麼呢。
+
+''14'' ''神''對摩西說、我是自有永有的．又說、你要對以色列人這樣說、那自有的打發我到你們這裡來。</pre>
 </div>
-<div created="20160820220314532" creator="yuzijie" modified="20160820220335428" modifier="yuzijie" tags="数数" title="序数词" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>!!! i numeri ordinali
+<div bag="default" caption="新世界译本" created="20161004093530199" modified="20161004093640179" revision="0" title="出埃及记 3:13-14 新世界译本" type="text/vnd.tiddlywiki">
+<pre>''13'' 摩西对上帝说:“我到以色列人那里去，对他们说:‘你们祖先的上帝差我到你们这里来。’要是他们对我说:‘他叫什么名字？’我该对他们说什么呢？”
 
-# primo
-# secondo
-# terzo
-# quarto
-# quinto
-# sesto
-# settimo
-# ottavo
-# nono
-# decimo</pre>
-</div>
-<div created="20160830181348346" creator="yuzijie" modified="20160830183804683" modifier="yuzijie" tags="时态" title="引出虚拟语气的短语" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>''注意：''虚拟语气里面的 `che` 相当于英语里面的 `that`。英语里面常常省略 `that`，比如 `I think (that) you are right.` 但是意大利语的 `che` 则不可省略，`Penso che sei vero`。
-
-有些动词，像 `suggerire` (to suggest)、`sperare` (to hope)、`desiderare` (to wish) 和 `insistere` (to insist) 后面必须使用虚拟语气。
-
-!!! 常用的短语
-
-@@width:100%;
-|!意大利语 |!英语 |
-|''Penso che…'' |I think that… |
-|''Credo che…'' |I believe that… |
-|''Spero che…'' |I hope that… |
-|''Sembra che…'' |It seems that… |
-|''È possibile che…'' |It’s possible that… |
-@@
-
-!!! 其他短语
-
-@@width:100%;
-|!意大利语 |!英语 |
-|''Suppongo che…'' |I suppose that… |
-|''Immagino che…'' |I imagine that… |
-|''È necessario che…'' |It is necessary that… |
-|''Mi piace che…'' |I'd like that… |
-|''Non vale la pena che…'' |It's not worth it that… |
-|''Non suggerisco che…'' |I'm not suggesting that… |
-|''Può darsi che…'' |It's possible that… |
-|''Non sono certo che…'' |I'm not sure that… |
-|''È probabile che…'' |It is probable that… |
-|''Ho l'impressione che…'' |I have the impression that… |
-@@</pre>
-</div>
-<div created="20160711142537655" creator="yuzijie" modified="20160711142657043" modifier="yuzijie" tags="词汇" title="形容当前状态" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>* ''purtroppo'' unfortunately 不幸地</pre>
-</div>
-<div created="20160712182938106" creator="yuzijie" modified="20160712183326486" modifier="yuzijie" tags="Italiano" title="意大利人习惯用法" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>; 表示在什么地方
-: si trova，可以翻译为 find himself in ...
-: 例如：''Pippo si trova nel suo ufficio.'' Pippo is in his office. / Pippo finds himself in his office.</pre>
-</div>
-<div caption="3. 推送变量到模板" created="20160822210226645" creator="yuzijie" modified="20160822221351006" modifier="yuzijie" tags="[[Run Code in Scriptlets]]" title="推送变量到模板" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>你可以通过给 `HTMLTemplate` 对象添加属性，把变量推送到模板。
-
-code.gs
-
-```javascript
-function doGet() {
-  var t = HtmlService.createTemplateFromFile('Index');
-  t.data = SpreadsheetApp
-          .openById('1234567890abcdefghijklmnopqrstuvwxyz')
-          .getActiveSheet()
-          .getDataRange()
-          .getValues();
-  return t.evaluate();
-}
-```
-
-index.html
-
-```php
-&lt;body&gt;
-  &lt;table&gt;
-  &lt;? for (var i = 0; i &lt; data.length; i++) { ?&gt;
-     &lt;tr&gt;
-       &lt;? for (var j = 0; j &lt; data[i].length; j++) { ?&gt;
-          &lt;td&gt;&lt;?= data[i][j] ?&gt;&lt;/td&gt;
-       &lt;? } ?&gt;
-     &lt;/tr&gt;
-  &lt;? } ?&gt;
-  &lt;/table&gt;
-&lt;/body&gt;
-```</pre>
-</div>
-<div created="20160818125113540" creator="yuzijie" modified="20160821154603336" modifier="yuzijie" tags="复习指南" title="提问题" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>提问题是学习语言的开始，所以首先要了解意大利语的[[疑问词|Question Words in Italian]]。知道[[疑问词|Question Words in Italian]]以后，还要学习[[常用疑问句型]]，了解英语、中文和意大利语对应的用法。</pre>
-</div>
-<div created="20160820220025798" creator="yuzijie" modified="20160820220300661" modifier="yuzijie" tags="复习指南" title="数数" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>数数在一种语言里面非常重要，人们每天离不开数数。普通数字用来描述数量，[[序数词]]则用来描述相对位置。</pre>
-</div>
-<div created="20160711182733005" creator="yuzijie" modified="20160711182807719" modifier="yuzijie" tags="Italiano" title="新视线意大利语初级" toc-link="no" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre></pre>
-</div>
-<div created="20160710202607904" creator="yuzijie" modified="20160830183930617" modifier="yuzijie" tags="复习指南" title="时态" toc-link="no" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>在意大利语里，每一个句子都必须要有''时态''的概念。''时态''的作用是区分所说的话属于主观还是客观，同时描述事件与时间的关系。
-
-!!! 1. 描述客观事实
-
-; 两种常用方法描述过去
-: 描述过去发生的事情，主要用到两个时态：PassatoProssimo 和 [[Imperfetto]]. 前者描述已完成的动作，并且强调对于现在的影响，后者则着重于描述过去一段时间的状态或过去的一个习惯。这两个时态也常常[[联合使用|Imperfetto + PassatoProssimo]]，来描述更加复杂的动作组合。
-; 比过去更远的过去
-: 如果要描述比过去更远发生的事情，可以用 TrapassatoProssimo，它相当于英语里面的过去完成时，指的是在过去的动作之前发生的动作。
-
-!!! 2. 表达主观想法
-
-在表达自己主观的想法或推测时，要用到[[虚拟语气|Congiuntivo]]。通常，在表达自己的主观想法前，要先说一些[[短语|引出虚拟语气的短语]]来引出后面的话。虚拟语气分为四个时态，[[现在时|CongiuntivoPresente]]、[[过去时|CongiuntivoPassato]]、[[未完成时|CongiuntivoImperfetto]]和[[远过去时|CongiuntivoTrapassato]]。</pre>
-</div>
-<div created="20160823100735035" creator="yuzijie" functions="getDisplayValue() getDisplayValues()" modified="20160823104522209" modifier="yuzijie" tags="AppsScript functions" title="时间格式转换" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>''后注：''现在已不需要格式转换了，使用 `getDisplayValue()` 和 `getDisplayValues()` 两个方法，即可得到表格字面的值。
-
----
-
-以下是来自 Google 工程师 [[Eric Koleda|http://stackoverflow.com/questions/17715841/how-to-read-the-correct-time-values-from-google-spreadsheet]] 的转换时间格式的代码。
-
-```javascript
-function getValueAsSeconds(range) {
-  var value = range.getValue();
-
-  // Get the date value in the spreadsheet's timezone.
-  var spreadsheetTimezone = range.getSheet()
-                                 .getParent()
-                                 .getSpreadsheetTimeZone();
-  var dateString = Utilities.formatDate(value, spreadsheetTimezone, 
-      'EEE, d MMM yyyy HH:mm:ss');
-  var date = new Date(dateString);
-
-  // Initialize the date of the epoch.
-  var epoch = new Date('Dec 30, 1899 00:00:00');
-
-  // Calculate the number of milliseconds between the epoch and the value.
-  var diff = date.getTime() - epoch.getTime();
-
-  // Convert the milliseconds to seconds and return.
-  return Math.round(diff / 1000);
-}
-
-function getValueAsMinutes(range) {
-  return getValueAsSeconds(range) / 60;
-}
-
-function getValueAsHours(range) {
-  return getValueAsMinutes(range) / 60;
-}
-```
-
-使用方法
-
-```javascript
-var range = SpreadsheetApp.getActiveSheet().getRange('A1');
-Logger.log(getValueAsHours(range));
-```</pre>
-</div>
-<div created="20160711143229506" creator="yuzijie" modified="20160711143323309" modifier="yuzijie" tags="词汇" title="比较" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>* ''come'' same as, just like</pre>
-</div>
-<div created="20160708201113754" creator="yuzijie" modified="20160710202006076" modifier="yuzijie" tags="常用语" title="洗漱" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>; 刮胡子
-: Mi sono raso 比较正式和书面。
-: Mi sono fatto la barba 通常用得比较多。
-; 化妆
-: ''Truccarsi'': Mi sono truccato/a
-; 梳头发
-: ''Pettinarsi'': Mi sono pettinato/a
-; 洗头发
-: Mi sono lavato/a i capelli</pre>
-</div>
-<div created="20160822000523096" creator="yuzijie" functions="onOpen()" modified="20160822101527466" modifier="yuzijie" tags="AppsScript functions" title="添加菜单" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>添加菜单的代码要写在 `onOpen()` 里面。
-
-```javascript
-function onOpen() {
-  var ui = SpreadsheetApp.getUi(); // or DocumentApp or FormApp
-  ui.createMenu('Custom Menu')
-    .addItem('First item', 'menuItem1')
-    .addSeparator()
-    .addSubMenu(ui.createMenu('Sub-menu')
-      .addItem('Second item', 'menuItem2'))
-    .addToUi();
-}
-```
-
-''注意：''菜单名不可以重名，如果重名，新菜单名会覆盖旧的菜单名。</pre>
-</div>
-<div created="20160710202243031" creator="yuzijie" modified="20160710202417384" modifier="yuzijie" tags="常用语" title="爱情" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>* Vittorio si è ''innamorato'' di Claudia.</pre>
-</div>
-<div caption="2. 直接调用内置 APIs" created="20160822205825699" creator="yuzijie" modified="20160823084818672" modifier="yuzijie" tags="[[Run Code in Scriptlets]]" title="直接调用内置 APIs" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>code.gs
-
-```javascript
-function doGet() {
-  return HtmlService
-        .createTemplateFromFile('Index')
-        .evaluate();
-}
-```
-
-index.html
-
-```php
-&lt;body&gt;
-  &lt;? var data = SpreadsheetApp
-        .openById('1234567890abcdefghijklmnopqrstuvwxyz')
-        .getActiveSheet()
-        .getDataRange()
-        .getValues(); ?&gt;
-  &lt;table&gt;
-    &lt;? for (var i = 0; i &lt; data.length; i++) { ?&gt;
-       &lt;tr&gt;
-         &lt;? for (var j = 0; j &lt; data[i].length; j++) { ?&gt;
-            &lt;td&gt;&lt;?= data[i][j] ?&gt;&lt;/td&gt;
-         &lt;? } ?&gt;
-       &lt;/tr&gt;
-    &lt;? } ?&gt;
-  &lt;/table&gt;
-&lt;/body&gt;
-```</pre>
-</div>
-<div created="20160709220544737" creator="yuzijie" modified="20160709220927419" modifier="yuzijie" tags="常用语" title="睡觉" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>; dormire 长时间的睡觉
-: Ho dormito delle 10 alle 12
-; addormentare 一个时刻
-: Mi sono addormentata alle a mezzanotte.
-; 上床睡觉也可以用
-: Sono andata a dormire a mezzanotte.
-: Sono andata a letto</pre>
-</div>
-<div created="20160708200311319" creator="yuzijie" modified="20160710214058228" modifier="yuzijie" tags="常用语" title="穿着" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>!! 穿衣服怎么说
-
-* `Mettersi` (穿) 搭配 `Togliersi` (脱) //这一组后面加衣服的名字//
-* `vestirsi` (穿) 搭配 `spogliarsi` (脱) //这一组不加宾语//
-
-!! 例句
-
-* Mi sono tolto il pigiama
-* Mi sono messo la camicia
-* Mi sono vestito/a con la gonna
-
-!! Gli accessori
-
-* ''Un Braccialetto'' 手链
-* ''Un Anello'' 戒指
-* ''Una Collana'' 项链
-* ''Una Sciarpa'' 围巾
-* ''Un Paio di Occhiali'' 眼镜
-* ''Un Paio di Orecchini'' 耳环</pre>
-</div>
-<div created="20160710205835682" creator="yuzijie" modified="20160710210356259" modifier="yuzijie" tags="专题" title="穿衣" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>; Che cosa porta / indossa Zac?
-: Zac indossa una camicia azzurra a maniche corte, un paio di pantaloni lunghi e un paio di scarpe marroni. Porta gli occhiali da vista.
-; Che cosa indossa Gabriella?
-: Gabriella indossa una camicetta a fiori a maniche lunghe, e una gonna lunga. Indossa un paio di sandali rossi. Porta un braccialetto da bianco.</pre>
-</div>
-<div created="20160815223538010" creator="yuzijie" modified="20160815233217993" modifier="yuzijie" tags="练习" title="第 7 单元听力练习" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>; G
-: Perché non sei venuto ''al'' cinema ieri? ''Era'' propio un bel film!
-; S
-: Ma sai che avevo tanto da studiare per il test di ''stamattina''.
-; G
-: Peccato, perché era un ''thriller'' psicologico di ''quelli'' che ''piacciono a te''. 
-; S
-: Mannaggia! Dai, ''racconta'' un po’.
-; G
-: Allora… Il protagonista, Robert, ha conosciuto Greta, ''un’attrice svizzera'', molto bella. All’inizio tutto andava bene, fino ''a'' quando un girno ha capito che Greta aveva ''qualche segreto''.
-; S
-: Aveva un altro, eh?
-; G
-: Aspetta! Ogni tanto spariva e quando tornava non aveva voglia di parlare. 
-; S
-: E lui non ''chiedeva'' spiegazioni?
-; G
-: Certo, ma lei aveva sempre ''la scusa pronta'': ''un appuntamento'' con il suo manager, un contratto e ''così via''. Una sera, però, mentre guardavano la tv, ''è squillato'' il suo cellulare. Lei ''ha'' risposto ed è uscita in ''fretta''. Ma Robert questa volta, ha seguito Greta ''per soprire la verità''.
-; S
-: E ''cos’ha'' scoperto? Un altro uomo, no?
-; G
-: No! Semplicemente che andava ''da uno'' psicologo! Praticamente ''viveva'' una doppia vita: credeva di essere un’altra persona!
-; S
-: Ho capito. E ''Com’è'' finita la storia?
-; G
-: Lei con ''l’aiuto di Robert sembrava stare bene e hanno addirittura deciso di sposarsi. Ma proprio un giorno prima del matrimonio, lei è sparita di nuovo''!</pre>
-</div>
-<div created="20160820134323880" creator="yuzijie" modified="20160820215305223" modifier="yuzijie" tags="练习" title="第 7 单元听力练习 2" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>!! 1
-
-&quot;&quot;&quot;
-Cosa pensi di Nanni Moretti?
-Secondo me, è un ''ottimo'' regista. //Caro diario// mi è ''piaciuto'' molto!
-''Sono d’accordo'' con te! ''Tant’è'' vero che ''ha'' vinto il premio ''per la migliore'' regia al Festival di Cannes.
-&quot;&quot;&quot;
-
-!! 2
-
-&quot;&quot;&quot;
-Ti ''piacciono'' tutti film di Fellini?
-Si, sono geniali. Ma per me il migliore è Amarcord.
-Mah, non sono d’accordo, preferisco //La dolce vita//.
-&quot;&quot;&quot;
-
-!! 3
-
-&quot;&quot;&quot;
-Bello il film. Ma sicuramente non è il migliore di Benigni.
-Hai ragione: //La vita è bella//, mi ''era'' piaciuto di più.
-&quot;&quot;&quot;
-
-!! 4
-
-&quot;&quot;&quot;
-Rosaria dice che Sofia Loren ha vinto un Oscar come migliore attrice.
-È Propio vero! Per La Ciociara se non sbaglio. Che bel film!
-Si, lo penso ''anch’io''.
-&quot;&quot;&quot;</pre>
-</div>
-<div created="20160815223517538" creator="yuzijie" modified="20160815223520301" modifier="yuzijie" tags="Italiano" title="练习" toc-link="no" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre></pre>
-</div>
-<div created="20160818125219172" creator="yuzijie" modified="20160818125233252" modifier="yuzijie" tags="复习指南" title="组句子" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>一个句子有很多的组成部分，包括：主语，谓语，宾语。谓语和宾语之间常用[[介词]]连接。</pre>
-</div>
-<div created="20160822000515192" creator="yuzijie" functions="getActiveSpreadsheet() getActiveDocument() getActiveForm() getUi() getActiveSheet() getActiveRange() getActiveCell() setActiveSheet(sheet) setActiveRange(range) getCursor() getSelection() setCursor(position) setSelection(range)" modified="20160823100041438" modifier="yuzijie" tags="AppsScript functions" title="绑定文件" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>!! 绑定方法
-
-在 Sheets，Docs 或 Forms 里面选择菜单 ''Tools &gt; Script editor'' 可以建立与之绑定的 AppsScript，且该脚本不显示在 Drive 里面。
-
-!! 常用方法
-
-* 在脚本内使用 `getActiveSpreadsheet()`，`getActiveDocument()` 和 `getActiveForm()` 可以「找到」自己绑定的父文件（即返回值是父文件）。
-* 使用 `getUi()` 可以访问用户界面，随后便可以[[添加菜单]]或打开[[侧边栏]]。
-
-!!! 在 Sheets 里
-
-* 使用 `getActiveSheet()`，`getActiveRange()` 和 `getActiveCell()` 帮助脚本「找到」当前打开的表单，被选中的单元格区域以及一个被选中的单元格。
-* `setActiveSheet(sheet)` 和 `setActiveRange(range)` 负责选中一个表单或一片单元格区域。
-
-!!! 在 Docs 里面
-
-* 使用 `getCursor()` 和 `getSelection()` 帮助脚本找到用户鼠标的位置和选中的一段文字。
-* `setCursor(position)` 和 `setSelection(range)` 让脚本改变鼠标位置和选中的文字。</pre>
-</div>
-<div created="20160830140723036" creator="yuzijie" modified="20160830153253550" modifier="yuzijie" tags="练习" title="翻译十句 1" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre># So people looking for good jobs are going to fail.
-#&gt; ''Quindi coloro che cercano buone posizioni sono destinati a fallire.''
-# You have to pursue your passion, you have to pursue your dreams.
-#&gt; ''Devi inseguire le tue passioni, devi inseguire i tuoi sogni.''
-# I’m not quite sure why you decide not to do it.
-#&gt; ''E le attività del resto dell'umanità?''
-# So, for example, one of your great excuses is…
-#&gt; ''Quindi, per esempio, una delle grandi scuse è…''
-# So I'm going to stand around, I'm going to try to be lucky.
-#&gt; ''Quindi aspetterò, cercherò di essere fortunato.''
-# There are special people who pursue their passions, but they are geniuses.
-#&gt; ''Ci sono persone speciali che inseguono le loro passioni, ma sono geni.''
-# When I was five, I thought I was a genius.
-#&gt; ''Quando avevo cinque anni, pensavo di essere un genio.''
-# What about the rest of humanity’s activities?
-#&gt; ''E le attività del resto dell'umanità?''
-# I love you more than any other woman I’ve ever encountered.
-#&gt; ''Ti amo più di ogni altra donna che io abbia mai incontrato.''
-# Does the word “destiny” scare you?
-#&gt; ''Avete paura della parola &quot;destino&quot;?''</pre>
-</div>
-<div created="20160830152202843" creator="yuzijie" modified="20160830152210909" modifier="yuzijie" tags="练习" title="翻译十句 2" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre></pre>
-</div>
-<div created="20160830150555166" creator="yuzijie" modified="20160830152157079" modifier="yuzijie" tags="练习" title="翻译十句 3" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre># But, what do you mean?</pre>
-</div>
-<div created="20160818210239691" creator="yuzijie" modified="20160818210435615" modifier="yuzijie" tags="复习指南" title="自反动词" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;&lt;h2 &quot;自反动词列表&quot;&gt;&gt;</pre>
-</div>
-<div created="20160818210401699" creator="yuzijie" modified="20160818210411013" modifier="yuzijie" tags="自反动词" title="自反动词列表" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>* lasciarsi</pre>
-</div>
-<div created="20160711142510187" creator="yuzijie" modified="20160711142534943" modifier="yuzijie" tags="Italiano" title="词汇" toc-link="no" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre></pre>
-</div>
-<div created="20160710204541725" creator="yuzijie" modified="20160710204705602" modifier="yuzijie" tags="常用语" title="购物" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>; Fare la spesa
-: 购买日用品</pre>
-</div>
-<div created="20160709220042502" creator="yuzijie" modified="20160709220112984" modifier="yuzijie" tags="常用语" title="转折" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>; 而不是
-: Ma non è</pre>
+''14'' 上帝对摩西说:“我要做什么，都必能成事。”又说:“你要告诉以色列人:‘“那必能成事的”差我到你们这里来。’”</pre>
 </div>
 
 </div>
