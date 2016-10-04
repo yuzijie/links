@@ -8,7 +8,66 @@
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
 <title>圣经研究 — Study of Bible</title>
 <div id="styleArea">
-<style data-tiddler-title="$:/boot/boot.css" data-tiddler-type="text/css" type="text/css">.tc-password-wrapper,.tc-error-form{font-family:sans-serif;z-index:20000;position:fixed;text-align:center;width:200px;top:4em;left:50%;margin-left:-144px;padding:16px 16px 16px 16px;border-radius:8px;}.tc-error-form{color:#fff;text-shadow:0 1px 0 rgba(0,0,0,0.5);background-color:rgb(255,75,75);border:8px solid rgb(255,0,0);width:480px;margin-left:-244px;}.tc-error-form div{padding-bottom:1em;}.tc-error-prompt{color:#000;text-shadow:none;}.tc-password-wrapper{color:#000;text-shadow:0 1px 0 rgba(255,255,255,0.5);background-color:rgb(197,235,183);border:8px solid rgb(164,197,152);}.tc-password-wrapper form{text-align:left;}.tc-password-wrapper h1{font-size:16px;line-height:20px;padding-bottom:16px;}.tc-password-wrapper input{width:100%;}</style>
+<style data-tiddler-title="$:/boot/boot.css" data-tiddler-type="text/css" type="text/css">/*
+Basic styles used before we boot up the parsing engine
+*/
+
+/*
+Error message and password prompt
+*/
+
+.tc-password-wrapper, .tc-error-form {
+    font-family: sans-serif;
+	z-index: 20000;
+	position: fixed;
+	text-align: center;
+	width: 200px;
+	top: 4em;
+    left: 50%;
+    margin-left: -144px; /* - width/2 - paddingHorz/2 - border */
+	padding: 16px 16px 16px 16px;
+	border-radius: 8px;
+}
+
+.tc-error-form {
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+	background-color: rgb(255, 75, 75);
+	border: 8px solid rgb(255, 0, 0);
+	width: 480px;
+    margin-left: -244px; /* - width/2 - paddingHorz/2 - border */
+}
+
+.tc-error-form div {
+	padding-bottom: 1em;
+}
+
+.tc-error-prompt {
+	color: #000;
+	text-shadow: none;
+}
+
+.tc-password-wrapper {
+	color: #000;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	background-color: rgb(197, 235, 183);
+	border: 8px solid rgb(164, 197, 152);
+}
+
+.tc-password-wrapper form {
+	text-align: left;
+}
+
+.tc-password-wrapper h1 {
+	font-size: 16px;
+	line-height: 20px;
+	padding-bottom: 16px;
+}
+
+.tc-password-wrapper input {
+	width: 100%;
+}
+</style>
 </div>
 <style type="text/css">
 
@@ -1179,6 +1238,8 @@ a.tc-tiddlylink:hover {
 		top: 0px;
 		width: 770px;
 		padding: 42px 42px 42px 42px;
+	}.tc-story-river {
+		width: calc(100% - 0px);
 	}}@media print {body.tc-body {
 		background-color: transparent;
 	}.tc-sidebar-header, .tc-topbar {
@@ -1229,6 +1290,8 @@ a.tc-tiddlylink:hover {
 		padding: 28px 42px 42px 42px;
 		width: 686px;
 		border-radius: 2px;
+	}.tc-tiddler-frame {
+		width: 100%;
 	}.tc-tiddler-info {
 		margin: 0 -42px 0 -42px;
 	}
@@ -2268,7 +2331,7 @@ Discussion
 <div class="tc-subtitle">
 <a class="tc-tiddlylink tc-tiddlylink-missing" href="#">
 
-</a> 4th October 2016 at 3:55pm
+</a> 4th October 2016 at 4:07pm
 </div>
 </div>
 <div class=" tc-reveal">
@@ -2276,7 +2339,7 @@ Discussion
 </div>
 <div class="tc-tiddler-body tc-reveal"><blockquote class="tc-quote"><p>I AM THAT I AM
 </p><cite>Exodus 3:14</cite></blockquote><p>来自出埃及记的这句话有些晦涩难懂。</p><blockquote class="tc-quote"><p><strong>6</strong> Moreover he said, <strong>I am</strong> the God of thy father, the God of Abraham, the God of Isaac, and the God of Jacob. And Moses hid his face; for he was afraid to look upon God.
-</p></blockquote><p>但是如果联系到第六节的经文，也许那句话并不算深奥，上帝可能只是不想重复自己说过的话罢了。</p><p>我摘抄了四篇译文，每篇译文的用词都各有不同，<strong>所以可以想到，不同译本的读者也会对圣经的理解产生差别</strong>。这四篇译文里面，我认为<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%87%BA%E5%9F%83%E5%8F%8A%E8%AE%B0%203%3A13-14%20%E6%96%B0%E4%B8%96%E7%95%8C%E8%AF%91%E6%9C%AC">新世界译本</a>对于圣经的翻译最为<mark><strong>离谱</strong></mark>，原文哪里提到「必能成事」了？<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#Exodus%203%3A13-14%20King%20James%20Version">King James Version</a> 我认为翻译得最为谨慎，难怪被定为美国的标准版本。通过这个研究我发现<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%87%BA%E5%9F%83%E5%8F%8A%E8%AE%B0%203%3A13-14%20%E6%96%B0%E4%B8%96%E7%95%8C%E8%AF%91%E6%9C%AC">新世界译本</a>的翻译不谨慎，夹杂着译者自己的理解和引申意思，我认为需要小心。</p><p><strong>King James Version</strong></p><blockquote class="tc-quote"><p><strong>13</strong> And Moses said unto God, Behold, when I come unto the children of Israel, and shall say unto them, The God of your fathers hath sent me unto you; and they shall say to me, What is his name? what shall I say unto them?</p><p><strong>14</strong> And God said unto Moses, I AM THAT I AM: and he said, Thus shalt thou say unto the children of Israel, I AM hath sent me unto you.</p></blockquote><p><strong>The Bible in Living English</strong></p><blockquote class="tc-quote"><p><strong>13</strong> And Moses said to God “Suppose I come to the sons of Israel and say to them ‘Your fathers’ God has sent me to you,’ and they say to me ‘What is his name?’ what shall I say to them?”</p><p><strong>14</strong> And God said to Moses “I will be what I will be”; and he said “You are to say to the sons of Israel ‘Will Be has sent me to you.’”</p></blockquote><p><strong>繁体字译本</strong></p><blockquote class="tc-quote"><p><strong>13</strong> 摩西對<strong>神</strong>說、我到以色列人那裡、對他們說、你們祖宗的<strong>神</strong>打發我到你們這裡來．他們若問我說、他叫甚麼名字、我要對他們說甚麼呢。</p><p><strong>14</strong> <strong>神</strong>對摩西說、我是自有永有的．又說、你要對以色列人這樣說、那自有的打發我到你們這裡來。</p></blockquote><p><strong>新世界译本</strong></p><blockquote class="tc-quote"><p><strong>13</strong> 摩西對<strong>神</strong>說、我到以色列人那裡、對他們說、你們祖宗的<strong>神</strong>打發我到你們這裡來．他們若問我說、他叫甚麼名字、我要對他們說甚麼呢。</p><p><strong>14</strong> <strong>神</strong>對摩西說、我是自有永有的．又說、你要對以色列人這樣說、那自有的打發我到你們這裡來。</p></blockquote></div>
+</p></blockquote><p>但是如果联系到第六节的经文，也许那句话并不算深奥，上帝可能只是不想重复自己说过的话罢了。</p><p>我摘抄了四篇译文，每篇译文的用词都各有不同，<strong>所以可以想到，不同译本的读者也会对圣经的理解产生差别</strong>。这四篇译文里面，我认为<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%87%BA%E5%9F%83%E5%8F%8A%E8%AE%B0%203%3A13-14%20%E6%96%B0%E4%B8%96%E7%95%8C%E8%AF%91%E6%9C%AC">新世界译本</a>对于圣经的翻译最为<mark><strong>离谱</strong></mark>，原文哪里提到「必能成事」了？<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#Exodus%203%3A13-14%20King%20James%20Version">King James Version</a> 我认为翻译得最为谨慎，难怪被定为美国的标准版本。通过这个研究我发现<a class="tc-tiddlylink tc-tiddlylink-resolves" href="#%E5%87%BA%E5%9F%83%E5%8F%8A%E8%AE%B0%203%3A13-14%20%E6%96%B0%E4%B8%96%E7%95%8C%E8%AF%91%E6%9C%AC">新世界译本</a>的翻译不谨慎，夹杂着译者自己的理解和引申意思，我认为需要小心。</p><p><strong>King James Version</strong></p><blockquote class="tc-quote"><p><strong>13</strong> And Moses said unto God, Behold, when I come unto the children of Israel, and shall say unto them, The God of your fathers hath sent me unto you; and they shall say to me, What is his name? what shall I say unto them?</p><p><strong>14</strong> And God said unto Moses, I AM THAT I AM: and he said, Thus shalt thou say unto the children of Israel, I AM hath sent me unto you.</p></blockquote><p><strong>The Bible in Living English</strong></p><blockquote class="tc-quote"><p><strong>13</strong> And Moses said to God “Suppose I come to the sons of Israel and say to them ‘Your fathers’ God has sent me to you,’ and they say to me ‘What is his name?’ what shall I say to them?”</p><p><strong>14</strong> And God said to Moses “I will be what I will be”; and he said “You are to say to the sons of Israel ‘Will Be has sent me to you.’”</p></blockquote><p><strong>繁体字译本</strong></p><blockquote class="tc-quote"><p><strong>13</strong> 摩西對<strong>神</strong>說、我到以色列人那裡、對他們說、你們祖宗的<strong>神</strong>打發我到你們這裡來．他們若問我說、他叫甚麼名字、我要對他們說甚麼呢。</p><p><strong>14</strong> <strong>神</strong>對摩西說、我是自有永有的．又說、你要對以色列人這樣說、那自有的打發我到你們這裡來。</p></blockquote><p><strong>新世界译本</strong></p><blockquote class="tc-quote"><p><strong>13</strong> 摩西对上帝说:“我到以色列人那里去，对他们说:‘你们祖先的上帝差我到你们这里来。’要是他们对我说:‘他叫什么名字？’我该对他们说什么呢？”</p><p><strong>14</strong> 上帝对摩西说:“我要做什么，都必能成事。”又说:“你要告诉以色列人:‘“那必能成事的”差我到你们这里来。’”</p></blockquote></div>
 
 
 
