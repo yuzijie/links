@@ -209,6 +209,8 @@ Error message and password prompt
 
 <li>$:/SiteTitle</li>
 
+<li>$:/state/sidebar</li>
+
 <li>$:/state/tab/sidebar--1835078512</li>
 
 <li>$:/status/IsLoggedIn</li>
@@ -8558,7 +8560,7 @@ $unselectedText$
 <div created="20160816130305765" creator="yuzijie" modified="20160816130320998" modifier="yuzijie" title="$:/core/ui/PageTemplate/pagecontrols" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
 </div>
-<div caption="{{$:/language/SideBar/Open/Caption}}" created="20160917203805936" creator="yuzijie" modified="20161222173517453" modifier="yuzijie" tags="$:/tags/SideBar" title="$:/core/ui/SideBar/Open" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div caption="{{$:/language/SideBar/Open/Caption}}" created="20160917203805936" creator="yuzijie" modified="20161222174424755" modifier="yuzijie" tags="$:/tags/SideBar" title="$:/core/ui/SideBar/Open" type="text/vnd.tiddlywiki" revision="1" bag="default">
 <pre>\define lingo-base() $:/language/CloseAll/
 
 &lt;$list filter=&quot;[list[$:/StoryList]]&quot; history=&quot;$:/HistoryList&quot; storyview=&quot;pop&quot;&gt;
@@ -8570,13 +8572,13 @@ $unselectedText$
 &lt;/$link&gt;
 &lt;/span&gt;
 &lt;span style=&quot;font-size:small;display:block;margin:0 0 10px 0;&quot;&gt;
-&lt;$button class=&quot;tc-btn-invisible tc-btn-mini&quot; style=&quot;font-size:20px;vertical-align:middle;padding-bottom:3px;&quot;&gt;
+&lt;$button class=&quot;tc-btn-invisible tc-btn-mini&quot; style=&quot;font-size:20px;vertical-align:middle;padding-bottom:2px;&quot;&gt;
 &lt;$action-listops $tiddler=&quot;$:/StoryList&quot; $subfilter=&quot;+[move:-1{!!title}]&quot;/&gt;&amp;#43;
 &lt;/$button&gt;
-&lt;$button class=&quot;tc-btn-invisible tc-btn-mini&quot; style=&quot;font-size:20px;vertical-align:middle;padding-bottom:3px;&quot;&gt;
+&lt;$button class=&quot;tc-btn-invisible tc-btn-mini&quot; style=&quot;font-size:20px;vertical-align:middle;padding-bottom:2px;&quot;&gt;
 &lt;$action-listops $tiddler=&quot;$:/StoryList&quot; $subfilter=&quot;+[move:1{!!title}]&quot;/&gt;&amp;#8722;
 &lt;/$button&gt;
-&lt;$button class=&quot;tc-btn-invisible tc-btn-mini&quot; style=&quot;font-size:20px;vertical-align:middle;padding-bottom:3px;margin-right:5px;&quot;&gt;
+&lt;$button class=&quot;tc-btn-invisible tc-btn-mini&quot; style=&quot;font-size:20px;vertical-align:middle;padding-bottom:2px;margin-right:5px;&quot;&gt;
 &lt;$action-sendmessage $message=&quot;tm-close-other-tiddlers&quot; $param={{!!title}}/&gt;&amp;times;
 &lt;/$button&gt;
 &lt;$set name=&quot;tag-uid&quot; value={{!!title}}&gt;
@@ -9342,7 +9344,10 @@ very-muted-foreground: #888888</pre>
 <div created="20161029063855693" creator="yuzijie" modified="20161203211416001" modifier="yuzijie" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>Android</pre>
 </div>
-<div created="20161222173902245" creator="yuzijie" modified="20161222173906279" modifier="yuzijie" title="$:/state/tab/sidebar--1835078512" revision="6" bag="default">
+<div created="20161222174412604" creator="yuzijie" modified="20161222174425624" modifier="yuzijie" title="$:/state/sidebar" revision="2" bag="default">
+<pre>yes</pre>
+</div>
+<div created="20161222174427657" creator="yuzijie" modified="20161222174443478" modifier="yuzijie" title="$:/state/tab/sidebar--1835078512" revision="5" bag="default">
 <pre>New</pre>
 </div>
 <div title="$:/status/IsLoggedIn" revision="2" bag="default">
@@ -9351,7 +9356,7 @@ very-muted-foreground: #888888</pre>
 <div title="$:/status/UserName" revision="1" bag="default">
 <pre>yuzijie</pre>
 </div>
-<div list="[[Activity Lifecycle]] [[Building User Interface]] [[Configuration Changes]]" title="$:/StoryList" revision="3" bag="default">
+<div list="" title="$:/StoryList" revision="10" bag="default">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json" revision="0" bag="default">
