@@ -1,10 +1,10 @@
 {
   "city":   {
     "id": 5375480,
-    "name": "Mountain View",
+    "name": "Politecnico di Torino",
     "coord":     {
-      "lon": -122.08384,
-      "lat": 37.386051
+      "lon": 45.062492,
+      "lat": 7.662203
     },
     "country": "US",
     "population": 0
@@ -27,8 +27,8 @@
       "humidity": 96,
       "weather": [      {
         "id": 500,
-        "main": "Light Rain",
-        "description": "Light Rain",
+        "main": "Sunny",
+        "description": "Sunny",
         "icon": "02d"
       }],
       "speed": 1.2,
