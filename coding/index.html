@@ -147,6 +147,8 @@ Error message and password prompt
 
 <li>$:/config/DefaultSidebarTab</li>
 
+<li>$:/config/defaultTemplate</li>
+
 <li>$:/config/index-tree</li>
 
 <li>$:/config/Navigation/openLinkFromInsideRiver</li>
@@ -159,7 +161,9 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler</li>
 
-<li>$:/config/path-prefix</li>
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/storyview</li>
+
+<li>$:/config/pathPrefix</li>
 
 <li>$:/config/plugins/menubar/breakpoint</li>
 
@@ -471,6 +475,8 @@ Error message and password prompt
 
 <li>Javascript</li>
 
+<li>Linux commands</li>
+
 <li>Neovim</li>
 
 <li>Programming languages</li>
@@ -487,11 +493,11 @@ Error message and password prompt
 
 <li>Programming languages/Guide/表达式/Javascript/基本表达式</li>
 
-<li>Programming languages/Guide/表达式/Javascript/左值表达式</li>
-
 <li>Programming languages/Guide/常量/Javascript</li>
 
-<li>Programming languages/Guide/对象/Javascript</li>
+<li>Programming languages/Guide/对象/Javascript/操作</li>
+
+<li>Programming languages/Guide/对象/Javascript/特性</li>
 
 <li>Programming languages/Guide/对象/Javascript/异常处理</li>
 
@@ -528,6 +534,8 @@ Error message and password prompt
 <li>Programming languages/Guide/对象/Javascript/string 对象</li>
 
 <li>Programming languages/Guide/对象/Javascript/String/方法</li>
+
+<li>Programming languages/Guide/对象/Predefined objects/Javascript</li>
 
 <li>Programming languages/Guide/函数/Javascript/高级用法</li>
 
@@ -650,6 +658,8 @@ Error message and password prompt
 <li>R 117</li>
 
 <li>R 118</li>
+
+<li>R 119</li>
 
 <li>R 12</li>
 
@@ -1027,9 +1037,37 @@ Error message and password prompt
 
 <li>R 278</li>
 
+<li>R 279</li>
+
 <li>R 28</li>
 
+<li>R 280</li>
+
+<li>R 281</li>
+
+<li>R 282</li>
+
+<li>R 283</li>
+
+<li>R 284</li>
+
+<li>R 285</li>
+
+<li>R 286</li>
+
+<li>R 287</li>
+
+<li>R 288</li>
+
+<li>R 289</li>
+
 <li>R 29</li>
+
+<li>R 290</li>
+
+<li>R 291</li>
+
+<li>R 292</li>
 
 <li>R 3</li>
 
@@ -1222,43 +1260,61 @@ Error message and password prompt
 <div created="20160815142832979" creator="yuzijie" modified="20210731111912242" modifier="yuzijie" title="$:/config/DefaultSidebarTab" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>Index</pre>
 </div>
-<div created="20210810181244550" creator="yuzijie" list="[[Programming languages]] Javascript [[Programming languages/Guide/对象/Javascript/string 对象]] [[Programming languages/Guide/数据类型/Javascript/结构数据类型]] [[Programming languages/Guide/对象/Javascript/Array/方法]] [[Programming languages/Guide/数据类型/类型转换/String/Javascript]] [[Programming languages/Guide/对象/Javascript]] [[Programming languages/Guide/函数/Javascript/语法特性]] [[Programming languages/Guide/函数/Javascript/全局函数]] [[Programming languages/Guide/函数/Javascript/高级用法]] [[Programming languages/Guide/对象/Javascript/Date/方法]] [[Programming languages/Guide/对象/Javascript/Indexed collections]]" modified="20210811105659116" modifier="yuzijie" title="$:/config/index-tree" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20210813184232690" creator="yuzijie" modified="20210814091652262" modifier="yuzijie" tags="customized" title="$:/config/defaultTemplate" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>R</pre>
+</div>
+<div created="20210812191037672" creator="yuzijie" list="[[Programming languages]] Javascript [[Programming languages/Guide/Javascript]] [[Linux commands]]" modified="20210813141003778" modifier="yuzijie" title="$:/config/index-tree" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>Programming languages</pre>
 </div>
-<div created="20210731114835576" creator="yuzijie" modified="20210811091921338" modifier="yuzijie" title="$:/config/Navigation/openLinkFromInsideRiver" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>below</pre>
+<div created="20210813134714903" creator="yuzijie" modified="20210813134715087" modifier="yuzijie" title="$:/config/Navigation/openLinkFromInsideRiver" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>above</pre>
 </div>
 <div created="20210710164918806" creator="yuzijie" modified="20210710165145666" modifier="yuzijie" title="$:/config/Navigation/UpdateAddressBar" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>permaview</pre>
 </div>
-<div created="20180106174755084" creator="yuzijie" modified="20210801091920391" modifier="yuzijie" tags="customized" title="$:/config/newTiddlerTemplate" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;p&gt;
-&lt;$edit-text tiddler=&quot;$:/temp/newTiddler&quot; default=&quot;&quot; tag=&quot;input&quot; size=&quot;36&quot;/&gt;
-&lt;$list filter=&quot;[enlist{$:/StoryList!!list}prefix[Draft of]limit[1]]&quot;&gt;&lt;$button&gt;&lt;$list filter=&quot;[enlist{$:/StoryList!!list}prefix[Draft of]]&quot;&gt;&lt;$action-sendmessage $message=&quot;tm-save-tiddler&quot; $param=&lt;&lt;currentTiddler&gt;&gt;/&gt;&lt;/$list&gt;Save Drafts&lt;/$button&gt;&lt;/$list&gt;
-&lt;/p&gt;
-&lt;p&gt;
-&lt;$button actions={{$:/core/ui/Actions/new-tiddler}}&gt;新空白&lt;/$button&gt;
-&lt;$set name=&quot;newTitle&quot; filter=&quot;[[$:/temp/newTiddler]has[text]]&quot; value={{$:/temp/newTiddler}} emptyValue='{{!!text}}' select=&quot;0&quot;&gt;&lt;$button&gt;
-&lt;$action-sendmessage $message=&quot;tm-new-tiddler&quot; $param=&quot;R&quot; date=&lt;&lt;now 'YYYY0MM0DD'&gt;&gt; caption=&lt;&lt;newTitle&gt;&gt;/&gt;
+<div created="20180106174755084" creator="yuzijie" modified="20210814085526860" modifier="yuzijie" tags="customized" title="$:/config/newTiddlerTemplate" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>\define newRecordAction(template, caption)
+&lt;$action-sendmessage $message=&quot;tm-new-tiddler&quot; $param=&quot;$template$&quot; date=&lt;&lt;now 'YYYY0MM0DD'&gt;&gt; caption=&quot;$caption$&quot;/&gt;
 &lt;$action-deletetiddler $tiddler=&quot;$:/temp/newTiddler&quot;/&gt;
-新纪录&lt;/$button&gt;&lt;/$set&gt;
-&lt;$macrocall $name=&quot;new&quot; name=&quot;新模板&quot; template=&quot;R&quot; fields=&quot;date=&lt;&lt;now 'YYYY0MM0DD'&gt;&gt; text='&lt;&lt;data-table template: filter:&gt;&gt;' caption=''&quot;/&gt;
-&lt;$macrocall $name=&quot;new&quot; name=&quot;新项目&quot; fields=&quot;&quot;&quot;text=&quot;!! 1. Objectives
+\end
 
-&lt;&lt;table cfilter:'完成率 Name [[Task State]]' rfilter:'[tag&lt;currentTiddler&gt;tag[Task]tagging[]!prefix[T ]!sort[date]]' title:'2. Key Results'&gt;&gt;
+\define newTemplateActionMessage(title)
+&lt;$action-sendmessage $message=&quot;tm-new-tiddler&quot; title=&quot;$title$&quot; date=&lt;&lt;now 'YYYY0MM0DD'&gt;&gt; text=&quot;&lt;&lt;data-table template:'$title$' filter:''&gt;&gt;&quot; caption=&quot;&quot;/&gt;
+\end
 
-&lt;&lt;record filter:'[tag&lt;currentTiddler&gt;tag[Task]sort[start]]' title:'3. Activities' template:'T' tag:'Task'&gt;&gt;&quot; caption=''&quot;&quot;&quot;/&gt;
-&lt;$button&gt;&lt;$action-setfield $tiddler=&lt;&lt;unusedtitle R&gt;&gt; type=&quot;application/x-tiddler-dictionary&quot; text=&quot;Name: {{!!caption}}
+\define newTemplateAction(template) &lt;$macrocall $name=&quot;newTemplateActionMessage&quot; title=&lt;&lt;unusedtitle $template$&gt;&gt;/&gt;
+
+\define newIncidentAction(template)
+&lt;$action-setfield $tiddler=&lt;&lt;unusedtitle $template$&gt;&gt; type=&quot;application/x-tiddler-dictionary&quot; text=&quot;Name: {{!!caption}}
 Details: 
 Reason: 
 Solution: 
 Deadline: &lt;$macrocall $name=task-template-table-deadline/&gt;
 完成率: &lt;$text text={{{[{##Task}percent&lt;currentTiddler&gt;]}}}/&gt;&quot; caption={{$:/temp/newTiddler}} deadline=&quot;&quot; template=&quot;$:/custom/template/ticket&quot; date=&lt;&lt;now YYYY0MM0DD&gt;&gt;/&gt;
 &lt;$action-deletetiddler $tiddler=&quot;$:/temp/newTiddler&quot;/&gt;
-新事件&lt;/$button&gt;
+\end
+
+\define newProjectAction()
+&lt;$action-sendmessage $message=&quot;tm-new-tiddler&quot; text=&quot;!! 1. Objectives
+
+&lt;&lt;table cfilter:'完成率 Name [[Task State]]' rfilter:'[tag&lt;currentTiddler&gt;tag[Task]tagging[]!prefix[T ]!sort[date]]' title:'2. Key Results'&gt;&gt;
+
+&lt;&lt;record filter:'[tag&lt;currentTiddler&gt;tag[Task]sort[start]]' title:'3. Activities' template:'T' tag:'Task'&gt;&gt;&quot; caption=&quot;&quot;/&gt;
+\end
+
+&lt;p&gt;
+&lt;$edit-text tiddler=&quot;$:/temp/newTiddler&quot; default=&quot;&quot; tag=&quot;input&quot; size=&quot;36&quot;/&gt;
+&lt;$list filter=&quot;[enlist{$:/StoryList!!list}prefix[Draft of]limit[1]]&quot;&gt;&lt;$button&gt;&lt;$list filter=&quot;[enlist{$:/StoryList!!list}prefix[Draft of]]&quot;&gt;&lt;$action-sendmessage $message=&quot;tm-save-tiddler&quot; $param=&lt;&lt;currentTiddler&gt;&gt;/&gt;&lt;/$list&gt;Save Drafts&lt;/$button&gt;&lt;/$list&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;$button actions={{$:/core/ui/Actions/new-tiddler}}&gt;新空白&lt;/$button&gt;
+&lt;$button&gt;&lt;$macrocall $name=&quot;newRecordAction&quot; template={{$:/config/defaultTemplate}} caption={{$:/temp/newTiddler}}/&gt;新纪录&lt;/$button&gt;
+&lt;$button&gt;&lt;$macrocall $name=&quot;newTemplateAction&quot; template={{$:/config/defaultTemplate}}/&gt;新模板&lt;/$button&gt;
+&lt;$button&gt;&lt;$macrocall $name=&quot;newIncidentAction&quot; template={{$:/config/defaultTemplate}}/&gt;新事件&lt;/$button&gt;
+&lt;$button&gt;&lt;$macrocall $name=&quot;newProjectAction&quot;/&gt;新项目&lt;/$button&gt;
 &lt;$button message=&quot;tm-edit-tiddler&quot; param=&quot;$:/config/newTiddlerTemplate&quot;&gt;Edit&lt;/$button&gt;
 &lt;/p&gt;
-&lt;p style=&quot;margin-top:7px;&quot;&gt;{{$:/config/path-prefix}}&lt;/p&gt;</pre>
+&lt;p style=&quot;margin-top:7px;&quot;&gt;{{$:/config/pathPrefix}}&lt;/p&gt;</pre>
 </div>
 <div created="20201031163620706" creator="yuzijie" modified="20201031163620789" modifier="yuzijie" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/full-screen" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>show</pre>
@@ -1266,7 +1322,10 @@ Deadline: &lt;$macrocall $name=task-template-table-deadline/&gt;
 <div created="20201031183716040" creator="yuzijie" modified="20201031183716340" modifier="yuzijie" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>hide</pre>
 </div>
-<div created="20190212203619173" creator="yuzijie" modified="20210711140500315" modifier="yuzijie" path="file://192.168.123.1/share/Brain/" path2="file://192.168.123.1/share/Brain/" tags="customized" title="$:/config/path-prefix" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20210813172403452" creator="yuzijie" modified="20210813172403583" modifier="yuzijie" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/storyview" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>show</pre>
+</div>
+<div created="20190212203619173" creator="yuzijie" modified="20210814091543115" modifier="yuzijie" path="file://192.168.123.1/share/Brain/" path2="file://192.168.123.1/share/Brain/" tags="customized" title="$:/config/pathPrefix" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;p&gt;Path 1:
 &lt;$select tiddler='$:/config/path-prefix' field='path'&gt;
 &lt;option&gt;file://D:/Samba/&lt;/option&gt;
@@ -11773,7 +11832,7 @@ exports.indexes = function(source,operator,options) {
 &lt;/div&gt;
 </pre>
 </div>
-<div caption="{{$:/language/SideBar/Open/Caption}} &lt;$count filter=&quot;[list[$:/StoryList]]&quot;/&gt;" description="List of Open Tiddlers" is-dropdown="yes" list-before="$:/core/ui/SideBar/Recent" modified="20210713172418224" modifier="yuzijie" tags="$:/tags/MenuBar customized" title="$:/core/ui/SideBar/Open" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div caption="{{$:/language/SideBar/Open/Caption}} &lt;$count filter=&quot;[list[$:/StoryList]]&quot;/&gt;" description="List of Open Tiddlers" is-dropdown="yes" list-before="$:/core/ui/SideBar/Recent" modified="20210811231551317" modifier="yuzijie" tags="$:/tags/MenuBar customized" title="$:/core/ui/SideBar/Open" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>\define lingo-base() $:/language/CloseAll/
 
 \define drop-actions()
@@ -11802,7 +11861,7 @@ $button$
 &lt;$list filter=&quot;[list&lt;tv-story-list&gt;search:*{$:/temp/menubarsearch}]&quot; history=&lt;&lt;tv-history-list&gt;&gt; storyview=&quot;pop&quot;&gt;
 &lt;div class=&quot;tc-sidebar-tab-open-item&quot;&gt;
 &lt;$macrocall $name=&quot;droppable-item&quot; button=&quot;&quot;&quot;&lt;$button message=&quot;tm-close-tiddler&quot; tooltip={{$:/language/Buttons/Close/Hint}} aria-label={{$:/language/Buttons/Close/Caption}} class=&quot;tc-btn-invisible tc-btn-mini tc-popup-keep&quot; style=&quot;font-size:medium;&quot;&gt;&lt;$action-navigate $to={{!!title}}/&gt;
-&lt;$list filter=&quot;[&lt;currentTiddler&gt;match{$:/temp/focussedTiddler}]&quot; emptyMessage=&quot;{{$:/core/images/close-button}}&quot;&gt;{{$:/core/images/new-button}}&lt;/$list&gt;
+&lt;$set name=&quot;red&quot; filter=&quot;[&lt;currentTiddler&gt;match{$:/temp/focussedTiddler}]&quot; value=&quot;red&quot; emptyValue=&quot;&quot;&gt;&lt;span class=&lt;&lt;red&gt;&gt;&gt;{{$:/core/images/close-button}}&lt;/span&gt;&lt;/$set&gt;
 &lt;/$button&gt;&amp;nbsp;
 &lt;$link to={{!!title}}&gt;&lt;$macrocall $name=&quot;icons&quot;/&gt; &lt;$list filter=&quot;[all[current]has[caption]]&quot;&gt;@@color:#555;{{!!caption}}@@ &amp;middot; &lt;/$list&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&quot;&quot;&quot;/&gt;
 &lt;/div&gt;
@@ -11907,10 +11966,17 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 &lt;/$reveal&gt;
 </pre>
 </div>
-<div modified="20201225075200340" modifier="yuzijie" tags="$:/tags/ViewTemplate customized" title="$:/core/ui/ViewTemplate/tags" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div modified="20210812183010106" modifier="yuzijie" tags="$:/tags/ViewTemplate customized" title="$:/core/ui/ViewTemplate/tags" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;$reveal type=&quot;nomatch&quot; stateTitle=&lt;&lt;folded-state&gt;&gt; text=&quot;hide&quot; tag=&quot;div&quot; retain=&quot;yes&quot; animate=&quot;yes&quot;&gt;
 &lt;$fieldmangler tiddler={{!!title}}&gt;&lt;$droppable actions=&quot;&lt;$action-sendmessage $message=tm-add-tag $param=&lt;&lt;actionTiddler&gt;&gt;/&gt;&quot; tag=&quot;div&quot;&gt;
-&lt;div class=&quot;tc-tags-wrapper tc-droppable-placeholder&quot; style=&quot;display:block;&quot;&gt;&lt;$list filter=&quot;[all[current]tags[]sort[title]]&quot; template=&quot;$:/core/ui/TagTemplate&quot; storyview=&quot;pop&quot;/&gt;&lt;/div&gt;
+&lt;div class=&quot;tc-tags-wrapper tc-droppable-placeholder&quot; style=&quot;display:block;&quot;&gt;
+&lt;$list filter=&quot;[all[current]listed[]!is[system]sort[title]]&quot; variable=&quot;listed&quot;&gt;&lt;span class=&quot;tc-tag-list-item&quot;&gt;&lt;$vars foregroundColor=&quot;#333333;&quot; backgroundColor=&quot;#fff3c9;&quot;&gt;
+&lt;$button to=&lt;&lt;listed&gt;&gt; message=&quot;tm-close-tiddler&quot; param=&lt;&lt;currentTiddler&gt;&gt; class=&quot;tc-tag-label tc-btn-invisible&quot; style=&lt;&lt;tag-pill-styles&gt;&gt;&gt;
+&amp;larr; &lt;$transclude tiddler=&lt;&lt;listed&gt;&gt; field=&quot;caption&quot;&gt;&lt;$view tiddler=&lt;&lt;listed&gt;&gt; field=title/&gt;&lt;/$transclude&gt;
+&lt;/$button&gt;
+&lt;/$vars&gt;&lt;/span&gt;&lt;/$list&gt;
+&lt;$list filter=&quot;[all[current]tags[]sort[title]]&quot; template=&quot;$:/core/ui/TagTemplate&quot; storyview=&quot;pop&quot;/&gt;
+&lt;/div&gt;
 &lt;/$droppable&gt;&lt;/$fieldmangler&gt;
 &lt;/$reveal&gt;
 </pre>
@@ -13008,11 +13074,11 @@ exports.urlgenerator = function(source,operator,options) {
 })();
 </pre>
 </div>
-<div created="20200229173911430" creator="yuzijie" modified="20210704010527268" modifier="yuzijie" tags="$:/tags/Macro" title="$:/custom/macro/actions" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20200229173911430" creator="yuzijie" modified="20210813210840631" modifier="yuzijie" tags="$:/tags/Macro" title="$:/custom/macro/actions" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>\define droppable-clone-action()
 &lt;$list filter=&quot;[&lt;actionTiddler&gt;prefix[T ]tag[Task]]&quot;&gt;&lt;$action-sendmessage $message=&quot;tm-new-tiddler&quot; $param={{!!title}} title=&lt;&lt;unusedtitle T&gt;&gt; date=&lt;&lt;now YYYY0MM0DD&gt;&gt;/&gt;&lt;/$list&gt;
-&lt;$list filter=&quot;[&lt;actionTiddler&gt;prefix[R ]]&quot;&gt;&lt;$action-sendmessage $message=&quot;tm-new-tiddler&quot; $param={{!!title}} title=&lt;&lt;unusedtitle R&gt;&gt; date=&lt;&lt;now YYYY0MM0DD&gt;&gt;/&gt;&lt;/$list&gt;
-&lt;$list filter=&quot;[&lt;actionTiddler&gt;] -[&lt;actionTiddler&gt;prefix[T ]tag[Task]] -[&lt;actionTiddler&gt;prefix[R ]]&quot;&gt;&lt;$action-sendmessage $message=&quot;tm-new-tiddler&quot; $param={{!!title}}/&gt;&lt;/$list&gt;
+&lt;$list filter=&quot;[&lt;actionTiddler&gt;prefix[$(template)$ ]]&quot;&gt;&lt;$action-sendmessage $message=&quot;tm-new-tiddler&quot; $param={{!!title}} title=&lt;&lt;unusedtitle $(template)$&gt;&gt; date=&lt;&lt;now YYYY0MM0DD&gt;&gt;/&gt;&lt;/$list&gt;
+&lt;$list filter=&quot;[&lt;actionTiddler&gt;] -[&lt;actionTiddler&gt;prefix[T ]tag[Task]] -[&lt;actionTiddler&gt;prefix[$(template)$ ]]&quot;&gt;&lt;$action-sendmessage $message=&quot;tm-new-tiddler&quot; $param={{!!title}}/&gt;&lt;/$list&gt;
 \end
 
 \define droppable-edit-action() &lt;$action-setfield $tiddler=&quot;$:/temp/Draft&quot; draft=&lt;&lt;actionTiddler&gt;&gt;/&gt;&lt;$action-navigate $to=&lt;&lt;actionTiddler&gt;&gt;/&gt;
@@ -13020,6 +13086,7 @@ exports.urlgenerator = function(source,operator,options) {
 \define droppable-TDC-action() &lt;$list filter=&quot;[&lt;actionTiddler&gt;status[未完待续]]&quot; emptyMessage=&quot;&lt;$action-setfield $tiddler=&lt;&lt;actionTiddler&gt;&gt; status=未完待续/&gt;&quot;&gt;&lt;$action-setfield $tiddler=&lt;&lt;actionTiddler&gt;&gt; status=&quot;&quot;/&gt;&lt;/$list&gt;
 
 \define droppable-index-tree()
+&lt;$action-sendmessage $message=&quot;tm-close-tiddler&quot; $param=&lt;&lt;actionTiddler&gt;&gt;/&gt;
 &lt;$action-listops $tiddler=&quot;$:/config/index-tree&quot; $field=&quot;list&quot; $subfilter=&quot;[&lt;actionTiddler&gt;] +[putfirst[]]&quot;/&gt;
 &lt;$action-setfield $tiddler=&quot;$:/config/index-tree&quot; text=&lt;&lt;actionTiddler&gt;&gt;/&gt;
 \end
@@ -13204,10 +13271,10 @@ exports.run = function(start, end) {
 })();
 </pre>
 </div>
-<div created="20191113100736132" creator="yuzijie" modified="20210810074845739" modifier="yuzijie" tags="$:/tags/Macro" title="$:/custom/macro/index-tree" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20191113100736132" creator="yuzijie" modified="20210813183400968" modifier="yuzijie" tags="$:/tags/Macro" title="$:/custom/macro/index-tree" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>\define index-tree-breadcrumb-filter(sort:&quot;sort[title]&quot;)
 [all[current]next[$:/config/index-tree]!prefix[$(currentTiddler)$/]!list[$:/StoryList]]
-[all[current]tags[]] [all[current]tags[]search:title:literal[/]tags[]]
+[all[current]tags[]] [all[current]tags[]search:title:literal[/]tags[]] [all[current]listed[]!is[system]]
 [all[current]parentPath[valid]] -[toc-link[no]] -[[Index]] +[$sort$]
 \end
 
@@ -13246,7 +13313,7 @@ exports.run = function(start, end) {
 &lt;/div&gt;
 &lt;/$list&gt;
 &lt;$list filter=&quot;[all[current]has[path]]&quot;&gt;
-&lt;$set name=&quot;path-option&quot; value={{!!path.prefix}} emptyValue=&quot;path&quot;&gt;&lt;$set name=&quot;prefix&quot; value={{{ [[$:/config/path-prefix]get&lt;path-option&gt;] }}}&gt;&lt;$set name=&quot;path&quot; value={{!!path}}&gt;
+&lt;$set name=&quot;path-option&quot; value={{!!path.prefix}} emptyValue=&quot;path&quot;&gt;&lt;$set name=&quot;prefix&quot; value={{{ [[$:/config/pathPrefix]get&lt;path-option&gt;] }}}&gt;&lt;$set name=&quot;path&quot; value={{!!path}}&gt;
 &lt;div style=&quot;line-height:25px;background:#cfffe2;border-radius:4px;font-size:smaller;padding-left:15px;&quot;&gt;
 &lt;$button class=&quot;tc-btn-invisible&quot; message=&quot;tm-copy-to-clipboard&quot; param=&lt;&lt;whole-path&gt;&gt; tooltip=&lt;&lt;whole-path&gt;&gt;&gt;Copy File Path&lt;/$button&gt; &amp;middot; &lt;$set name=&quot;filename&quot; filter=&quot;[&lt;path&gt;split[/]last[]]&quot; select=&quot;0&quot;&gt;&lt;$button class=&quot;tc-btn-invisible&quot; message=&quot;tm-copy-to-clipboard&quot; param=&lt;&lt;filename&gt;&gt; tooltip=&lt;&lt;filename&gt;&gt;&gt;Copy File Name&lt;/$button&gt;&lt;/$set&gt; &amp;middot; &lt;$set name=&quot;path&quot; filter=&quot;[&lt;path&gt;parentPath[]]&quot; select=&quot;0&quot;&gt;&lt;$button class=&quot;tc-btn-invisible&quot; message=&quot;tm-copy-to-clipboard&quot; param=&lt;&lt;whole-path&gt;&gt; tooltip=&lt;&lt;whole-path&gt;&gt;&gt;Copy File Location&lt;/$button&gt;&lt;/$set&gt;
 &lt;/div&gt;
@@ -13261,12 +13328,12 @@ exports.run = function(start, end) {
 ; 在 Index 里面显示 Trees
 : `&lt;&lt;index-tree&gt;&gt;`</pre>
 </div>
-<div created="20190202180006460" creator="yuzijie" modified="20210713203358540" modifier="yuzijie" tags="$:/tags/Macro" title="$:/custom/macro/links" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20190202180006460" creator="yuzijie" modified="20210813183347962" modifier="yuzijie" tags="$:/tags/Macro" title="$:/custom/macro/links" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>\define whole-path() $(prefix)$$(path)$
 \define modalImageTitle() &lt;$list filter=&quot;[[$(currentTiddler)$]has[caption]]&quot; emptyMessage=&quot;$(currentTiddler)$&quot;&gt;{{!!caption}}&lt;/$list&gt;
 
 \define links(tiddler)
-&lt;$set name=&quot;path-option&quot; value={{!!path.prefix}} emptyValue=&quot;path&quot;&gt;&lt;$set name=&quot;prefix&quot; value={{{ [[$:/config/path-prefix]get&lt;path-option&gt;] }}}&gt;
+&lt;$set name=&quot;path-option&quot; value={{!!path.prefix}} emptyValue=&quot;path&quot;&gt;&lt;$set name=&quot;prefix&quot; value={{{ [[$:/config/pathPrefix]get&lt;path-option&gt;] }}}&gt;
 &lt;$list filter=&quot;[all[current]has[path]]&quot;&gt;&lt;$set name=&quot;path&quot; value={{!!path}}&gt;
 &lt;$button class=&quot;tc-btn-invisible&quot; message=&quot;tm-copy-to-clipboard&quot; param=&lt;&lt;whole-path&gt;&gt; tooltip=&lt;&lt;whole-path&gt;&gt;&gt;{{$:/core/images/file}}&lt;/$button&gt;
 &lt;/$set&gt;&lt;/$list&gt;
@@ -13303,6 +13370,7 @@ exports.run = function(start, end) {
 \end
 
 \define icons()
+&lt;$list filter=&quot;[all[current]tag[Snippet]]&quot;&gt;&lt;span&gt;📜&lt;/span&gt;&lt;/$list&gt;
 &lt;$list filter=&quot;[all[current]tag[Task]]&quot;&gt;&lt;span&gt;🏆&lt;/span&gt;&lt;/$list&gt;
 &lt;$list filter=&quot;[all[current]!is[system]search:title:literal[/]]&quot;&gt;&lt;span&gt;🌿&lt;/span&gt;&lt;/$list&gt;
 &lt;$list filter=&quot;[all[current]type[application/x-tiddler-dictionary]]&quot;&gt;&lt;span&gt;🔠&lt;/span&gt;&lt;/$list&gt;
@@ -13334,14 +13402,14 @@ $name$
 ; 新建 Tiddler
 : `&lt;&lt;new name:&quot;按钮名称&quot; template:&quot;模板&quot; class:&quot;tc-btn-invisible&quot; style:&quot;按钮风格&quot; title:&quot;标题&quot; fields:&quot;&quot;&quot;tags='标签' text='123'&quot;&quot;&quot;&gt;&gt;`</pre>
 </div>
-<div created="20190110073141540" creator="yuzijie" modified="20210501224828572" modifier="yuzijie" tags="$:/tags/Macro" title="$:/custom/macro/record" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20190110073141540" creator="yuzijie" modified="20210813193530807" modifier="yuzijie" tags="$:/tags/Macro" title="$:/custom/macro/record" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>\define record-filter-builder(f1,f3) $f1$ $(f2)$ +[!has[draft.of]] $f3$
 \define record-state() $:/state/record/$(currentTiddler)$/$(tab)$
 
-\define record(filter:&quot;[tag&lt;currentTiddler&gt;]&quot;, title, fields, tag, sort-by-tags, template:&quot;R&quot;)
+\define record(filter:&quot;[tag&lt;currentTiddler&gt;]&quot;, title, fields, tag, sort-by-tags)
 &lt;$set name=&quot;f2&quot; filter=&quot;[[$:/state/record/select/$(currentTiddler)$/$title$]has[text]]&quot; value={{$:/state/record/select/$(currentTiddler)$/$title$}} emptyValue=&quot;&quot;&gt;&lt;$set name=&quot;current&quot; value=&lt;&lt;currentTiddler&gt;&gt;&gt;
 &lt;$reveal default=&quot;$title$&quot; type=&quot;nomatch&quot; text=&quot;&quot; tag=&quot;h2&quot;&gt;
-&lt;$list filter=&quot;[all[current]has[path.prefix]]&quot; emptyMessage=&quot;&quot;&quot;&lt;$macrocall $name=&quot;new&quot; name=&quot;$title$&quot; template=&quot;$template$&quot; class=&quot;tc-btn-invisible&quot; fields=&quot;tags=&lt;&lt;new-tags-builder '$tag$'&gt;&gt; date=&lt;&lt;now 'YYYY0MM0DD'&gt;&gt; caption='{{!!text}}' $fields$&quot;/&gt;&quot;&quot;&quot;&gt;&lt;$macrocall $name=&quot;new&quot; name=&quot;$title$&quot; template=&quot;$template$&quot; class=&quot;tc-btn-invisible&quot; fields=&quot;tags=&lt;&lt;new-tags-builder '$tag$'&gt;&gt; date=&lt;&lt;now 'YYYY0MM0DD'&gt;&gt; path.prefix={{!!path.prefix}} caption='{{!!text}}' $fields$&quot;/&gt;&lt;/$list&gt;
+&lt;$list filter=&quot;[all[current]has[path.prefix]]&quot; emptyMessage=&quot;&quot;&quot;&lt;$macrocall $name=&quot;new&quot; name=&quot;$title$&quot; template={{$:/config/defaultTemplate}} class=&quot;tc-btn-invisible&quot; fields=&quot;tags=&lt;&lt;new-tags-builder '$tag$'&gt;&gt; date=&lt;&lt;now 'YYYY0MM0DD'&gt;&gt; caption='{{!!text}}' $fields$&quot;/&gt;&quot;&quot;&quot;&gt;&lt;$macrocall $name=&quot;new&quot; name=&quot;$title$&quot; template={{$:/config/defaultTemplate}} class=&quot;tc-btn-invisible&quot; fields=&quot;tags=&lt;&lt;new-tags-builder '$tag$'&gt;&gt; date=&lt;&lt;now 'YYYY0MM0DD'&gt;&gt; path.prefix={{!!path.prefix}} caption='{{!!text}}' $fields$&quot;/&gt;&lt;/$list&gt;
 &lt;small style=&quot;color:#ccc;&quot;&gt;&lt;$count filter=&lt;&lt;record-filter-builder &quot;$filter$&quot;&gt;&gt;/&gt; &lt;$macrocall $name=&quot;filter-by-tags&quot; tiddler=&lt;&lt;currentTiddler&gt;&gt; title=&quot;$title$&quot; filter=&quot;$filter$ +[!has[draft.of]]&quot;/&gt;&lt;/small&gt;
 &lt;/$reveal&gt;
 &lt;$reveal default=&quot;$sort-by-tags$&quot; type=&quot;match&quot; text=&quot;yes&quot; tag=&quot;div&quot;&gt;
@@ -13428,7 +13496,7 @@ $name$
 \end
 
 ; 按照日期做记录
-: `&lt;&lt;record filter:&quot;[tag&lt;currentTiddler&gt;sort[date]]&quot; title:&quot;进展&quot; fields:&quot;自定义新 record 的 field, 例如: type='application/x-tiddler-dictionary'&quot; tag:&quot;给新 Tiddler 添加额外的 tag&quot; sort-by-tags:&quot;yes&quot; template:&quot;R&quot;&gt;&gt;`
+: `&lt;&lt;record filter:&quot;[tag&lt;currentTiddler&gt;sort[date]]&quot; title:&quot;进展&quot; fields:&quot;自定义新 record 的 field, 例如: type='application/x-tiddler-dictionary'&quot; tag:&quot;给新 Tiddler 添加额外的 tag&quot; sort-by-tags:&quot;yes&quot;&gt;&gt;`
 ; 显示 record items
 : `&lt;&lt;record-items filter:&quot;过滤器&quot; current:&quot;currentTiddler&quot;&gt;&gt;`
 ; 显示一个 Popup
@@ -13618,16 +13686,16 @@ $name$
 ; 13. Deadline 适用于倒计时的情况, 以及小里程碑
 : `&lt;&lt;d step:&quot;下一步&quot; tiddler:&quot;指向某个 Tiddler&quot; t:&quot;20190102(start)&quot; r:&quot;备注&quot; d:&quot;20190201(end)&quot; to:&quot;delegated to&quot; ms:&quot;Milestone Name&quot;&gt;&gt;`</pre>
 </div>
-<div created="20191013140545554" creator="yuzijie" modified="20210811083509754" modifier="yuzijie" tags="$:/tags/Macro" title="$:/custom/macro/table" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20191013140545554" creator="yuzijie" modified="20210813195359459" modifier="yuzijie" tags="$:/tags/Macro" title="$:/custom/macro/table" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>\define table-sort-option() $:/state/table/$(current)$/$(tableTitle)$
 \define table-subfilter() [index:$(property)$[$(index-value)$]]
 \define table-filter-builder(f1,f3,f4) $f1$ $(table-row-filter-radio)$ $(table-row-filter-checkbox)$ $(f2)$ $f3$ $f4$
 
-\define table(cfilter, rfilter:&quot;[tag&lt;currentTiddler&gt;]&quot;, rheader, title, fields, tag, template:&quot;R&quot;, checkbox)
+\define table(cfilter, rfilter:&quot;[tag&lt;currentTiddler&gt;]&quot;, rheader, title, fields, tag, checkbox)
 &lt;$set name=&quot;table-row-filter-radio&quot; value={{$:/temp/table/$(currentTiddler)$/$title$!!radio}}&gt;&lt;$set name=&quot;table-row-filter-checkbox&quot; value={{$:/temp/table/$(currentTiddler)$/$title$!!checkbox}}&gt;
 &lt;$set name=&quot;f2&quot; value={{$:/state/record/select/$(currentTiddler)$/$title$}}&gt;&lt;$set name=&quot;current&quot; value=&lt;&lt;currentTiddler&gt;&gt;&gt;
 &lt;$reveal default=&quot;$title$&quot; type=&quot;nomatch&quot; text=&quot;&quot; tag=&quot;h2&quot;&gt;
-&lt;$list filter=&quot;[all[current]has[path.prefix]]&quot; emptyMessage=&quot;&quot;&quot;&lt;$macrocall $name=&quot;new&quot; name=&quot;$title$&quot; template=&quot;$template$&quot; class=&quot;tc-btn-invisible&quot; fields=&quot;tags=&lt;&lt;new-tags-builder '$tag$'&gt;&gt; date=&lt;&lt;now 'YYYY0MM0DD'&gt;&gt; type='application/x-tiddler-dictionary' $fields$&quot;/&gt;&quot;&quot;&quot;&gt;&lt;$macrocall $name=&quot;new&quot; name=&quot;$title$&quot; template=&quot;$template$&quot; class=&quot;tc-btn-invisible&quot; fields=&quot;tags=&lt;&lt;new-tags-builder '$tag$'&gt;&gt; date=&lt;&lt;now 'YYYY0MM0DD'&gt;&gt; type='application/x-tiddler-dictionary' path.prefix={{!!path.prefix}} $fields$&quot;/&gt;&lt;/$list&gt;
+&lt;$list filter=&quot;[all[current]has[path.prefix]]&quot; emptyMessage=&quot;&quot;&quot;&lt;$macrocall $name=&quot;new&quot; name=&quot;$title$&quot; template={{$:/config/defaultTemplate}} class=&quot;tc-btn-invisible&quot; fields=&quot;tags=&lt;&lt;new-tags-builder '$tag$'&gt;&gt; date=&lt;&lt;now 'YYYY0MM0DD'&gt;&gt; type='application/x-tiddler-dictionary' $fields$&quot;/&gt;&quot;&quot;&quot;&gt;&lt;$macrocall $name=&quot;new&quot; name=&quot;$title$&quot; template={{$:/config/defaultTemplate}} class=&quot;tc-btn-invisible&quot; fields=&quot;tags=&lt;&lt;new-tags-builder '$tag$'&gt;&gt; date=&lt;&lt;now 'YYYY0MM0DD'&gt;&gt; type='application/x-tiddler-dictionary' path.prefix={{!!path.prefix}} $fields$&quot;/&gt;&lt;/$list&gt;
 &lt;small style=&quot;color:#ccc;&quot;&gt;&lt;$count filter=&lt;&lt;table-filter-builder &quot;$rfilter$&quot; &quot;+[!has[draft.of]]&quot;&gt;&gt;/&gt; &lt;$macrocall $name=&quot;filter-by-tags&quot; tiddler=&lt;&lt;currentTiddler&gt;&gt; title=&quot;$title$&quot; filter=&quot;$rfilter$&quot;/&gt;&lt;/small&gt;
 &lt;/$reveal&gt;
 &lt;div class=&quot;macro-table&quot;&gt;&lt;table&gt;&lt;$set name=&quot;tableTitle&quot; value=&quot;$title$&quot;&gt;
@@ -13768,12 +13836,12 @@ $(widget)$
 &lt;/$set&gt;&lt;/$set&gt;
 \end
 
-\define vtable(main, cfilter, rfilter, cheader1, cheader2, title, fields, tag, template:&quot;R&quot;, highlight)
+\define vtable(main, cfilter, rfilter, cheader1, cheader2, title, fields, tag, highlight)
 &lt;$set name=&quot;mainTiddler&quot; filter=&quot;[[$main$]is[tiddler]]&quot; value=&quot;$main$&quot; emptyValue=&lt;&lt;currentTiddler&gt;&gt;&gt;&lt;$set name=&quot;vtable-sort&quot; value={{$:/state/table/$(currentTiddler)$/$title$}}&gt;
 &lt;$set name=&quot;vtable-key-filter&quot; filter=&quot;[[$:/temp/table/$(currentTiddler)$/$title$]has[filter]]&quot; value={{$:/temp/table/$(currentTiddler)$/$title$!!filter}} emptyValue=&quot;[&lt;mainTiddler&gt;indexes[]]&quot;&gt;
 &lt;$set name=&quot;coltitles&quot; filter=&quot;[&lt;mainTiddler&gt;get[coltitles]enlist-input[]]&quot;&gt;&lt;$set name=&quot;columns&quot; filter=&quot;$cfilter$ +[append&lt;coltitles&gt;]&quot;&gt;
 &lt;$reveal default=&quot;$title$&quot; type=&quot;nomatch&quot; text=&quot;&quot; tag=&quot;h2&quot;&gt;
-&lt;$macrocall $name=&quot;new&quot; name=&quot;$title$&quot; template=&quot;$template$&quot; class=&quot;tc-btn-invisible&quot; fields=&quot;tags=&lt;&lt;new-tags-builder '$tag$'&gt;&gt; date=&lt;&lt;now 'YYYY0MM0DD'&gt;&gt; type='application/x-tiddler-dictionary' $fields$&quot;/&gt;
+&lt;$macrocall $name=&quot;new&quot; name=&quot;$title$&quot; template={{$:/config/defaultTemplate}} class=&quot;tc-btn-invisible&quot; fields=&quot;tags=&lt;&lt;new-tags-builder '$tag$'&gt;&gt; date=&lt;&lt;now 'YYYY0MM0DD'&gt;&gt; type='application/x-tiddler-dictionary' $fields$&quot;/&gt;
 &lt;small style=&quot;color:#ccc;&quot;&gt;&lt;$count filter=&lt;&lt;vtable-filter-builder &quot;$rfilter$&quot;&gt;&gt;/&gt;&lt;/small&gt;
 &lt;/$reveal&gt;
 &lt;div class=&quot;macro-table&quot;&gt;&lt;table&gt;
@@ -13815,9 +13883,11 @@ $(widget)$
 &lt;/tr&gt;
 \end
 
-\define table-edit(cfilter, rfilter:&quot;[tag&lt;currentTiddler&gt;]&quot;, fields, tag, template:&quot;R&quot;)
+\define table-edit-new-action(template, tag, fields) &lt;$action-setfield $tiddler=&lt;&lt;unusedtitle &quot;$template$&quot;&gt;&gt; date=&lt;&lt;now YYYY0MM0DD&gt;&gt; tags=&lt;&lt;new-tags-builder &quot;$tag$&quot;&gt;&gt; $fields$/&gt;
+
+\define table-edit(cfilter, rfilter:&quot;[tag&lt;currentTiddler&gt;]&quot;, fields, tag)
 &lt;h2&gt;&lt;$set name=&quot;current&quot; value=&lt;&lt;currentTiddler&gt;&gt;&gt;
-&lt;$button class=&quot;tc-btn-invisible&quot;&gt;&lt;$action-setfield $tiddler=&lt;&lt;unusedtitle &quot;$template$&quot;&gt;&gt; date=&lt;&lt;now YYYY0MM0DD&gt;&gt; tags=&lt;&lt;new-tags-builder &quot;$tag$&quot;&gt;&gt; $fields$/&gt;Add New Row&lt;/$button&gt;
+&lt;$button class=&quot;tc-btn-invisible&quot;&gt;&lt;$macrocall $name=&quot;table-edit-new-action&quot; template={{$:/config/defaultTemplate}} tag=&quot;$tag$&quot; fields=&quot;$fields$&quot;/&gt;Add New Row&lt;/$button&gt;
 &lt;/$set&gt;&lt;/h2&gt;
 &lt;div class=&quot;macro-table&quot;&gt;&lt;table&gt;
 &lt;tr&gt;
@@ -13854,7 +13924,7 @@ $(widget)$
 \end
 
 ; 1. 把 Data-Dictionary 用 Table 的形式展示出来, 每个 Tiddler 相当于一行
-: `&lt;&lt;table cfilter:&quot;[[A]] [[B]] [[C]] 列标题过滤&quot; rfilter:&quot;[tag&lt;currentTiddler&gt;] 行标题过滤&quot; rheader:&quot;Name of Row header&quot; title:&quot;表格标题&quot; fields:&quot;新建词条的时候自定义的字段&quot; tag:&quot;给新 Tiddler 添加额外的 tag&quot; template:&quot;R&quot; checkbox:&quot;在行首添加一个选择框, yes/no&quot;&gt;&gt;`
+: `&lt;&lt;table cfilter:&quot;[[A]] [[B]] [[C]] 列标题过滤&quot; rfilter:&quot;[tag&lt;currentTiddler&gt;] 行标题过滤&quot; rheader:&quot;Name of Row header&quot; title:&quot;表格标题&quot; fields:&quot;新建词条的时候自定义的字段&quot; tag:&quot;给新 Tiddler 添加额外的 tag&quot; checkbox:&quot;在行首添加一个选择框, yes/no&quot;&gt;&gt;`
 ; 2. 展示 Table 的行
 : `&lt;&lt;table-row rheader:&quot;Name of Row header&quot; checkbox:&quot;在行首添加一个选择框, yes/no&quot;&gt;&gt;`
 ; 3. 点击 table filter radio 以后触发的动作
@@ -13870,12 +13940,12 @@ $(widget)$
 ; 8. 按照某列的值来筛选 vTable 行
 : `&lt;&lt;vtable-row-filter column:&quot;列的名字&quot; main:&quot;主 Tiddler&quot; list:&quot;筛选条件清单, 如果有了它就无视 rfilter 和 sort&quot; rfilter:&quot;要和被筛选的 table 的 rfilter 一致&quot; title:&quot;要和被筛选的 table 的 title 一致&quot; mode:&quot;single/list&quot; sort:&quot;给 Radio 排序&quot;&gt;&gt;`
 ; 9. 把 Data-Dictionary 用 Table 的形式展示出来, 每个 Tiddler 相当于一列 (Vertical Table)
-: `&lt;&lt;vtable main:&quot;主 Tiddler, 没有则利用当前 Tiddler&quot; cfilter:&quot;可以用它新加一些列&quot; rfilter:&quot;行过滤&quot; cheader1:&quot;表格第一列, 主 Tiddler 的 Keys&quot; cheader2:&quot;表格第二列, 主 Tiddler 的 Values&quot; title:&quot;表格标题&quot; fields:&quot;新建的时候自定义的字段&quot; tag:&quot;给新 Tiddler 添加额外的 tag&quot; template:&quot;R&quot; highlight:&quot;value/empty, 单元格高亮&quot;&gt;&gt;`
+: `&lt;&lt;vtable main:&quot;主 Tiddler, 没有则利用当前 Tiddler&quot; cfilter:&quot;可以用它新加一些列&quot; rfilter:&quot;行过滤&quot; cheader1:&quot;表格第一列, 主 Tiddler 的 Keys&quot; cheader2:&quot;表格第二列, 主 Tiddler 的 Values&quot; title:&quot;表格标题&quot; fields:&quot;新建的时候自定义的字段&quot; tag:&quot;给新 Tiddler 添加额外的 tag&quot; highlight:&quot;value/empty, 单元格高亮&quot;&gt;&gt;`
 : &lt;&lt;display content:&quot;在列 Tiddler 的 `empty` field 里面可以自定义 N/A 按钮的行为&quot; mode:&quot;tips&quot;&gt;&gt;
 ; 10. 展示 vTable 的行
 : `&lt;&lt;vtable-row cfilter:&quot;列标题&quot; cheader:&quot;表格第二列 Name of 2nd Column header&quot; highlight:&quot;value/empty, 单元格高亮&quot;&gt;&gt;`
 ; 11. 使用 table 形式编辑 Data tiddlers 的值
-: `&lt;&lt;table-edit cfilter:&quot;[[A]] [[B]] [[C]] 列标题过滤&quot; rfilter:&quot;[tag&lt;currentTiddler&gt;] 行标题过滤&quot; fields:&quot;新建词条的时候自定义的字段&quot; tag:&quot;给新 Tiddler 添加额外的 tag&quot; template:&quot;R&quot;&gt;&gt;`
+: `&lt;&lt;table-edit cfilter:&quot;[[A]] [[B]] [[C]] 列标题过滤&quot; rfilter:&quot;[tag&lt;currentTiddler&gt;] 行标题过滤&quot; fields:&quot;新建词条的时候自定义的字段&quot; tag:&quot;给新 Tiddler 添加额外的 tag&quot;&gt;&gt;`
 ; 12. table-edit 的行
 : `&lt;&lt;table-row-edit&gt;&gt;`</pre>
 </div>
@@ -14090,20 +14160,19 @@ Deadline: &lt;$macrocall $name=task-template-table-deadline/&gt;
 ; custom-toc 的目录名字
 : `&lt;&lt;custom-toc-caption&gt;&gt;`</pre>
 </div>
-<div created="20190928115034446" creator="yuzijie" modified="20210811102042873" modifier="yuzijie" tags="$:/tags/Macro" title="$:/custom/macro/tools" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>\define snippet(key,modal,template:&quot;R&quot;)
-&lt;$list filter=&quot;[belongs.to[$(currentTiddler)$]tag[Snippet]note[$key$]]&quot; emptyMessage=&quot;&quot;&quot;&lt;$macrocall $name=&quot;new&quot; name=&quot;Create Code Block&quot; template=&quot;$template$&quot; class=&quot;tc-btn-invisible tc-tiddlylink&quot; fields=&quot;tags='Snippet' date=&lt;&lt;now 'YYYY0MM0DD'&gt;&gt; belongs.to='$(currentTiddler)$' language={{##Language}} note='$key$' type='text/plain' caption=''&quot;/&gt;&quot;&quot;&quot;&gt;
+<div created="20190928115034446" creator="yuzijie" modified="20210813193902511" modifier="yuzijie" tags="$:/tags/Macro" title="$:/custom/macro/tools" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>\define snippet(key, modal)
+&lt;$list filter=&quot;[belongs.to[$(currentTiddler)$]tag[Snippet]note[$key$]]&quot; emptyMessage=&quot;&quot;&quot;&lt;$macrocall $name=&quot;new&quot; name=&quot;Create Code Block&quot; template={{$:/config/defaultTemplate}} class=&quot;tc-btn-invisible tc-tiddlylink&quot; fields=&quot;tags='Snippet' date=&lt;&lt;now 'YYYY0MM0DD'&gt;&gt; belongs.to='$(currentTiddler)$' language={{##Language}} note='$key$' type='text/plain' caption=''&quot;/&gt;&quot;&quot;&quot;&gt;
 &lt;$reveal default=&quot;$modal$&quot; type=&quot;match&quot; text=&quot;yes&quot;&gt;
-&lt;$button class=&quot;tc-btn-invisible tc-tiddlylink&quot;&gt;
+&lt;$button class=&quot;tc-btn-invisible&quot; style=&quot;text-align:left;line-height:25px;&quot;&gt;
 &lt;$list filter=&quot;[all[current]type[text/vnd.tiddlywiki]]&quot; emptyMessage=&quot;&quot;&quot;&lt;$action-sendmessage $message=&quot;tm-modal&quot; $param=&quot;$:/custom/template/code-modal&quot; mContent={{!!text}} mTitle={{!!title}}/&gt;&quot;&quot;&quot;&gt;&lt;$action-sendmessage $message=&quot;tm-modal&quot; $param=&quot;$:/custom/template/normal-modal&quot; mTitle={{!!title}}/&gt;&lt;/$list&gt;
-&lt;$transclude field=&quot;caption&quot;&gt;View Content&lt;/$transclude&gt;
+@@font-size:small;&lt;&lt;icons&gt;&gt;@@ &lt;$transclude field=&quot;caption&quot;&gt;View Content&lt;/$transclude&gt;
 &lt;/$button&gt;
-&lt;&lt;links tiddler:&quot;Snippet&quot;&gt;&gt;
 &lt;/$reveal&gt;
 &lt;$reveal default=&quot;$modal$&quot; type=&quot;nomatch&quot; text=&quot;yes&quot; class=&quot;snippet&quot;&gt;
-&lt;$button class=&quot;tc-btn-invisible&quot;&gt;''&lt;$transclude field=&quot;caption&quot;&gt;{{!!title}}&lt;/$transclude&gt;''
+&lt;$button class=&quot;tc-btn-invisible&quot;&gt;
 &lt;$list filter=&quot;[all[current]type[text/vnd.tiddlywiki]]&quot; emptyMessage=&quot;&quot;&quot;&lt;$action-sendmessage $message=&quot;tm-modal&quot; $param=&quot;$:/custom/template/code-modal&quot; mContent={{!!text}} mTitle={{!!title}}/&gt;&quot;&quot;&quot;&gt;&lt;$action-sendmessage $message=&quot;tm-modal&quot; $param=&quot;$:/custom/template/normal-modal&quot; mTitle={{!!title}}/&gt;&lt;/$list&gt;
-&lt;$list filter=&quot;[tag[Comment]belongs.to{!!title}]&quot; variable=&quot;NONE&quot;&gt;@@color:red;+ Comments@@&lt;/$list&gt;
+@@font-size:small;&lt;&lt;icons&gt;&gt;@@ &lt;$transclude field=&quot;caption&quot;&gt;{{!!title}}&lt;/$transclude&gt; &lt;$list filter=&quot;[tag[Comment]belongs.to{!!title}]&quot;&gt;@@color:red;+ Comments@@&lt;/$list&gt;
 &lt;/$button&gt;
 &lt;$list filter=&quot;[all[current]type[text/vnd.tiddlywiki]]&quot; emptyMessage=&quot;&quot;&quot;&lt;$codeblock code={{!!text}} language={{!!language}}/&gt;&quot;&quot;&quot;&gt;&lt;$transclude mode=&quot;block&quot;/&gt;&lt;/$list&gt;
 &lt;/$reveal&gt;
@@ -14273,7 +14342,7 @@ Deadline: &lt;$macrocall $name=task-template-table-deadline/&gt;
 
 \define format-date(date, template:&quot;YYYY-0MM-0DD&quot;) &lt;$set name=&quot;output&quot; filter=&quot;[[$date$]format:date[$template$]]&quot; select=&quot;0&quot;&gt;&lt;&lt;output&gt;&gt;&lt;/$set&gt;
 
-# ''在 Table 的单元格里面创建一个新的 Snippet 代码或查看已创建的代码''&lt;$macrocall $name=&quot;code&quot; content=&quot;&quot;&quot;&lt;&lt;snippet key:&quot;index key&quot; modal:&quot;yes/no&quot; template:&quot;R&quot;&gt;&gt;&quot;&quot;&quot;/&gt;
+# ''在 Table 的单元格里面创建一个新的 Snippet 代码或查看已创建的代码''&lt;$macrocall $name=&quot;code&quot; content=&quot;&quot;&quot;&lt;&lt;snippet key:&quot;index key&quot; modal:&quot;yes/no&quot;&gt;&gt;&quot;&quot;&quot;/&gt;
 # ''解决 diff-text widget 不能接受 tiddler title 作为参数的缺陷''&lt;$macrocall $name=&quot;code&quot; content=&quot;&quot;&quot;&lt;&lt;diff-title source:&quot;source title&quot; dest:&quot;destination title&quot;&gt;&gt;&quot;&quot;&quot;/&gt;
 # ''一个 Tiddler 的链接, 如果该 Tiddler 有 Caption 则显示 Caption, 否则显示 Title''&lt;$macrocall $name=&quot;code&quot; content=&quot;&quot;&quot;&lt;&lt;l title:&quot;Tiddler title&quot; tooltip:&quot;tooltip&quot; class:&quot;custom class&quot;&gt;&gt;&quot;&quot;&quot;/&gt;
 # ''比较两个不同的代码之间的区别''&lt;$macrocall $name=&quot;code&quot; content=&quot;&quot;&quot;&lt;&lt;source-compare&gt;&gt;&quot;&quot;&quot;/&gt;
@@ -14336,7 +14405,7 @@ Deadline: &lt;$macrocall $name=task-template-table-deadline/&gt;
 &lt;&lt;searchResultList&gt;&gt;
 </pre>
 </div>
-<div caption="Data" created="20201226091951349" creator="yuzijie" first-search-filter="[!is[system]type[application/x-tiddler-dictionary]search:title,caption,note,keywords&lt;userInput&gt;] +[sort[title]limit[100]]" list-after="$:/custom/search/ParentSearchResultList" modified="20210502002015759" modifier="yuzijie" second-search-filter="[!is[system]type[application/x-tiddler-dictionary]search:*&lt;userInput&gt;] +[sort[title]limit[100]]" tags="$:/tags/SearchResults" title="$:/custom/search/DataSearchResultList" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div caption="Data" created="20201226091951349" creator="yuzijie" first-search-filter="[!is[system]type[application/x-tiddler-dictionary]search:title,caption,note,keywords&lt;userInput&gt;] +[sort[title]limit[100]]" list-after="$:/core/ui/DefaultSearchResultList" modified="20210814163614397" modifier="yuzijie" second-search-filter="[!is[system]type[application/x-tiddler-dictionary]search:*&lt;userInput&gt;] +[sort[title]limit[100]]" tags="$:/tags/SearchResults" title="$:/custom/search/DataSearchResultList" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>\define searchResultList()
 //&lt;small&gt;{{$:/language/Search/Matches/Title}}&lt;/small&gt;//
 &lt;small&gt;&lt;$button&gt;&lt;$list filter={{{ [&lt;configTiddler&gt;get[first-search-filter]] }}}&gt;&lt;$action-navigate $to=&lt;&lt;currentTiddler&gt;&gt; $scroll=&quot;no&quot;/&gt;&lt;/$list&gt;Open All&lt;/$button&gt;&lt;/small&gt;
@@ -14356,6 +14425,9 @@ Deadline: &lt;$macrocall $name=task-template-table-deadline/&gt;
 &lt;$list filter={{{ [&lt;configTiddler&gt;get[second-search-filter]] }}}&gt;
 &lt;span class={{{[&lt;currentTiddler&gt;addsuffix[-secondaryList]] -[&lt;searchListState&gt;get[text]] +[then[]else[tc-list-item-selected]] }}}&gt;
 &lt;$transclude tiddler=&quot;$:/core/ui/ListItemTemplate&quot;/&gt;
+&lt;$list filter=&quot;[all[current]indexes[]search:title:literal&lt;userInput&gt;limit[1]]&quot; variable=&quot;NONE&quot;&gt;&lt;div style=&quot;padding:0px 10px;&quot;&gt;''Keys:''
+&lt;$list filter=&quot;[all[current]indexes[]search:title:literal&lt;userInput&gt;]&quot;&gt;&lt;&lt;currentTiddler&gt;&gt; &lt;/$list&gt;
+&lt;/div&gt;&lt;/$list&gt;
 &lt;/span&gt;
 &lt;/$list&gt;
 &lt;/$list&gt;
@@ -14409,7 +14481,7 @@ Deadline: &lt;$macrocall $name=task-template-table-deadline/&gt;
 &lt;&lt;searchResultList&gt;&gt;
 </pre>
 </div>
-<div caption="Parent" created="20210328220236087" creator="yuzijie" first-search-filter="[search:title,tags,caption,keywords,text&lt;userInput&gt;tags[]!is[system]sort[title]limit[200]] -[[Snippet]] -[[Task]] -[[Comment]] -[[customized]]" list-after="$:/core/ui/DefaultSearchResultList" modified="20210403175224022" modifier="yuzijie" tags="$:/tags/SearchResults" title="$:/custom/search/ParentSearchResultList" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div caption="Parent" created="20210328220236087" creator="yuzijie" first-search-filter="[search:title,tags,caption,keywords,text&lt;userInput&gt;tags[]!is[system]sort[title]limit[200]] -[[Snippet]] -[[Task]] -[[Comment]] -[[customized]]" list-after="$:/custom/search/DataSearchResultList" modified="20210814161100503" modifier="yuzijie" tags="$:/tags/SearchResults" title="$:/custom/search/ParentSearchResultList" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>\define searchResultList()
 //&lt;small&gt;Parent matches:&lt;/small&gt;//
 &lt;small&gt;&lt;$button&gt;&lt;$list filter={{{ [&lt;configTiddler&gt;get[first-search-filter]] }}}&gt;&lt;$action-navigate $to=&lt;&lt;currentTiddler&gt;&gt; $scroll=&quot;no&quot;/&gt;&lt;/$list&gt;Open All&lt;/$button&gt;&lt;/small&gt;
@@ -14453,7 +14525,7 @@ Deadline: &lt;$macrocall $name=task-template-table-deadline/&gt;
 &lt;&lt;searchResultList&gt;&gt;
 </pre>
 </div>
-<div caption="Task" created="20201225182244564" creator="yuzijie" first-search-filter="[tag[Task]search:*&lt;userInput&gt;] +[sort[title]]" list-after="$:/custom/search/DataSearchResultList" modified="20201226205501104" modifier="yuzijie" second-search-filter="[prefix[$:/task-state/]search:*&lt;userInput&gt;] +[sort[title]]" tags="$:/tags/SearchResults" title="$:/custom/search/TaskSearchResultList" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div caption="Task" created="20201225182244564" creator="yuzijie" first-search-filter="[tag[Task]search:*&lt;userInput&gt;] +[sort[title]]" list-after="$:/custom/search/ParentSearchResultList" modified="20210814161100524" modifier="yuzijie" second-search-filter="[prefix[$:/task-state/]search:*&lt;userInput&gt;] +[sort[title]]" tags="$:/tags/SearchResults" title="$:/custom/search/TaskSearchResultList" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>\define searchResultList()
 //&lt;small&gt;Task matches:&lt;/small&gt;//
 &lt;small&gt;&lt;$button&gt;&lt;$list filter={{{ [&lt;configTiddler&gt;get[first-search-filter]] }}}&gt;&lt;$action-navigate $to=&lt;&lt;currentTiddler&gt;&gt; $scroll=&quot;no&quot;/&gt;&lt;/$list&gt;Open All&lt;/$button&gt;&lt;/small&gt;
@@ -14569,7 +14641,7 @@ Deadline: &lt;$macrocall $name=task-template-table-deadline/&gt;
 
 &lt;/$transclude&gt;</pre>
 </div>
-<div created="20160605213910575" creator="yuzijie" modified="20210709101110863" modifier="yuzijie" tags="$:/tags/Stylesheet" title="$:/custom/style/body" type="text/css" revision="0" bag="default">
+<div created="20160605213910575" creator="yuzijie" modified="20210812191525042" modifier="yuzijie" tags="$:/tags/Stylesheet" title="$:/custom/style/body" type="text/css" revision="0" bag="default">
 <pre>.tc-btn-mini {border-radius: 2px; font-size: small;}
 
 .tc-view-field-name {width: auto; white-space: nowrap;}
@@ -14649,7 +14721,7 @@ input[type=search].tc-menu-show-when-wide {display: none;}
 
 .tc-sidebar-lists {margin-bottom: 18px;}
 
-.tc-sidebar-tab-open-item {position: relative; font-size: 1em; margin: 8px 0; white-space: nowrap;}
+.tc-sidebar-tab-open-item {position: relative; font-size: 1em; margin: 7px 0; white-space: nowrap;}
 
 .tc-more-sidebar {margin-top: -5px;}
 
@@ -14775,7 +14847,7 @@ img {max-width: 100%;}
 
 label {display: inline-block;}</pre>
 </div>
-<div created="20160708093003717" creator="yuzijie" modified="20210807230559063" modifier="yuzijie" tags="$:/tags/Stylesheet" title="$:/custom/style/tools" type="text/css" revision="0" bag="default">
+<div created="20160708093003717" creator="yuzijie" modified="20210811231428827" modifier="yuzijie" tags="$:/tags/Stylesheet" title="$:/custom/style/tools" type="text/css" revision="0" bag="default">
 <pre>.section {border-bottom: 1px solid #DDD; text-transform: uppercase; font-weight: bold;}
 .select {background: #f5f5f5; padding: 0 10px; line-height: 1.5; border: 0; -webkit-appearance: none;}
 
@@ -14880,6 +14952,7 @@ blockquote.record {border-width: 1px 1px 1px 4px; border-color: #eee #eee #ddd #
 /* For Menubar Plugin */
 .tc-menubar .tc-drop-down {padding: 10px 20px;}
 .tc-menubar .tc-drop-down a, .tc-menubar .tc-drop-down button {display: inline-block; width: auto; padding: 0;}
+.tc-sidebar-tab-open .tc-btn-invisible.tc-btn-mini .red svg {fill: red;}
 
 /* For Macro: table */
 .macro-table {overflow-x: hidden; margin-top: 1em; margin-bottom: 1em;}
@@ -14944,10 +15017,10 @@ table.ihm-tgr-table tr th:last-child, table.ihm-tgr-table tr td:last-child {bord
 .tgr-style-data {background: #fff797;}
 .tgr-style-branch {background: #f2ddff;}</pre>
 </div>
-<div created="20181118150240560" creator="yuzijie" list-after="$:/core/ui/ViewTemplate/body" modified="20210710002348883" modifier="yuzijie" tags="$:/tags/ViewTemplate" title="$:/custom/template/bottom" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;div class=&quot;tc-tiddler-body&quot;&gt;
+<div created="20181118150240560" creator="yuzijie" list-after="$:/core/ui/ViewTemplate/body" modified="20210812181032012" modifier="yuzijie" tags="$:/tags/ViewTemplate" title="$:/custom/template/bottom" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;$reveal type=&quot;nomatch&quot; stateTitle=&lt;&lt;folded-state&gt;&gt; text=&quot;hide&quot; tag=&quot;div&quot; retain=&quot;yes&quot; animate=&quot;yes&quot; class=&quot;tc-tiddler-body&quot;&gt;
 &lt;$list filter=&quot;[all[current]has[list]!is[system]]&quot; variable=&quot;current&quot;&gt;
-&lt;ol style=&quot;font-size:small;line-height:25px;background:#ffeec8;border-radius:4px;&quot;&gt;&lt;$list filter=&quot;[enlist{!!list}]&quot;&gt;
+&lt;ol style=&quot;font-size:small;line-height:25px;background:#fff3c9;border-radius:4px;&quot;&gt;&lt;$list filter=&quot;[enlist{!!list}]&quot;&gt;
 &lt;$droppable actions=&quot;&quot;&quot;&lt;$action-listops $tiddler=&lt;&lt;current&gt;&gt; $field=&quot;list&quot; $subfilter=&quot;+[insertbefore:currentTiddler&lt;actionTiddler&gt;]&quot;/&gt;&quot;&quot;&quot; tag=&quot;li&quot;&gt;
 &lt;div class=&quot;tc-droppable-placeholder&quot;/&gt;
 &lt;div&gt;
@@ -14962,14 +15035,14 @@ table.ihm-tgr-table tr th:last-child, table.ihm-tgr-table tr td:last-child {bord
 &lt;/$list&gt;&lt;/ol&gt;
 &lt;/$list&gt;
 &lt;$list filter=&quot;[all[current]has[belongs.to]]&quot;&gt;
-&lt;div style=&quot;font-size:small;line-height:25px;background:#ffeec8;border-radius:4px;padding-left:30px;&quot;&gt;&lt;$tiddler tiddler={{!!belongs.to}}&gt;
+&lt;div style=&quot;font-size:small;line-height:25px;background:#fff3c9;border-radius:4px;padding-left:30px;&quot;&gt;&lt;$tiddler tiddler={{!!belongs.to}}&gt;
 Belongs to:
 &lt;$button dragTiddler={{!!title}} class=&quot;tc-btn-invisible tc-tiddlylink&quot; tooltip={{!!title}}&gt;
 &lt;$action-navigate $to={{!!title}}/&gt;&lt;$transclude field=&quot;caption&quot;&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$transclude&gt;
 &lt;/$button&gt;
 &lt;/$tiddler&gt;&lt;/div&gt;
 &lt;/$list&gt;
-&lt;/div&gt;</pre>
+&lt;/$reveal&gt;</pre>
 </div>
 <div created="20190216164326004" creator="yuzijie" footer="&lt;$button message=&quot;tm-close-tiddler&quot;&gt;&lt;$action-sendmessage $message=&quot;tm-edit-tiddler&quot; $param=&lt;&lt;mTitle&gt;&gt;/&gt;EDIT&lt;/$button&gt; &lt;&lt;modal-edit-code&gt;&gt; &lt;&lt;modal-edit-comment&gt;&gt; &lt;$button message=&quot;tm-close-tiddler&quot;&gt;CLOSE&lt;/$button&gt;" modified="20210810125115091" modifier="yuzijie" subtitle="&lt;$tiddler tiddler=&lt;&lt;mTitle&gt;&gt;&gt;&lt;$transclude field=&quot;caption&quot; tiddler=&lt;&lt;mTitle&gt;&gt;&gt;&lt;$view field=&quot;title&quot; tiddler=&lt;&lt;mTitle&gt;&gt;/&gt;&lt;/$transclude&gt;&lt;/$tiddler&gt;&lt;div style=&quot;float:right;font-size:smaller;&quot;&gt;&lt;$button message=&quot;tm-copy-to-clipboard&quot; class=&quot;tc-btn-invisible&quot; param=&lt;&lt;mTitle&gt;&gt;&gt;{{$:/core/images/copy-clipboard}} copy title&lt;/$button&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;$button message=&quot;tm-copy-to-clipboard&quot; class=&quot;tc-btn-invisible&quot; param=&lt;&lt;mContent&gt;&gt;&gt;{{$:/core/images/copy-clipboard}} copy content&lt;/$button&gt;&lt;/div&gt;" title="$:/custom/template/code-modal" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;section class=&quot;code-viewer&quot;&gt;
@@ -14995,7 +15068,7 @@ Belongs to:
 &lt;div style=&quot;text-align:right;font-size:small;&quot;&gt;&lt;$link&gt;More...&lt;/$link&gt;&lt;/div&gt;
 &lt;/$tiddler&gt;</pre>
 </div>
-<div created="20181001195337690" creator="yuzijie" list-before="$:/core/ui/ViewTemplate/body" modified="20210714110559321" modifier="yuzijie" tags="$:/tags/ViewTemplate" title="$:/custom/template/task" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20181001195337690" creator="yuzijie" list-before="$:/core/ui/ViewTemplate/body" modified="20210812002736534" modifier="yuzijie" tags="$:/tags/ViewTemplate" title="$:/custom/template/task" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;$list filter=&quot;[all[current]tag[Task]prefix[T]]&quot;&gt;&lt;$set name=&quot;side-tree&quot; value=&quot;yes&quot;&gt;
 &lt;h1 style=&quot;margin-top:0;&quot;&gt;{{!!caption}}&lt;/h1&gt;
 &lt;div style=&quot;position:relative;&quot;&gt;&lt;$set name=&quot;popup&quot; filter=&quot;[all[current]addprefix[$:/temp/popup/]]&quot; select=&quot;0&quot;&gt;
@@ -15029,7 +15102,7 @@ C &lt;$count filter=&quot;[{!!text}matches&lt;pattern-cancel&gt;]&quot;/&gt;
 &lt;td&gt;&lt;&lt;ts &quot;finish&quot; &quot;YYYY-0MM-0DD&quot; &quot;&lt;$action-setfield note='Done'/&gt;&lt;$action-setfield status=''/&gt;&quot;&gt;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/table&gt;
-&lt;div class=&quot;tc-tiddler-body&quot;&gt;
+&lt;$reveal type=&quot;nomatch&quot; stateTitle=&lt;&lt;folded-state&gt;&gt; text=&quot;hide&quot; tag=&quot;div&quot; retain=&quot;yes&quot; animate=&quot;yes&quot; class=&quot;tc-tiddler-body&quot;&gt;
 &lt;$macrocall $name=&quot;task-template-table&quot; task=&lt;&lt;currentTiddler&gt;&gt;/&gt;&lt;h2&gt;Activities&lt;/h2&gt;
 &lt;$list filter=&quot;[all[current]has[appendix]] [prefix&lt;tree-prefix-builder&gt;] +[limit[1]]&quot; variable=&quot;NONE&quot;&gt;&lt;div class=&quot;task-attachments&quot;&gt;
 &lt;$list filter=&quot;[all[current]has[appendix]]&quot; variable=&quot;current&quot;&gt;&lt;div&gt;&lt;$list filter=&quot;[enlist{!!appendix}]&quot;&gt;
@@ -15040,7 +15113,7 @@ C &lt;$count filter=&quot;[{!!text}matches&lt;pattern-cancel&gt;]&quot;/&gt;
 &lt;/$list&gt;&lt;/div&gt;&lt;/$list&gt;
 &lt;$list filter=&quot;[prefix&lt;tree-prefix-builder&gt;limit[1]]&quot; variable=&quot;NONE&quot;&gt;&lt;$macrocall $name=&quot;tree&quot; prefix=&lt;&lt;tree-prefix-builder&gt;&gt;/&gt;&lt;/$list&gt;
 &lt;/div&gt;&lt;/$list&gt;
-&lt;/div&gt;
+&lt;/$reveal&gt;
 &lt;/$droppable&gt;
 &lt;/$set&gt;&lt;/div&gt;
 &lt;/$set&gt;&lt;/$list&gt;</pre>
@@ -15102,7 +15175,7 @@ C &lt;$count filter=&quot;[{!!text}matches&lt;pattern-cancel&gt;]&quot;/&gt;
 @@color:red;font-size:small;{{!!status}}@@
 @@color:green;font-size:small;{{!!note}}@@</pre>
 </div>
-<div created="20190202192618583" creator="yuzijie" list-before="$:/core/ui/ViewTemplate/body" modified="20210803174950243" modifier="yuzijie" tags="$:/tags/ViewTemplate" title="$:/custom/template/top" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20190202192618583" creator="yuzijie" list-before="$:/core/ui/ViewTemplate/body" modified="20210813183320342" modifier="yuzijie" tags="$:/tags/ViewTemplate" title="$:/custom/template/top" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;$list filter=&quot;[all[current]type[text/plain]!tag[Comment]]&quot;&gt;&lt;div style=&quot;text-align:center;padding:3px;background:#fff3d1;font-size:smaller;&quot;&gt;
 &lt;$button class=&quot;tc-btn-invisible&quot;&gt;
 &lt;$action-sendmessage $message=&quot;tm-modal&quot; $param=&quot;$:/custom/template/code-modal&quot; mContent={{!!text}} mTitle={{!!title}}/&gt;
@@ -15121,19 +15194,18 @@ Show code viewer&lt;$list filter=&quot;[belongs.to{!!title}is[tiddler]]&quot;&gt
 &lt;/div&gt;
 &lt;/$list&gt;
 &lt;$list filter=&quot;[all[current]has[path]]&quot;&gt;
-&lt;$set name=&quot;path-option&quot; value={{!!path.prefix}} emptyValue=&quot;path&quot;&gt;&lt;$set name=&quot;prefix&quot; value={{{ [[$:/config/path-prefix]get&lt;path-option&gt;] }}}&gt;&lt;$set name=&quot;path&quot; value={{!!path}}&gt;
+&lt;$set name=&quot;path-option&quot; value={{!!path.prefix}} emptyValue=&quot;path&quot;&gt;&lt;$set name=&quot;prefix&quot; value={{{ [[$:/config/pathPrefix]get&lt;path-option&gt;] }}}&gt;&lt;$set name=&quot;path&quot; value={{!!path}}&gt;
 &lt;div style=&quot;text-align:center;padding:3px;background:#dfffd3;font-size:smaller;&quot;&gt;
 &lt;$button class=&quot;tc-btn-invisible&quot; message=&quot;tm-copy-to-clipboard&quot; param=&lt;&lt;whole-path&gt;&gt; tooltip=&lt;&lt;whole-path&gt;&gt;&gt;Copy File Path&lt;/$button&gt; &amp;middot; &lt;$set name=&quot;filename&quot; filter=&quot;[&lt;path&gt;split[/]last[]]&quot; select=&quot;0&quot;&gt;&lt;$button class=&quot;tc-btn-invisible&quot; message=&quot;tm-copy-to-clipboard&quot; param=&lt;&lt;filename&gt;&gt; tooltip=&lt;&lt;filename&gt;&gt;&gt;Copy File Name&lt;/$button&gt;&lt;/$set&gt; &amp;middot; &lt;$set name=&quot;path&quot; filter=&quot;[&lt;path&gt;parentPath[]]&quot; select=&quot;0&quot;&gt;&lt;$button class=&quot;tc-btn-invisible&quot; message=&quot;tm-copy-to-clipboard&quot; param=&lt;&lt;whole-path&gt;&gt; tooltip=&lt;&lt;whole-path&gt;&gt;&gt;Copy File Location&lt;/$button&gt;&lt;/$set&gt;
 &lt;/div&gt;
 &lt;/$set&gt;&lt;/$set&gt;&lt;/$set&gt;
 &lt;/$list&gt;
 &lt;$list filter=&quot;[all[current]type[application/x-tiddler-dictionary]] +[!is[system]]&quot;&gt;
-&lt;div class=&quot;tc-tiddler-body&quot;&gt;
-&lt;$reveal type=&quot;nomatch&quot; state=&quot;!!caption&quot; text=&quot;&quot;&gt;&lt;h2&gt;{{!!caption}}
+&lt;$reveal type=&quot;nomatch&quot; state=&quot;!!caption&quot; text=&quot;&quot; tag=&quot;div&quot; class=&quot;tc-tiddler-body&quot;&gt;&lt;h2&gt;{{!!caption}}
 &lt;$list filter=&quot;[all[current]has[status]]&quot;&gt;@@color:red;[{{!!status}}]@@&lt;/$list&gt;
 &lt;$list filter=&quot;[all[current]has[note]]&quot;&gt;@@color:green;[{{!!note}}]@@&lt;/$list&gt;
 &lt;/h2&gt;&lt;/$reveal&gt;
-&lt;&lt;data-table&gt;&gt;&lt;/div&gt;
+&lt;$reveal type=&quot;nomatch&quot; stateTitle=&lt;&lt;folded-state&gt;&gt; text=&quot;hide&quot; tag=&quot;div&quot; retain=&quot;yes&quot; animate=&quot;yes&quot; class=&quot;tc-tiddler-body&quot;&gt;&lt;&lt;data-table&gt;&gt;&lt;/$reveal&gt;
 &lt;/$list&gt;</pre>
 </div>
 <div caption="Add to shortcut" created="20201121065911874" creator="yuzijie" description="Add tiddler to shortcut list" modified="20201121071224375" modifier="yuzijie" tags="$:/tags/ViewToolbar" title="$:/custom/ui/Buttons/add-to-shortcut" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -15182,8 +15254,8 @@ Show code viewer&lt;$list filter=&quot;[belongs.to{!!title}is[tiddler]]&quot;&gt
 &lt;/$button&gt;
 &lt;/$list&gt;</pre>
 </div>
-<div caption="New tiddler" created="20201031171839824" creator="yuzijie" description="Create a new tiddler" modified="20201031174631010" modifier="yuzijie" tags="$:/tags/PageControls" title="$:/custom/ui/Buttons/new-tiddler" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;$droppable actions=&lt;&lt;droppable-clone-action&gt;&gt; tag=&quot;span&quot;&gt;&lt;span class=&quot;tc-droppable-placeholder&quot; style=&quot;display:inline-block;&quot;&gt;
+<div caption="New tiddler" created="20201031171839824" creator="yuzijie" description="Create a new tiddler" modified="20210813201438987" modifier="yuzijie" tags="$:/tags/PageControls" title="$:/custom/ui/Buttons/new-tiddler" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;$set name=&quot;template&quot; value={{$:/config/defaultTemplate}}&gt;&lt;$droppable actions=&lt;&lt;droppable-clone-action&gt;&gt; tag=&quot;span&quot;&gt;&lt;span class=&quot;tc-droppable-placeholder&quot; style=&quot;display:inline-block;&quot;&gt;
 &lt;$button popup=&lt;&lt;qualify &quot;$:/state/popup/NewTiddlerWindow&quot;&gt;&gt; tooltip=&quot;Create a new tiddler&quot; aria-label=&quot;Create a new tiddler&quot; class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;
 &lt;$list filter=&quot;[&lt;tv-config-toolbar-icons&gt;match[yes]]&quot;&gt;{{$:/core/images/new-button}}&lt;/$list&gt;
 &lt;$list filter=&quot;[&lt;tv-config-toolbar-text&gt;match[yes]]&quot;&gt;&lt;span class=&quot;tc-btn-text&quot;&gt;&lt;$text text=&quot;New tiddler&quot;/&gt;&lt;/span&gt;&lt;/$list&gt;
@@ -15191,7 +15263,7 @@ Show code viewer&lt;$list filter=&quot;[belongs.to{!!title}is[tiddler]]&quot;&gt
 &lt;$reveal type=&quot;popup&quot; state=&lt;&lt;qualify &quot;$:/state/popup/NewTiddlerWindow&quot;&gt;&gt;&gt;&lt;span class=&quot;tc-block-dropdown tc-popup-keep&quot; style=&quot;padding:0px 17px;font-size:medium;&quot;&gt;
 &lt;$transclude tiddler=&quot;$:/config/newTiddlerTemplate&quot; mode=&quot;block&quot;/&gt;
 &lt;/span&gt;&lt;/$reveal&gt;
-&lt;/span&gt;&lt;/$droppable&gt;</pre>
+&lt;/span&gt;&lt;/$droppable&gt;&lt;/$set&gt;</pre>
 </div>
 <div caption="Open in sidebar" created="20201031110107265" creator="yuzijie" description="Open tiddler in the sidebar" list-after="$:/core/ui/Buttons/info" modified="20201219224848666" modifier="yuzijie" tags="$:/tags/ViewToolbar" title="$:/custom/ui/Buttons/open-in-sidebar" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>\whitespace trim
@@ -15255,14 +15327,20 @@ Show code viewer&lt;$list filter=&quot;[belongs.to{!!title}is[tiddler]]&quot;&gt
 	suffix='&quot;&quot;&quot; mode:&quot;tips&quot;&gt;&gt;'
 /&gt;</pre>
 </div>
-<div created="20210709074458680" creator="yuzijie" modified="20210811090720783" modifier="yuzijie" tags="$:/tags/SideBarSegment" title="$:/custom/ui/SideBarSegments/open" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;div class=&quot;tc-sidebar-tab-open&quot; style=&quot;font-size:small;margin-top:1.2em;margin-bottom:-2px;&quot;&gt;
+<div created="20210709074458680" creator="yuzijie" modified="20210814154111612" modifier="yuzijie" tags="$:/tags/SideBarSegment" title="$:/custom/ui/SideBarSegments/open" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>\define folded-state()
+$:/state/folded/$(currentTiddler)$
+\end
+&lt;div class=&quot;tc-sidebar-tab-open&quot; style=&quot;font-size:small;margin-top:1.4em;&quot;&gt;
 &lt;$list filter=&quot;[list&lt;tv-story-list&gt;]&quot; history=&lt;&lt;tv-history-list&gt;&gt; storyview=&quot;pop&quot;&gt;
 &lt;$droppable actions=&quot;&lt;$action-listops $tiddler=&lt;&lt;tv-story-list&gt;&gt; $subfilter='+[insertbefore:currentTiddler&lt;actionTiddler&gt;]'/&gt;&quot; tag=&quot;div&quot;&gt;&lt;div class=&quot;tc-droppable-placeholder&quot;/&gt;
 &lt;div class=&quot;tc-sidebar-tab-open-item&quot;&gt;
-&lt;$button message=&quot;tm-close-tiddler&quot; class=&quot;tc-btn-invisible&quot; style=&quot;fill:#aaa;&quot;&gt;&lt;$action-navigate $to={{!!title}}/&gt;
-&lt;$list filter=&quot;[&lt;currentTiddler&gt;match{$:/temp/focussedTiddler}]&quot; emptyMessage=&quot;{{$:/core/images/cancel-button}}&quot;&gt;@@fill:red;{{$:/core/images/save-button}}@@&lt;/$list&gt;
+&lt;$set name=&quot;red&quot; filter=&quot;[&lt;currentTiddler&gt;match{$:/temp/focussedTiddler}]&quot; value=&quot;fill:red;&quot; emptyValue=&quot;fill:#bbb;&quot;&gt;
+&lt;$button class=&quot;tc-btn-invisible&quot; style=&lt;&lt;red&gt;&gt;&gt;
+&lt;$action-sendmessage $message=&quot;tm-fold-tiddler&quot; $param=&lt;&lt;currentTiddler&gt;&gt; foldedState=&lt;&lt;folded-state&gt;&gt;/&gt;
+&lt;$list filter=&quot;[&lt;folded-state&gt;text[hide]]&quot; emptyMessage={{$:/core/images/chevron-right}}&gt;@@fill:green;{{$:/core/images/chevron-left}}@@&lt;/$list&gt;
 &lt;/$button&gt;
+&lt;/$set&gt;
 &lt;$link to={{!!title}}&gt;&lt;$macrocall $name=&quot;icons&quot;/&gt; &lt;$list filter=&quot;[all[current]has[caption]]&quot;&gt;@@color:#555;{{!!caption}}@@ &amp;middot; &lt;/$list&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;
 &lt;/div&gt;
 &lt;/$droppable&gt;
@@ -15270,14 +15348,14 @@ Show code viewer&lt;$list filter=&quot;[belongs.to{!!title}is[tiddler]]&quot;&gt
 &lt;$droppable actions=&quot;&lt;$action-listops $tiddler=&lt;&lt;tv-story-list&gt;&gt; $subfilter='[&lt;actionTiddler&gt;]'/&gt;&quot; tag=&quot;div&quot;&gt;&lt;div class=&quot;tc-droppable-placeholder&quot;/&gt;
 &lt;$list filter=&quot;[recentlyClosed[]!is[missing]limit[1]]&quot;&gt;
 &lt;div class=&quot;tc-sidebar-tab-open-item&quot;&gt;
-&lt;$button class=&quot;tc-btn-invisible&quot; style=&quot;fill:#aaa;&quot;&gt;{{$:/core/images/info-button}}&lt;/$button&gt;
+&lt;$button class=&quot;tc-btn-invisible&quot; style=&quot;fill:#bbb;&quot;&gt;&lt;$action-navigate $to=&lt;&lt;currentTiddler&gt;&gt;/&gt;{{$:/core/images/chevron-up}}&lt;/$button&gt;
 //&lt;$link to={{!!title}}&gt;&lt;$macrocall $name=&quot;icons&quot;/&gt; &lt;$list filter=&quot;[all[current]has[caption]]&quot;&gt;@@color:#555;{{!!caption}}@@ &amp;middot; &lt;/$list&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;//
 &amp;middot; &lt;$button message=&quot;tm-copy-to-clipboard&quot; param=&lt;&lt;currentTiddler&gt;&gt; class=&quot;tc-btn-invisible&quot; style=&quot;color:#999;&quot;&gt;//copy title//&lt;/$button&gt;
 &lt;/div&gt;
 &lt;/$list&gt;
 &lt;div class=&quot;tc-sidebar-tab-open-item&quot;&gt;
 &lt;$button class=&quot;tc-btn-invisible&quot; style=&quot;color:#999;&quot;&gt;&lt;$list filter=&quot;[list[$:/StoryList]!tag[Task]]&quot;&gt;&lt;$action-sendmessage $message=&quot;tm-close-tiddler&quot; $param=&lt;&lt;currentTiddler&gt;&gt;/&gt;&lt;/$list&gt;Keep tasks&lt;/$button&gt; &amp;middot;
-&lt;$button set=&quot;$:/state/tab/sidebar--595412856&quot; setTo=&quot;$:/core/ui/SideBar/More&quot; class=&quot;tc-btn-invisible&quot; style=&quot;color:#999;&quot;&gt;More recently closed...&lt;/$button&gt;
+&lt;$button set=&quot;$:/state/tab/sidebar--595412856&quot; setTo=&quot;$:/core/ui/SideBar/More&quot; class=&quot;tc-btn-invisible&quot; style=&quot;color:#999;&quot;&gt;More recently closed&amp;hellip;&lt;/$button&gt;
 &lt;/div&gt;
 &lt;/$droppable&gt;
 &lt;/div&gt;</pre>
@@ -15949,10 +16027,10 @@ very-muted-foreground: #888888</pre>
 <div title="$:/status/UserName" revision="1" bag="default">
 <pre>yuzijie</pre>
 </div>
-<div list="" title="$:/StoryList" revision="2" bag="default">
+<div list="" title="$:/StoryList" revision="1" bag="default">
 <pre></pre>
 </div>
-<div created="20201031183729500" creator="yuzijie" list="$:/custom/ui/Buttons/new-tiddler $:/custom/ui/Buttons/opening-behaviour $:/core/ui/Buttons/full-screen $:/core/ui/Buttons/control-panel $:/core/ui/Buttons/save-wiki $:/core/ui/Buttons/home $:/core/ui/Buttons/close-all $:/core/ui/Buttons/fold-all $:/core/ui/Buttons/unfold-all $:/core/ui/Buttons/permaview $:/core/ui/Buttons/new-tiddler $:/core/ui/Buttons/new-journal $:/core/ui/Buttons/new-image $:/core/ui/Buttons/import $:/core/ui/Buttons/export-page $:/core/ui/Buttons/advanced-search $:/core/ui/Buttons/manager $:/core/ui/Buttons/tag-manager $:/core/ui/Buttons/language $:/core/ui/Buttons/palette $:/core/ui/Buttons/theme $:/core/ui/Buttons/storyview $:/core/ui/Buttons/encryption $:/core/ui/Buttons/timestamp $:/core/ui/Buttons/print $:/core/ui/Buttons/refresh $:/core/ui/Buttons/more-page-actions" modified="20201031183840778" modifier="yuzijie" title="$:/tags/PageControls" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20201031183729500" creator="yuzijie" list="$:/custom/ui/Buttons/new-tiddler $:/custom/ui/Buttons/opening-behaviour $:/core/ui/Buttons/full-screen $:/core/ui/Buttons/storyview $:/core/ui/Buttons/control-panel $:/core/ui/Buttons/save-wiki $:/core/ui/Buttons/home $:/core/ui/Buttons/close-all $:/core/ui/Buttons/fold-all $:/core/ui/Buttons/unfold-all $:/core/ui/Buttons/permaview $:/core/ui/Buttons/new-tiddler $:/core/ui/Buttons/new-journal $:/core/ui/Buttons/new-image $:/core/ui/Buttons/import $:/core/ui/Buttons/export-page $:/core/ui/Buttons/advanced-search $:/core/ui/Buttons/manager $:/core/ui/Buttons/tag-manager $:/core/ui/Buttons/language $:/core/ui/Buttons/palette $:/core/ui/Buttons/theme $:/core/ui/Buttons/encryption $:/core/ui/Buttons/timestamp $:/core/ui/Buttons/print $:/core/ui/Buttons/refresh $:/core/ui/Buttons/more-page-actions" modified="20210813172437141" modifier="yuzijie" title="$:/tags/PageControls" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
 </div>
 <div list="$:/core/ui/SideBarSegments/site-title $:/core/ui/SideBarSegments/site-subtitle $:/core/ui/SideBarSegments/page-controls $:/custom/ui/SideBarSegments/open $:/core/ui/SideBarSegments/tabs" modified="20210709122534925" modifier="yuzijie" tags="customized" title="$:/tags/SideBarSegment" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -16086,13 +16164,13 @@ very-muted-foreground: #888888</pre>
 <pre>-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, &quot;PingFang SC&quot;, &quot;Microsoft YaHei UI&quot;, &quot;WenQuanYi Micro Hei&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;
 </pre>
 </div>
-<div caption="🔠 {{!!title}}" created="20210808194908030" creator="yuzijie" modified="20210808194930264" modifier="yuzijie" tags="Index" title="Code editors" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div caption="📝 {{!!title}}" created="20210808194908030" creator="yuzijie" modified="20210812092126587" modifier="yuzijie" tags="Index" title="Code editors" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;&lt;table cfilter:&quot;Type Description&quot; rfilter:&quot;[tag&lt;currentTiddler&gt;type[application/x-tiddler-dictionary]]&quot; rheader:&quot;Name&quot; title:&quot;编辑器&quot; fields:&quot;text='Type: 
 Description: '&quot;&gt;&gt;
 
 &lt;&lt;ref&gt;&gt;</pre>
 </div>
-<div created="20181212172024243" creator="yuzijie" list-before="$:/core/ui/SideBar/More" modified="20210717204123650" modifier="yuzijie" tags="$:/tags/SideBar customized" title="Editor" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20181212172024243" creator="yuzijie" list-before="$:/core/ui/SideBar/More" modified="20210813072626087" modifier="yuzijie" tags="$:/tags/SideBar customized" title="Editor" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;$set name=&quot;color&quot; filter=&quot;[[$:/StoryList]contains{$:/temp/Draft!!draft}]&quot; value=&quot;&quot; emptyValue=&quot;editor-red&quot;&gt;&lt;div class=&lt;&lt;color&gt;&gt;&gt;
 &lt;$edit-text tiddler=&quot;$:/temp/Draft&quot; field=&quot;draft&quot; size=&quot;23&quot; class=&quot;tc-edit-texteditor draft-search&quot;/&gt;
 &lt;$list filter=&quot;[[$:/temp/Draft]has[draft]]&quot; emptyMessage=&quot;&quot;&quot;&lt;$button set=&quot;$:/temp/Draft!!draft&quot; setTo=&quot;$:/Draft&quot; class=&quot;tc-btn-invisible tc-tiddlylink&quot; style=&quot;font-weight:500;&quot;&gt;&lt;$action-navigate $to=&quot;$:/Draft&quot;/&gt;~$:/Draft&lt;/$button&gt;&quot;&quot;&quot;&gt;
@@ -16111,7 +16189,7 @@ Description: '&quot;&gt;&gt;
 &lt;/$list&gt;
 &lt;/small&gt;&lt;/$droppable&gt;
 
-&lt;$list filter=&quot;[[$:/temp/Draft]has[draft]]&quot; emptyMessage=&quot;&quot;&quot;&lt;$macrocall $name=&quot;tabs&quot; tabsList=&quot;[tag[Editor]!has[draft.of]]&quot; default=&quot;Editor/Batch Editor&quot; state=&quot;$:/state/tab/editor&quot;/&gt;&quot;&quot;&quot;&gt;&lt;$list filter=&quot;[[$:/StoryList]contains{!!draft}]&quot; emptyMessage=&quot;&lt;$transclude tiddler={{!!draft}} mode=block/&gt;&quot; variable=&quot;NONE&quot;&gt;
+&lt;$list filter=&quot;[[$:/temp/Draft]has[draft]]&quot; emptyMessage=&quot;&quot;&quot;&lt;$macrocall $name=&quot;tabs&quot; tabsList=&quot;[tag[Editor]!has[draft.of]]&quot; default=&quot;Editor/Batch Editor&quot; state=&quot;$:/state/tab/editor&quot;/&gt;&quot;&quot;&quot;&gt;&lt;$list filter=&quot;[[$:/StoryList]contains{!!draft}]&quot; emptyMessage=&quot;&quot; variable=&quot;NONE&quot;&gt;
 &lt;$edit-text tiddler={{!!draft}} tag=textarea autoHeight=&quot;no&quot; class=&quot;edit-area tc-edit-texteditor&quot;&gt;
 &lt;$button actions=&quot;&quot;&quot;&lt;$action-sendmessage $message=&quot;tm-edit-text-operation&quot; $param=&quot;wrap-selection&quot; prefix='&lt;&lt;a &quot;' suffix=&lt;&lt;now '&quot; &quot;&quot; t:YYYY0MM0DD&gt;&gt;'&gt;&gt;/&gt;&quot;&quot;&quot;&gt;Task&lt;/$button&gt;
 &lt;$button actions=&quot;&quot;&quot;&lt;$action-sendmessage $message=&quot;tm-edit-text-operation&quot; $param=&quot;wrap-selection&quot; prefix='&lt;&lt;w &quot;' suffix=&lt;&lt;now '&quot; &quot;&quot; t:YYYY0MM0DD to:&quot;&quot;&gt;&gt;'&gt;&gt;/&gt;&quot;&quot;&quot;&gt;Wait&lt;/$button&gt;
@@ -16145,8 +16223,7 @@ Description: '&quot;&gt;&gt;
 .edit-area {width: 100%; line-height: 24px; white-space: pre; padding: 8px 10px;}
 .tc-sidebar-lists .tc-editor-toolbar {margin: 4px 0;}
 input.tc-edit-texteditor {padding:0 5px;margin:5px 0;}
-&lt;/style&gt;
-</pre>
+&lt;/style&gt;</pre>
 </div>
 <div caption="比较" created="20200427021411619" creator="yuzijie" modified="20210713203753267" modifier="yuzijie" tags="Editor customized" title="Editor/比较两个 Tiddlers 的不同" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>`File 1:` &lt;$edit-text tiddler=&quot;$:/temp/tools/diff/file1&quot; field=&quot;note&quot; tag=input size=30 type=search/&gt; (Red)
@@ -16210,8 +16287,10 @@ Drag the tiddler over to delete it, and its sub tiddlers
 &lt;div class=&quot;tc-droppable-placeholder&quot; style=&quot;display:inline-block;padding:5px 0 10px 0;border-radius:15px;&quot;&gt;给 Tiddler 添加/删除未完待续的标签&lt;/div&gt;
 &lt;/$droppable&gt;</pre>
 </div>
-<div caption="Batch Editor" created="20200425125950200" creator="yuzijie" modified="20210601205141900" modifier="yuzijie" tags="Editor customized" title="Editor/Batch Editor" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>\define batch-edit-newTitle() &lt;$set name=&quot;newTitle&quot; tiddler=&quot;$:/temp/batch-edit/newTitle&quot;&gt;&lt;&lt;newTitle&gt;&gt;&lt;/$set&gt;
+<div caption="Batch Editor" created="20200425125950200" creator="yuzijie" modified="20210813213054497" modifier="yuzijie" tags="Editor customized" title="Editor/Batch Editor" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>\define batch-edit-newTiddler(template)
+&lt;$list filter=&quot;[all[current]has[text]]&quot; emptyMessage=&quot;&quot;&quot;&lt;$action-sendmessage $message=&quot;tm-new-tiddler&quot; $param={{!!title}} title=&lt;&lt;unusedtitle $template$&gt;&gt; caption='{{!!text}}' text={{!!title}} date={{!!created}}/&gt;&quot;&quot;&quot;&gt;&lt;$action-sendmessage $message=&quot;tm-new-tiddler&quot; $param={{!!title}} title=&lt;&lt;unusedtitle $template$&gt;&gt; caption={{!!title}} date={{!!created}}/&gt;&lt;/$list&gt;
+\end
 \define prefix-edit-tag() -[[$(current)$]] [[$(newTitle)$]]
 
 &lt;style&gt;
@@ -16298,9 +16377,7 @@ Drag the tiddler over to delete it, and its sub tiddlers
 
 &lt;$list filter=&quot;[[$:/temp/tools/batch-edit/action]get[note]match[rename-setfield-caption]]&quot;&gt;
 &lt;$button&gt;&lt;$list filter={{$:/temp/tools/batch-edit/filter!!note}}&gt;
-&lt;$set name=&quot;newTitle&quot; filter=&quot;[prefix[R ]sortan[title]last[]removeprefix[R ]add[1]addprefix[R ]]&quot; select=&quot;0&quot;&gt;
-&lt;$list filter=&quot;[all[current]has[text]]&quot; emptyMessage=&quot;&quot;&quot;&lt;$action-sendmessage $message=&quot;tm-new-tiddler&quot; $param={{!!title}} title=&lt;&lt;newTitle&gt;&gt; caption='{{!!text}}' text={{!!title}} date={{!!created}}/&gt;&quot;&quot;&quot;&gt;&lt;$action-sendmessage $message=&quot;tm-new-tiddler&quot; $param={{!!title}} title=&lt;&lt;newTitle&gt;&gt; caption={{!!title}} date={{!!created}}/&gt;&lt;/$list&gt;&lt;$action-deletetiddler $tiddler={{!!title}}/&gt;
-&lt;/$set&gt;
+&lt;$macrocall $name=&quot;batch-edit-newTiddler&quot; template={{$:/config/defaultTemplate}}/&gt;&lt;$action-deletetiddler $tiddler={{!!title}}/&gt;
 &lt;/$list&gt;Start!&lt;/$button&gt;
 &lt;/$list&gt;
 
@@ -16378,9 +16455,14 @@ Drag the tiddler over to delete it, and its sub tiddlers
 
 &lt;&lt;index-tree&gt;&gt;</pre>
 </div>
-<div created="20210731113707962" creator="yuzijie" date="20210731" list="[[Programming languages/Guide/Javascript]] [[Programming languages/Guide/对象/Javascript]] [[Programming languages/高级特性/Javascript]] [[Programming languages/概念理解/Javascript]]" modified="20210811083016797" modifier="yuzijie" tags="[[Programming languages]]" title="Javascript" type="application/x-tiddler-dictionary" revision="0" bag="default">
+<div created="20210731113707962" creator="yuzijie" date="20210731" list="[[Programming languages/Guide/Javascript]] [[Programming languages/概念理解/Javascript]] [[Programming languages/高级特性/Javascript]]" modified="20210812094047260" modifier="yuzijie" tags="[[Programming languages]]" title="Javascript" type="application/x-tiddler-dictionary" revision="0" bag="default">
 <pre>Type: 脚本语言
 Description: 主要用于构建网络应用的编程语言</pre>
+</div>
+<div caption="👨‍💻 {{!!title}}" created="20210812090807198" creator="yuzijie" modified="20210812092306510" modifier="yuzijie" tags="Index" title="Linux commands" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;&lt;table cfilter:&quot;Name Description&quot; rfilter:&quot;[tag&lt;currentTiddler&gt;]&quot; title:&quot;Commands&quot; fields:&quot;text='Name: {{!!caption}}
+Description: ' caption=''&quot;&gt;&gt;
+&lt;&lt;ref&gt;&gt;</pre>
 </div>
 <div created="20210808195031351" creator="yuzijie" date="20210808" modified="20210808195120709" modifier="yuzijie" tags="[[Code editors]]" title="Neovim" type="application/x-tiddler-dictionary" revision="0" bag="default">
 <pre>Type: 
@@ -16404,28 +16486,29 @@ Description: '&quot;&gt;&gt;
 <div caption="Variables" created="20210801110237594" creator="yuzijie" modified="20210810175617227" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Guide/变量/Javascript" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;&lt;record filter:&quot;[tag&lt;currentTiddler&gt;sort[title]]&quot; title:&quot;正文&quot;&gt;&gt;</pre>
 </div>
-<div caption="表达式" created="20210805214148651" creator="yuzijie" modified="20210807134231723" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Guide/表达式/Javascript" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>* 表达式是解析为一个值的一串代码
+<div caption="表达式分类" created="20210805214148651" creator="yuzijie" modified="20210814155445015" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Guide/表达式/Javascript" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;&lt;table cfilter:&quot;Name Description&quot; rfilter:&quot;[tag&lt;currentTiddler&gt;!toc-link[no]]&quot; title:&quot;表达式&quot; fields:&quot;text='Name: {{!!caption}}
+Description: ' caption=''&quot;&gt;&gt;
+
+* 表达式是解析为一个值的一串代码
 * 从概念上讲，有两种类型的表达式:
 *# 有副作用的 (比如赋值)
 *# 和单纯计算求值的
 
-&lt;&lt;table cfilter:&quot;Name Description&quot; rfilter:&quot;[tag&lt;currentTiddler&gt;]&quot; title:&quot;表达式&quot; fields:&quot;text='Name: {{!!caption}}
-Description: ' caption=''&quot;&gt;&gt;</pre>
+&lt;&lt;record filter:&quot;[tag&lt;currentTiddler&gt;toc-link[no]]&quot; title:&quot;其他&quot;&gt;&gt;</pre>
 </div>
 <div caption="基本表达式分类" created="20210807134303926" creator="yuzijie" modified="20210807163911685" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Guide/表达式/Javascript/基本表达式" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;&lt;table cfilter:&quot;Name Description&quot; rfilter:&quot;[tag&lt;currentTiddler&gt;]&quot; title:&quot;基本表达式&quot; fields:&quot;text='Name: {{!!caption}}
 Description: ' caption=''&quot;&gt;&gt;</pre>
 </div>
-<div caption="左值表达式分类" created="20210807170259367" creator="yuzijie" modified="20210807175054871" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Guide/表达式/Javascript/左值表达式" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;&lt;table cfilter:&quot;Name Description&quot; rfilter:&quot;[tag&lt;currentTiddler&gt;]&quot; title:&quot;左值表达式&quot; fields:&quot;text='Name: {{!!caption}}
-Description: ' caption=''&quot;&gt;&gt;</pre>
-</div>
 <div caption="Constants" created="20210807082015087" creator="yuzijie" modified="20210810175608425" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Guide/常量/Javascript" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;&lt;record filter:&quot;[tag&lt;currentTiddler&gt;sort[title]]&quot; title:&quot;正文&quot;&gt;&gt;</pre>
 </div>
-<div caption="JS 对象" created="20210807193507624" creator="yuzijie" modified="20210807193543979" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Guide/对象/Javascript" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;&lt;ref mode:prefix&gt;&gt;</pre>
+<div caption="操作" created="20210813141530806" creator="yuzijie" modified="20210813141844216" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Guide/对象/Javascript/操作" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;&lt;record filter:&quot;[tag&lt;currentTiddler&gt;sort[caption]]&quot; title:&quot;操作&quot;&gt;&gt;</pre>
+</div>
+<div caption="特性" created="20210813141129279" creator="yuzijie" modified="20210813142219031" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Guide/对象/Javascript/特性" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;&lt;record filter:&quot;[tag&lt;currentTiddler&gt;sort[caption]]&quot; title:&quot;特性&quot;&gt;&gt;</pre>
 </div>
 <div caption="异常处理对象" created="20210805135340471" creator="yuzijie" modified="20210807193628253" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Guide/对象/Javascript/异常处理" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;&lt;table cfilter:&quot;Name Description&quot; rfilter:&quot;[tag&lt;currentTiddler&gt;]&quot; title:&quot;异常处理对象&quot; fields:&quot;text='Name: {{!!caption}}
@@ -16495,6 +16578,9 @@ Description: ' caption=''&quot;&gt;&gt;</pre>
 <pre>&lt;&lt;table cfilter:&quot;Name Description&quot; rfilter:&quot;[tag&lt;currentTiddler&gt;]&quot; title:&quot;方法&quot; fields:&quot;text='Name: {{!!caption}}
 Description: ' caption=''&quot;&gt;&gt;</pre>
 </div>
+<div caption="内置对象" created="20210813145006185" creator="yuzijie" modified="20210813145120200" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Guide/对象/Predefined objects/Javascript" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;&lt;record filter:&quot;[tag&lt;currentTiddler&gt;sort[caption]]&quot; title:&quot;对象&quot;&gt;&gt;</pre>
+</div>
 <div caption="高级用法" created="20210810093246644" creator="yuzijie" modified="20210810093300594" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Guide/函数/Javascript/高级用法" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;&lt;record filter:&quot;[tag&lt;currentTiddler&gt;sort[title]]&quot; title:&quot;正文&quot;&gt;&gt;</pre>
 </div>
@@ -16552,8 +16638,10 @@ Description: ' caption=''&quot;&gt;&gt;</pre>
 <div caption="Object destructuring" created="20210731221601136" creator="yuzijie" modified="20210801081950831" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Guide/语法/Javascript/Object destructuring" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;&lt;record filter:&quot;[tag&lt;currentTiddler&gt;sort[caption]]&quot; title:&quot;正文&quot;&gt;&gt;</pre>
 </div>
-<div caption="Flow control &amp; error handling" created="20210803202349536" creator="yuzijie" modified="20210810163235242" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Guide/语句/流程控制/Javascript" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;&lt;table cfilter:&quot;Name Description&quot; rfilter:&quot;[tag&lt;currentTiddler&gt;]&quot; title:&quot;Statements&quot; fields:&quot;text='Name: {{!!caption}}
+<div caption="Flow control &amp; error handling" created="20210803202349536" creator="yuzijie" modified="20210812092814364" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Guide/语句/流程控制/Javascript" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;&lt;display content:&quot;流程控制用来控制代码的走向&quot; mode:&quot;tips&quot;&gt;&gt;
+
+&lt;&lt;table cfilter:&quot;Name Description&quot; rfilter:&quot;[tag&lt;currentTiddler&gt;]&quot; title:&quot;Statements&quot; fields:&quot;text='Name: {{!!caption}}
 Description: ' caption=''&quot;&gt;&gt;</pre>
 </div>
 <div caption="辅助语句" created="20210803205435954" creator="yuzijie" modified="20210805152309252" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Guide/语句/流程控制/Javascript/辅助语句/Switch" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -16572,12 +16660,16 @@ Description: ' caption=''&quot;&gt;&gt;</pre>
 <pre>&lt;&lt;table cfilter:&quot;Name Description&quot; rfilter:&quot;[tag&lt;currentTiddler&gt;]&quot; title:&quot;Statements&quot; fields:&quot;text='Name: {{!!caption}}
 Description: ' caption=''&quot;&gt;&gt;</pre>
 </div>
-<div caption="Declarations" created="20210810174310856" creator="yuzijie" modified="20210810180138070" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Guide/语句/声明/Javascript" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;&lt;table cfilter:&quot;Name Description&quot; rfilter:&quot;[tag&lt;currentTiddler&gt;]&quot; title:&quot;Statements&quot; fields:&quot;text='Name: {{!!caption}}
+<div caption="Declarations" created="20210810174310856" creator="yuzijie" modified="20210812092523278" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Guide/语句/声明/Javascript" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;&lt;display content:&quot;&quot;&quot;声明是创建变量/常量的方法&quot;&quot;&quot; mode:&quot;tips&quot;&gt;&gt;
+
+&lt;&lt;table cfilter:&quot;Name Description&quot; rfilter:&quot;[tag&lt;currentTiddler&gt;]&quot; title:&quot;Statements&quot; fields:&quot;text='Name: {{!!caption}}
 Description: ' caption=''&quot;&gt;&gt;</pre>
 </div>
-<div caption="Loops and iteration" created="20210805145630623" creator="yuzijie" modified="20210810163258545" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Guide/语句/循环/Javascript" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;&lt;table cfilter:&quot;Name Description&quot; rfilter:&quot;[tag&lt;currentTiddler&gt;]&quot; title:&quot;Statements&quot; fields:&quot;text='Name: {{!!caption}}
+<div caption="Loops and iteration" created="20210805145630623" creator="yuzijie" modified="20210812092854740" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Guide/语句/循环/Javascript" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;&lt;display content:&quot;循环用来重复执行一组动作&quot; mode:&quot;tips&quot;&gt;&gt;
+
+&lt;&lt;table cfilter:&quot;Name Description&quot; rfilter:&quot;[tag&lt;currentTiddler&gt;]&quot; title:&quot;Statements&quot; fields:&quot;text='Name: {{!!caption}}
 Description: ' caption=''&quot;&gt;&gt;</pre>
 </div>
 <div caption="辅助语句" created="20210805153859081" creator="yuzijie" modified="20210805153957277" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Guide/语句/循环/Javascript/辅助语句" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -16587,10 +16679,11 @@ Description: ' caption=''&quot;&gt;&gt;</pre>
 <div caption="运算符优先级" created="20210807113947973" creator="yuzijie" modified="20210807114022453" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Guide/运算符/优先级/Javascript" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;&lt;record filter:&quot;[tag&lt;currentTiddler&gt;!sort[date]]&quot; title:&quot;正文&quot;&gt;&gt;</pre>
 </div>
-<div caption="运算符分类" created="20210805213917255" creator="yuzijie" modified="20210811111743601" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Guide/运算符/Javascript" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;&lt;table cfilter:&quot;Name Description Operators&quot; rfilter:&quot;[tag&lt;currentTiddler&gt;]&quot; title:&quot;运算符&quot; fields:&quot;text='Name: {{!!caption}}
+<div caption="运算符分类" created="20210805213917255" creator="yuzijie" modified="20210814155357669" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Guide/运算符/Javascript" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;&lt;table cfilter:&quot;Name Description Operators&quot; rfilter:&quot;[tag&lt;currentTiddler&gt;!toc-link[no]]&quot; title:&quot;运算符&quot; fields:&quot;text='Name: {{!!caption}}
 Description: ' caption=''&quot;&gt;&gt;
-</pre>
+
+&lt;&lt;record filter:&quot;[tag&lt;currentTiddler&gt;toc-link[no]]&quot; title:&quot;其他&quot;&gt;&gt;</pre>
 </div>
 <div caption="赋值运算符特性" created="20210806135333509" creator="yuzijie" modified="20210807113204435" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Guide/运算符/Javascript/赋值运算符特性" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;&lt;table cfilter:&quot;Name Description&quot; rfilter:&quot;[tag&lt;currentTiddler&gt;]&quot; title:&quot;高级特性&quot; fields:&quot;text='Name: {{!!caption}}
@@ -16623,13 +16716,13 @@ Description: ' caption=''&quot;&gt;&gt;</pre>
 <div caption="被看作是 `false` 的值" created="20210803204130503" creator="yuzijie" modified="20210803204946121" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Guide/Falsy Values/Javascript" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;&lt;table cfilter:&quot;Name&quot; rfilter:&quot;[tag&lt;currentTiddler&gt;]&quot; title:&quot;被看作是 false 的值&quot; fields:&quot;text='Name: {{!!caption}}' caption=''&quot;&gt;&gt;</pre>
 </div>
-<div caption="Guide" created="20210731115526679" creator="yuzijie" modified="20210810204321577" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Guide/Javascript" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;&lt;table cfilter:&quot;Name Description&quot; rfilter:&quot;[tag&lt;currentTiddler&gt;]&quot; title:&quot;Guide&quot; fields:&quot;text='Name: {{!!caption}}
-Description: ' caption=''&quot;&gt;&gt;
+<div caption="Guide" created="20210731115526679" creator="yuzijie" modified="20210812092703510" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Guide/Javascript" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>!! Table of Contents
 
-!! Table of Contents
+&lt;$set name=&quot;side-tree&quot; value=&quot;no&quot;&gt;&lt;&lt;ref mode:toc&gt;&gt;&lt;/$set&gt;
 
-&lt;$set name=&quot;side-tree&quot; value=&quot;no&quot;&gt;&lt;&lt;ref mode:toc&gt;&gt;&lt;/$set&gt;</pre>
+&lt;&lt;table cfilter:&quot;Name Description&quot; rfilter:&quot;[tag&lt;currentTiddler&gt;status[未完待续]]&quot; title:&quot;Todo&quot; fields:&quot;text='Name: {{!!caption}}
+Description: ' caption=''&quot;&gt;&gt;</pre>
 </div>
 <div caption="Snippets" created="20210810201837028" creator="yuzijie" modified="20210810201920028" modifier="yuzijie" tags="[[Programming languages]]" title="Programming languages/Snippets/Javascript/函数/forEach" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;&lt;record filter:&quot;[tag&lt;currentTiddler&gt;!sort[date]]&quot; title:&quot;正文&quot;&gt;&gt;</pre>
@@ -16788,9 +16881,8 @@ Description: 使用字符串运算符进行计算并返回一个字符串的表�
 &lt;$list filter=&quot;[&lt;currentTiddler&gt;listed[]!is[system]limit[1]]&quot; variable=&quot;NONE&quot;&gt;&lt;&lt;record filter:&quot;[&lt;currentTiddler&gt;listed[]!is[system]sort[title]]&quot;&gt;&gt;&lt;/$list&gt;
 &lt;$list filter=&quot;[all[current]has[list]]&quot;&gt;&lt;$macrocall $name=&quot;tabs&quot; tabsList=&quot;[enlist{!!list}sortby{!!list}]&quot; default={{{[enlist{!!list}sortby{!!list}first[]]}}} template=&quot;$:/custom/template/tabs&quot;/&gt;&lt;/$list&gt;</pre>
 </div>
-<div caption="运算符含义" created="20210806132459673" creator="yuzijie" date="20210806" modified="20210807112949877" modifier="yuzijie" tags="[[Programming languages/Guide/运算符/Javascript]]" title="R 117" toc-link="no" type="application/x-tiddler-dictionary" revision="0" bag="default">
+<div caption="运算符含义" created="20210806132459673" creator="yuzijie" date="20210806" modified="20210814155406272" modifier="yuzijie" tags="[[Programming languages/Guide/运算符/Javascript]]" title="R 117" toc-link="no" type="application/x-tiddler-dictionary" revision="0" bag="default">
 <pre>Name: {{!!caption}}
-Description: 所有运算符的含义
 普通赋值: `x = y`
 加法赋值: `x = x + y`
 减法赋值: `x = x - y`
@@ -16845,6 +16937,10 @@ Zero-fill right shift: 将 a 的二进制串向右移动 b 位, 舍弃掉被移�
 * Number 方法: `Number.toString()`&lt;$macrocall $name=&quot;code&quot; language=&quot;javascript&quot; copy=&quot;no&quot; content=&quot;&quot;&quot;x.toString()
 (123).toString()
 (100 + 23).toString()&quot;&quot;&quot;/&gt;</pre>
+</div>
+<div caption="find" created="20210812091237545" creator="yuzijie" date="20210812" modified="20210812091259687" modifier="yuzijie" status="未完待续" tags="[[Linux commands]]" title="R 119" type="application/x-tiddler-dictionary" revision="0" bag="default">
+<pre>Name: {{!!caption}}
+Description: </pre>
 </div>
 <div caption="5. 解析一个从函数返回的数组" created="20210731222235398" creator="yuzijie" date="20210801" modified="20210801081813721" modifier="yuzijie" status="未完待续" tags="[[Programming languages/Guide/语法/Javascript/Array destructuring]]" title="R 12" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>!! {{!!caption}}</pre>
@@ -16908,9 +17004,13 @@ Description: 使用逻辑运算符计算并返回一个布尔值的表达式</pr
 <pre>Name: {{!!caption}}
 Description: 基本的关键字构成的表达式</pre>
 </div>
-<div caption="左值表达式" created="20210807133712343" creator="yuzijie" date="20210807" list="[[Programming languages/Guide/表达式/Javascript/左值表达式]]" modified="20210807170333606" modifier="yuzijie" tags="[[Programming languages/Guide/表达式/Javascript]]" title="R 135" type="application/x-tiddler-dictionary" revision="0" bag="default">
+<div caption="左值表达式" coltitles="[[R 149]]" created="20210807133712343" creator="yuzijie" date="20210807" list="" modified="20210812133521716" modifier="yuzijie" tags="[[Programming languages/Guide/表达式/Javascript]]" title="R 135" type="application/x-tiddler-dictionary" revision="0" bag="default">
 <pre>Name: {{!!caption}}
-Description: 左边的值是被赋值的对象</pre>
+Description: 左边的值是被赋值的对象
+`new`: 创建一个用户定义或内建类型的实例对象
+`new.target`: 用于检测函数或构造方法是否正在通过 `new` 运算符被调用
+`super`: 用来调用一个对象的父类的方法
+`...`: 允许将对象或数组在需要多个参数的地方展开</pre>
 </div>
 <div caption="`this`" created="20210807161432950" creator="yuzijie" date="20210807" modified="20210807161628721" modifier="yuzijie" tags="[[Programming languages/Guide/表达式/Javascript/基本表达式]]" title="R 136" type="application/x-tiddler-dictionary" revision="0" bag="default">
 <pre>Name: {{!!caption}}
@@ -16968,21 +17068,21 @@ Description: 对象初始化或对象字面量的语法</pre>
 <pre>Name: {{!!caption}}
 Description: 正则表达式字面量语法</pre>
 </div>
-<div caption="`new`" created="20210807170412661" creator="yuzijie" date="20210807" modified="20210807173642049" modifier="yuzijie" tags="[[Programming languages/Guide/表达式/Javascript/左值表达式]]" title="R 149" type="application/x-tiddler-dictionary" revision="0" bag="default">
-<pre>Name: {{!!caption}}
-Description: 创建一个用户定义或内建类型的实例对象</pre>
+<div caption="表达式例子" created="20210812132517173" creator="yuzijie" date="20210812" modified="20210812133454271" modifier="yuzijie" tags="[[Programming languages/Guide/表达式/Javascript]]" title="R 149" toc-link="no" type="application/x-tiddler-dictionary" revision="0" bag="default">
+<pre>`new`: &lt;&lt;snippet key:&quot;new&quot; modal:&quot;yes&quot;&gt;&gt;
+`new.target`: 
+`super`: &lt;&lt;snippet key:&quot;super&quot; modal:&quot;yes&quot;&gt;&gt;
+`...`: &lt;&lt;snippet key:&quot;...1&quot; modal:&quot;yes&quot;&gt;&gt;;;&lt;&lt;snippet key:&quot;...2&quot; modal:&quot;yes&quot;&gt;&gt;</pre>
 </div>
 <div caption="2. 对象解构赋值时不声明变量" created="20210801090613304" creator="yuzijie" date="20210801" modified="20210801091048058" modifier="yuzijie" status="未完待续" tags="[[Programming languages/Guide/语法/Javascript/Object destructuring]]" title="R 15" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>!! {{!!caption}}
 
 &lt;&lt;display content:&quot;&quot;&quot;默认情况下, 被赋值的变量的名称必须和对象的属性值一致&quot;&quot;&quot; mode:&quot;tips&quot;&gt;&gt;</pre>
 </div>
-<div caption="`new.target`" created="20210807170604858" creator="yuzijie" date="20210807" modified="20210807174715409" modifier="yuzijie" tags="[[Programming languages/Guide/表达式/Javascript/左值表达式]]" title="R 150" type="application/x-tiddler-dictionary" revision="0" bag="default">
-<pre>Name: {{!!caption}}
-Description: 用于检测函数或构造方法是否正在通过 `new` 运算符被调用
-Examples: &lt;&lt;snippet key:&quot;Examples&quot; modal:&quot;yes&quot;&gt;&gt;</pre>
+<div caption="1. {{!!text}}" created="20210813142009005" creator="yuzijie" date="20210813" modified="20210813142143678" modifier="yuzijie" tags="[[Programming languages/Guide/对象/Javascript/特性]]" title="R 150" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>对象的方法和对象的属性都是大小写敏感的</pre>
 </div>
-<div belongs.to="R 153" caption="使用展开式传递参数, 求和" created="20210807175141246" creator="yuzijie" date="20210807" language="Javascript" modified="20210807175307471" modifier="yuzijie" note="Examples" tags="Snippet" title="R 151" type="text/plain" revision="0" bag="default">
+<div belongs.to="R 149" caption="使用展开式传递参数, 求和" created="20210807175141246" creator="yuzijie" date="20210807" language="Javascript" modified="20210812133429245" modifier="yuzijie" note="...1" tags="Snippet" title="R 151" type="text/plain" revision="0" bag="default">
 <pre>function sum(x, y, z) {
   return x + y + z;
 }
@@ -16992,25 +17092,62 @@ const numbers = [1, 2, 3];
 console.log(sum(...numbers));
 // expected output: 6</pre>
 </div>
-<div caption="`super`" created="20210807170606448" creator="yuzijie" date="20210807" modified="20210807172050390" modifier="yuzijie" tags="[[Programming languages/Guide/表达式/Javascript/左值表达式]]" title="R 152" type="application/x-tiddler-dictionary" revision="0" bag="default">
-<pre>Name: {{!!caption}}
-Description: 用来调用一个对象的父类的方法
-Examples: &lt;&lt;snippet key:&quot;Examples&quot;&gt;&gt;</pre>
+<div caption="1. 创建一个对象的三种方法" created="20210813142403424" creator="yuzijie" date="20210813" modified="20210813154450226" modifier="yuzijie" tags="[[Programming languages/Guide/对象/Javascript/操作]]" title="R 152" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>!! {{!!caption}}
+
+!!! 方法一: 先创建一个构造函数, 然后使用 [[new|R 135]] Keyword
+
+```javascript
+function Car() {
+  this.maker = &quot;Fiat&quot;;
+}
+var myCar = new Car();
+myCar.maker = 'Ford';
+```
+
+!!! 方法二: 使用 `object initializer`
+
+```javascript
+var myCar = {
+    make: 'Ford',
+    model: 'Mustang',
+    year: 1969
+};
+```
+
+!!! 方法三: 使用 `Object.create()`
+
+&lt;&lt;display content:&quot;&quot;&quot;尽量不要使用, 因为无法通过 instanceof 来判断继承关系&quot;&quot;&quot; mode:&quot;tips&quot;&gt;&gt;
+
+好处是不需要创建 constructors 函数
+
+```javascript
+// Animal properties and method encapsulation
+var Animal = {
+  type: 'Invertebrates', // Default value of properties
+  displayType: function() {  // Method which will display type of Animal
+    console.log(this.type);
+  }
+};
+
+// Create new animal type called Fishes
+var fish = Object.create(Animal);
+fish.type = 'Fishes';
+fish.displayType(); // Output:Fishes
+```</pre>
 </div>
-<div caption="`...`" created="20210807170833885" creator="yuzijie" date="20210807" modified="20210807175420677" modifier="yuzijie" tags="[[Programming languages/Guide/表达式/Javascript/左值表达式]]" title="R 153" type="application/x-tiddler-dictionary" revision="0" bag="default">
-<pre>Name: {{!!caption}}
-Description: 允许将对象或数组在需要多个参数的地方展开
-Examples: &lt;&lt;snippet key:&quot;Examples&quot; modal:&quot;yes&quot;&gt;&gt;;;&lt;&lt;snippet key:&quot;Examples 2&quot; modal:&quot;yes&quot;&gt;&gt;</pre>
+<div caption="2. {{!!text}}" created="20210813143452189" creator="yuzijie" date="20210813" modified="20210813144028742" modifier="yuzijie" tags="[[Programming languages/Guide/对象/Javascript/特性]]" title="R 153" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>对象的属性的名字必须是字符串或者是 Symbols</pre>
 </div>
-<div belongs.to="R 152" caption="Javascript super 的用法" created="20210807171939716" creator="yuzijie" date="20210807" language="javascript" modified="20210807172051858" modifier="yuzijie" note="Examples" tags="Snippet" title="R 154" type="text/plain" revision="0" bag="default">
+<div belongs.to="R 149" caption="Javascript super 的用法" created="20210807171939716" creator="yuzijie" date="20210807" language="javascript" modified="20210812133323998" modifier="yuzijie" note="super" tags="Snippet" title="R 154" type="text/plain" revision="0" bag="default">
 <pre>super([arguments]); // 调用父类的 Constructor
 super.functionOnParent([arguments]);</pre>
 </div>
-<div caption="Basics &amp; variables" created="20210731080234074" creator="yuzijie" date="20210731" list="[[Programming languages/Guide/变量/Javascript]] [[Programming languages/Guide/常量/Javascript]] [[Programming languages/Guide/语句/声明/Javascript]] [[Programming languages/Guide/书写规范/Javascript]]" modified="20210810175753846" modifier="yuzijie" tags="[[Programming languages/Guide/Javascript]]" title="R 1548" type="application/x-tiddler-dictionary" revision="0" bag="default">
+<div caption="Basics, variables &amp; constants" created="20210731080234074" creator="yuzijie" date="20210731" list="[[Programming languages/Guide/变量/Javascript]] [[Programming languages/Guide/常量/Javascript]] [[Programming languages/Guide/语句/声明/Javascript]] [[Programming languages/Guide/书写规范/Javascript]]" modified="20210812092443858" modifier="yuzijie" tags="[[Programming languages/Guide/Javascript]]" title="R 1548" type="application/x-tiddler-dictionary" revision="0" bag="default">
 <pre>Name: {{!!caption}}
 Description: 基本语法及数据类型</pre>
 </div>
-<div belongs.to="R 150" caption="当 `Foo()` 直接执行, 没有和 `new` 一起使用时报错" created="20210807174716372" creator="yuzijie" date="20210807" language="javascript" modified="20210807174834277" modifier="yuzijie" note="Examples" tags="Snippet" title="R 155" type="text/plain" revision="0" bag="default">
+<div belongs.to="R 149" caption="当 `Foo()` 直接执行, 没有和 `new` 一起使用时报错" created="20210807174716372" creator="yuzijie" date="20210807" language="javascript" modified="20210812133242066" modifier="yuzijie" note="new" tags="Snippet" title="R 155" type="text/plain" revision="0" bag="default">
 <pre>function Foo() {
   if (!new.target) { throw 'Foo() must be called with new'; }
 }
@@ -17027,13 +17164,13 @@ try {
 <pre>Name: {{!!caption}}
 Description: 1. 完成特定动作的一组语句, 同时将多个输入参数转化为确定的输出;;2. 当和 `new` 一起使用时, 也可以作为 JS 对象的构造函数</pre>
 </div>
-<div caption="Expressions &amp; operators" created="20210731080353235" creator="yuzijie" date="20210731" list="[[Programming languages/Guide/运算符/Javascript]] [[Programming languages/Guide/运算符/优先级/Javascript]] [[Programming languages/Guide/表达式/Javascript]]" maxdepth="3" modified="20210807114033644" modifier="yuzijie" tags="[[Programming languages/Guide/Javascript]]" title="R 1552" type="application/x-tiddler-dictionary" revision="0" bag="default">
+<div caption="Expressions &amp; operators" created="20210731080353235" creator="yuzijie" date="20210731" list="[[Programming languages/Guide/运算符/Javascript]] [[Programming languages/Guide/运算符/优先级/Javascript]] [[Programming languages/Guide/表达式/Javascript]]" maxdepth="3" modified="20210814155156246" modifier="yuzijie" tags="[[Programming languages/Guide/Javascript]]" title="R 1552" type="application/x-tiddler-dictionary" revision="0" bag="default">
 <pre>Name: {{!!caption}}
 Description: 表达式用于计算出一个值</pre>
 </div>
-<div caption="Working with objects" created="20210731080514153" creator="yuzijie" date="20210731" maxdepth="3" modified="20210807070057052" modifier="yuzijie" status="未完待续" tags="[[Programming languages/Guide/Javascript]]" title="R 1557" type="application/x-tiddler-dictionary" revision="0" bag="default">
+<div caption="Objects" created="20210731080514153" creator="yuzijie" date="20210731" list="[[Programming languages/Guide/对象/Javascript/操作]] [[Programming languages/Guide/对象/Javascript/特性]] [[Programming languages/Guide/对象/Predefined objects/Javascript]]" maxdepth="3" modified="20210813145138480" modifier="yuzijie" tags="[[Programming languages/Guide/Javascript]]" title="R 1557" type="application/x-tiddler-dictionary" revision="0" bag="default">
 <pre>Name: {{!!caption}}
-Description: </pre>
+Description: 一个对象是一组属性的集合, 属性由键值对组成;;属性的值可以是一个函数, 我们称之为对象的方法</pre>
 </div>
 <div caption="Details of the object model" created="20210731080530358" creator="yuzijie" date="20210731" maxdepth="3" modified="20210807070057063" modifier="yuzijie" status="未完待续" tags="[[Programming languages/Guide/Javascript]]" title="R 1558" type="application/x-tiddler-dictionary" revision="0" bag="default">
 <pre>Name: {{!!caption}}
@@ -17043,7 +17180,7 @@ Description: </pre>
 <pre>Name: {{!!caption}}
 Description: </pre>
 </div>
-<div belongs.to="R 153" caption="构建一个包含所有 `div` 的 Array" created="20210807175421464" creator="yuzijie" date="20210807" language="javascript" modified="20210807175612722" modifier="yuzijie" note="Examples 2" tags="Snippet" title="R 156" type="text/plain" revision="0" bag="default">
+<div belongs.to="R 149" caption="构建一个包含所有 `div` 的 Array" created="20210807175421464" creator="yuzijie" date="20210807" language="javascript" modified="20210812133444491" modifier="yuzijie" note="...2" tags="Snippet" title="R 156" type="text/plain" revision="0" bag="default">
 <pre>[...document.querySelectorAll('div')]
 // [&lt;div&gt;, &lt;div&gt;, &lt;div&gt;]</pre>
 </div>
@@ -17478,8 +17615,18 @@ myfunc(&quot;a&quot;, &quot;b&quot;)&quot;&quot;&quot;/&gt;
 })();&quot;&quot;&quot;/&gt;
 : 第一个括号里面是函数的定义, 第二个括号是用来调用该函数</pre>
 </div>
-<div belongs.to="R 126" caption="`instanceof` examples" created="20210810124434212" creator="yuzijie" date="20210810" language="javascript" modified="20210810124708428" modifier="yuzijie" note="Examples" tags="Snippet" title="R 229" type="text/plain" revision="0" bag="default">
-<pre>objectName instanceof Constructor</pre>
+<div belongs.to="R 126" caption="`instanceof` examples" created="20210810124434212" creator="yuzijie" date="20210810" language="javascript" modified="20210813153224025" modifier="yuzijie" note="Examples" tags="Snippet" title="R 229" type="text/plain" revision="0" bag="default">
+<pre>objectName instanceof Constructor
+
+
+function Car(make, model, year) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+}
+const auto = new Car('Honda', 'Accord', 1998);
+
+console.log(auto instanceof Car);</pre>
 </div>
 <div caption="{{!!text}}" created="20210801110607198" creator="yuzijie" date="20210801" modified="20210810174820121" modifier="yuzijie" tags="[[Programming languages/Guide/变量/Javascript]]" title="R 23" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>只声明但没有赋值的变量, 默认值是 `undefined`</pre>
@@ -17741,10 +17888,10 @@ Description: </pre>
 <pre>Name: {{!!caption}}
 Description: </pre>
 </div>
-<div caption="JS 变量和常量的命名规则" created="20210807084039483" creator="yuzijie" date="20210807" modified="20210810174920220" modifier="yuzijie" note="⭐" tags="[[Programming languages/Guide/变量/Javascript]] [[Programming languages/Guide/常量/Javascript]]" title="R 27" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div caption="JS 变量和常量的命名规则" created="20210807084039483" creator="yuzijie" date="20210807" modified="20210811172645863" modifier="yuzijie" note="⭐" tags="[[Programming languages/Guide/变量/Javascript]] [[Programming languages/Guide/常量/Javascript]]" title="R 27" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>!! {{!!caption}}
 
-# 必须以字母 (尽量使用小写字母凯塔), 下划线 `_` 或 美元符号 `$` 开头
+# 必须以字母 (尽量使用小写字母开头), 下划线 `_` 或 美元符号 `$` 开头
 # 尽量使用小写字母开头, 使用 `camelCase` 写法</pre>
 </div>
 <div caption="`delete()`" created="20210810205524118" creator="yuzijie" date="20210810" modified="20210810205615053" modifier="yuzijie" status="未完待续" tags="[[Programming languages/Guide/对象/Javascript/Map/方法]]" title="R 270" type="application/x-tiddler-dictionary" revision="0" bag="default">
@@ -17798,15 +17945,105 @@ Description: 基于一个类似数组或可迭代的对象创建一个 shallow-c
 # 通过 &lt;&lt;l &quot;R 277&quot;&gt;&gt;
 # 通过 &lt;&lt;l &quot;R 153&quot;&gt;&gt; 展开操作符, 例如: &lt;$macrocall $name=&quot;code&quot; language=&quot;Javascript&quot; copy=&quot;no&quot; content=&quot;&quot;&quot;[...mySet];&quot;&quot;&quot;/&gt;</pre>
 </div>
+<div caption="sed" created="20210812091326576" creator="yuzijie" date="20210812" modified="20210812091348515" modifier="yuzijie" status="未完待续" tags="[[Linux commands]]" title="R 279" type="application/x-tiddler-dictionary" revision="0" bag="default">
+<pre>Name: {{!!caption}}
+Description: </pre>
+</div>
 <div caption="Object" created="20210803155605209" creator="yuzijie" date="20210803" list="" modified="20210811095852288" modifier="yuzijie" tags="[[Programming languages/Guide/数据类型/Javascript/结构数据类型]]" title="R 28" type="application/x-tiddler-dictionary" revision="0" bag="default">
 <pre>Name: {{!!caption}}
 Typeof: object
 Category: 对象
 Description: 所有结构数据类型本质上都继承自对象</pre>
 </div>
+<div caption="grep" created="20210812091351641" creator="yuzijie" date="20210812" modified="20210812091356357" modifier="yuzijie" status="未完待续" tags="[[Linux commands]]" title="R 280" type="application/x-tiddler-dictionary" revision="0" bag="default">
+<pre>Name: {{!!caption}}
+Description: </pre>
+</div>
+<div caption="awk" created="20210812091359223" creator="yuzijie" date="20210812" modified="20210812091403869" modifier="yuzijie" status="未完待续" tags="[[Linux commands]]" title="R 281" type="application/x-tiddler-dictionary" revision="0" bag="default">
+<pre>Name: {{!!caption}}
+Description: </pre>
+</div>
+<div caption="Regex" created="20210812093050305" creator="yuzijie" date="20210812" modified="20210812093055687" modifier="yuzijie" status="未完待续" tags="[[Programming languages/Guide/Javascript]]" title="R 282" type="application/x-tiddler-dictionary" revision="0" bag="default">
+<pre>Name: {{!!caption}}
+Description: </pre>
+</div>
+<div caption="2. 访问一个对象属性的两种方法" created="20210812094229934" creator="yuzijie" date="20210812" modified="20210813144146002" modifier="yuzijie" tags="[[Programming languages/Guide/对象/Javascript/操作]]" title="R 283" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>!! {{!!caption}}
+
+!!! 方法一: 使用 `.` 符号
+
+```Javascript
+objectName.propertyName
+```
+
+!!! 方法二: 使用 `[]` 符号
+
+```javascript
+myCar['make'] = 'Ford';
+myCar['model'] = 'Mustang';
+myCar['year'] = 1969;
+```
+
+`[]` 里面也可以是一个变量
+
+```javascript
+myCar[propertyName] = 'Ford';
+```</pre>
+</div>
+<div caption="3. 对象的属性如果不是合法的 identifier, 就只能用 `[]` 访问" created="20210813143620195" creator="yuzijie" date="20210813" modified="20210813143819725" modifier="yuzijie" tags="[[Programming languages/Guide/对象/Javascript/特性]]" title="R 284" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>对象的属性如果不是合法的 identifier, 就只能用 `[]` 访问
+
+; 什么是合法的 identifier
+: 中间不能有空格, 横线 `-`, 或者以数字开头也不行</pre>
+</div>
+<div caption="3. 三种方式可以遍历对象的属性" created="20210813144247488" creator="yuzijie" date="20210813" modified="20210813144644337" modifier="yuzijie" status="未完待续" tags="[[Programming languages/Guide/对象/Javascript/操作]]" title="R 285" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>!! {{!!caption}}
+
+!!! 方法一: [[for...in|R 84]]
+
+!!! 方法二: `Object.keys(o)`
+
+!!! 方法三: `Object.getOwnPropertyNames(o)`</pre>
+</div>
+<div caption="4. 对象的继承 Inheritance and the prototype chain" created="20210813151550581" creator="yuzijie" date="20210813" modified="20210813151628760" modifier="yuzijie" status="未完待续" tags="[[Programming languages/Guide/对象/Javascript/特性]]" title="R 286" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>!! {{!!caption}}</pre>
+</div>
+<div caption="4. 给对象的类添加属性" created="20210813151815033" creator="yuzijie" date="20210813" modified="20210813151916334" modifier="yuzijie" status="未完待续" tags="[[Programming languages/Guide/对象/Javascript/操作]]" title="R 287" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>!! {{!!caption}}
+
+```Javascript
+Car.prototype.color = null;
+car1.color = 'black';
+```</pre>
+</div>
+<div caption="5. 给对象添加方法" created="20210813154906935" creator="yuzijie" date="20210813" modified="20210813155102455" modifier="yuzijie" tags="[[Programming languages/Guide/对象/Javascript/操作]]" title="R 288" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>!! {{!!caption}}
+
+```Javascript
+objectName.methodname = functionName;
+
+var myObj = {
+  myMethod: function(params) { ... }
+  //或者
+  myOtherMethod(params) { ... }
+};
+```</pre>
+</div>
+<div caption="6. 使用 `this`" created="20210813160728381" creator="yuzijie" date="20210813" modified="20210813160742190" modifier="yuzijie" status="未完待续" tags="[[Programming languages/Guide/对象/Javascript/操作]]" title="R 289" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>!! {{!!caption}}</pre>
+</div>
 <div caption="布尔值 boolean" created="20210801221419540" creator="yuzijie" date="20210802" modified="20210811091932215" modifier="yuzijie" tags="[[Programming languages/Guide/数据类型/Javascript/原始数据类型]]" title="R 29" type="application/x-tiddler-dictionary" revision="0" bag="default">
 <pre>Name: {{!!caption}}
 Typeof: boolean</pre>
+</div>
+<div caption="7. Defining getters and setters" created="20210813160813872" creator="yuzijie" date="20210813" modified="20210813160821062" modifier="yuzijie" status="未完待续" tags="[[Programming languages/Guide/对象/Javascript/操作]]" title="R 290" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>!! {{!!caption}}</pre>
+</div>
+<div caption="8. 删除一个属性" created="20210813160831500" creator="yuzijie" date="20210813" modified="20210813160839141" modifier="yuzijie" status="未完待续" tags="[[Programming languages/Guide/对象/Javascript/操作]]" title="R 291" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>!! {{!!caption}}</pre>
+</div>
+<div caption="9. 对比对象" created="20210813160856746" creator="yuzijie" date="20210813" modified="20210813160916490" modifier="yuzijie" status="未完待续" tags="[[Programming languages/Guide/对象/Javascript/操作]]" title="R 292" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>!! {{!!caption}}</pre>
 </div>
 <div caption="`let` statement" created="20210731125103161" creator="yuzijie" date="20210731" modified="20210810180128567" modifier="yuzijie" tags="[[Programming languages/Guide/语句/声明/Javascript]]" title="R 3" type="application/x-tiddler-dictionary" revision="0" bag="default">
 <pre>Name: {{!!caption}}
@@ -17880,7 +18117,7 @@ Description: 由双引号 `&quot;` 对或单引号 `'` 括起来的零个或多�
 <pre>Name: {{!!caption}}
 Description: 特殊字符串, 使用 &lt;code&gt;&amp;#96;&lt;/code&gt; 反单引号括起来, 支持多行, 并且可以嵌入表达式</pre>
 </div>
-<div caption="Array" created="20210810185508156" creator="yuzijie" date="20210810" list="[[Programming languages/Guide/对象/Javascript/Array/特性]] [[Programming languages/Guide/对象/Javascript/Array/处理]] [[Programming languages/Guide/对象/Javascript/Array/方法]]" modified="20210811103348158" modifier="yuzijie" tags="[[Programming languages/Guide/数据类型/Javascript/结构数据类型/Indexed collections]]" title="R 46" type="application/x-tiddler-dictionary" revision="0" bag="default">
+<div caption="Array" created="20210810185508156" creator="yuzijie" date="20210810" list="[[Programming languages/Guide/对象/Javascript/Array/特性]] [[Programming languages/Guide/对象/Javascript/Array/处理]] [[Programming languages/Guide/对象/Javascript/Array/方法]]" modified="20210813160301630" modifier="yuzijie" tags="[[Programming languages/Guide/数据类型/Javascript/结构数据类型/Indexed collections]] [[Programming languages/Guide/对象/Predefined objects/Javascript]]" title="R 46" type="application/x-tiddler-dictionary" revision="0" bag="default">
 <pre>Name: {{!!caption}}
 Category: 索引集合
 Description: 数组对象是一个有序的数据集合</pre>
