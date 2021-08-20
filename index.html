@@ -47,7 +47,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>Wiki for coders  — The manual of computer technologies</title>
+<title>Welcome  — User guide for new employees</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~-->
 
 <!--~~ Raw markup ~~-->
@@ -361,15 +361,15 @@ Error message and password prompt
 
 <li>$:/custom/template/img-modal</li>
 
+<li>$:/custom/template/key-result</li>
+
+<li>$:/custom/template/key-result/content</li>
+
 <li>$:/custom/template/normal-modal</li>
 
 <li>$:/custom/template/tabs</li>
 
 <li>$:/custom/template/task</li>
-
-<li>$:/custom/template/ticket</li>
-
-<li>$:/custom/template/ticket/content</li>
 
 <li>$:/custom/template/tidgraph/branch</li>
 
@@ -406,6 +406,8 @@ Error message and password prompt
 <li>$:/Draft</li>
 
 <li>$:/favicon.ico</li>
+
+<li>$:/Import</li>
 
 <li>$:/isEncrypted</li>
 
@@ -477,6 +479,8 @@ Error message and password prompt
 
 <li>R</li>
 
+<li>Rome IT</li>
+
 <li>Tasks</li>
 
 <li>Tasks/Actions</li>
@@ -484,8 +488,6 @@ Error message and password prompt
 <li>Tasks/Progress</li>
 
 <li>Tasks/Todo</li>
-
-<li>yuzijie</li>
 
 </ul>
 </p>
@@ -513,7 +515,7 @@ Error message and password prompt
 <div created="20210813184232690" creator="yuzijie" modified="20210814091652262" modifier="yuzijie" tags="customized" title="$:/config/defaultTemplate" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>R</pre>
 </div>
-<div created="20210812191037672" creator="yuzijie" list="[[Programming languages]] [[Linux commands]] [[Code editors]] [[Code editors/Extensions/Neovim]] Others Javascript [[Programming languages/Guide/Javascript]]" modified="20210815171012596" modifier="yuzijie" title="$:/config/index-tree" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20210812191037672" creator="yuzijie" list="" modified="20210820190158426" modifier="Rome IT" title="$:/config/index-tree" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
 </div>
 <div created="20210813134714903" creator="yuzijie" modified="20210813134715087" modifier="yuzijie" title="$:/config/Navigation/openLinkFromInsideRiver" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -522,7 +524,7 @@ Error message and password prompt
 <div created="20210710164918806" creator="yuzijie" modified="20210710165145666" modifier="yuzijie" title="$:/config/Navigation/UpdateAddressBar" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>permaview</pre>
 </div>
-<div created="20180106174755084" creator="yuzijie" modified="20210817134812239" modifier="yuzijie" tags="customized" title="$:/config/newTiddlerTemplate" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20180106174755084" creator="yuzijie" modified="20210820184149613" modifier="yuzijie" tags="customized" title="$:/config/newTiddlerTemplate" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>\define newRecordAction(template, caption)
 &lt;$action-sendmessage $message=&quot;tm-new-tiddler&quot; $param=&quot;$template$&quot; date=&lt;&lt;now 'YYYY0MM0DD'&gt;&gt; caption=&quot;$caption$&quot;/&gt;
 &lt;$action-deletetiddler $tiddler=&quot;$:/temp/newTiddler&quot;/&gt;
@@ -533,16 +535,6 @@ Error message and password prompt
 \end
 
 \define newTemplateAction(template) &lt;$macrocall $name=&quot;newTemplateActionMessage&quot; title=&lt;&lt;unusedtitle $template$&gt;&gt;/&gt;
-
-\define newIncidentAction(template)
-&lt;$action-setfield $tiddler=&lt;&lt;unusedtitle $template$&gt;&gt; type=&quot;application/x-tiddler-dictionary&quot; text=&quot;Name: {{!!caption}}
-Details: 
-Reason: 
-Solution: 
-Deadline: &lt;$macrocall $name=task-template-table-deadline/&gt;
-完成率: &lt;$text text={{{[{##Task}percent&lt;currentTiddler&gt;]}}}/&gt;&quot; caption={{$:/temp/newTiddler}} deadline=&quot;&quot; template=&quot;$:/custom/template/ticket&quot; date=&lt;&lt;now YYYY0MM0DD&gt;&gt;/&gt;
-&lt;$action-deletetiddler $tiddler=&quot;$:/temp/newTiddler&quot;/&gt;
-\end
 
 \define newProjectAction()
 &lt;$action-sendmessage $message=&quot;tm-new-tiddler&quot; text=&quot;!! 1. Objectives
@@ -560,7 +552,6 @@ Deadline: &lt;$macrocall $name=task-template-table-deadline/&gt;
 &lt;$button actions={{$:/core/ui/Actions/new-tiddler}}&gt;新空白&lt;/$button&gt;
 &lt;$button&gt;&lt;$macrocall $name=&quot;newRecordAction&quot; template={{$:/config/defaultTemplate}} caption={{$:/temp/newTiddler}}/&gt;新纪录&lt;/$button&gt;
 &lt;$button&gt;&lt;$macrocall $name=&quot;newTemplateAction&quot; template={{$:/config/defaultTemplate}}/&gt;新模板&lt;/$button&gt;
-&lt;$button&gt;&lt;$macrocall $name=&quot;newIncidentAction&quot; template={{$:/config/defaultTemplate}}/&gt;新事件&lt;/$button&gt;
 &lt;$button&gt;&lt;$macrocall $name=&quot;newProjectAction&quot;/&gt;新项目&lt;/$button&gt;
 &lt;$button message=&quot;tm-edit-tiddler&quot; param=&quot;$:/config/newTiddlerTemplate&quot;&gt;Edit&lt;/$button&gt;
 &lt;/p&gt;
@@ -12592,7 +12583,7 @@ exports.run = function(start, end) {
 ; 在 Index 里面显示 Trees
 : `&lt;&lt;index-tree&gt;&gt;`</pre>
 </div>
-<div created="20190202180006460" creator="yuzijie" modified="20210813183347962" modifier="yuzijie" tags="$:/tags/Macro" title="$:/custom/macro/links" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20190202180006460" creator="yuzijie" modified="20210820184036327" modifier="yuzijie" tags="$:/tags/Macro" title="$:/custom/macro/links" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>\define whole-path() $(prefix)$$(path)$
 \define modalImageTitle() &lt;$list filter=&quot;[[$(currentTiddler)$]has[caption]]&quot; emptyMessage=&quot;$(currentTiddler)$&quot;&gt;{{!!caption}}&lt;/$list&gt;
 
@@ -12640,7 +12631,7 @@ exports.run = function(start, end) {
 &lt;$list filter=&quot;[all[current]type[application/x-tiddler-dictionary]]&quot;&gt;&lt;span&gt;🔠&lt;/span&gt;&lt;/$list&gt;
 &lt;$list filter=&quot;[all[current]has[url]]&quot;&gt;&lt;span&gt;🔗&lt;/span&gt;&lt;/$list&gt;
 &lt;$list filter=&quot;[all[current]has[path]]&quot;&gt;&lt;span&gt;📄&lt;/span&gt;&lt;/$list&gt;
-&lt;$list filter=&quot;[all[current]tag[Ticket]]&quot;&gt;&lt;span&gt;🎫&lt;/span&gt;&lt;/$list&gt;
+&lt;$list filter=&quot;[all[current]tag[Key Result]]&quot;&gt;&lt;span&gt;🗝️&lt;/span&gt;&lt;/$list&gt;
 \end
 
 ; 在列表的结尾根据 Tiddler 的不同添加 7 种图标 (Additional Tags, External Files, External HTML/PDF, External Links, Code Snippets, Images, Tasks)
@@ -12766,7 +12757,7 @@ $name$
 ; 显示一个 Popup
 : `&lt;&lt;record-popup&gt;&gt;`</pre>
 </div>
-<div created="20170723171032526" creator="yuzijie" modified="20210626164123340" modifier="yuzijie" tags="$:/tags/Macro" title="$:/custom/macro/step" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20170723171032526" creator="yuzijie" modified="20210820181828220" modifier="yuzijie" tags="$:/tags/Macro" title="$:/custom/macro/step" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>\define linkIfExists(text,title,popup)
 &lt;$reveal default=&quot;$title$&quot; type=&quot;match&quot; text=&quot;&quot;&gt;$text$&lt;/$reveal&gt;
 &lt;$reveal default=&quot;$title$&quot; type=&quot;nomatch&quot; text=&quot;&quot; style=&quot;position:relative;&quot;&gt;
@@ -12791,7 +12782,7 @@ $name$
 \define task-state() $:/task-state/$(currTask)$/$(currStep)$
 \define date-pattern() ^20[0-9]{2}[01][0-9]{3}$
 
-\define days-button(value,days,step,ms,r)
+\define days-button(value,days,step,ms,r,to)
 &lt;$button class=&quot;tc-btn-invisible&quot; tooltip=&quot;$(format-t)$&quot;&gt;
 &lt;$list filter=&quot;[[$(task-state)$]!date[$value$]]&quot; emptyMessage=&quot;&quot;&quot;&lt;$action-navigate $to=&quot;$ms$&quot;/&gt;&lt;&lt;__days__&gt;&gt;&quot;&quot;&quot;&gt;
 &lt;$action-setfield $tiddler=&quot;$(task-state)$&quot; date=&quot;$value$&quot; text=&quot;open&quot;/&gt;Update Time
@@ -12803,29 +12794,32 @@ $name$
 &lt;$list filter=&quot;[[$(task-state)$]!remark[$r$]]&quot;&gt;
 &lt;$button&gt;&lt;$action-setfield $tiddler=&quot;$(task-state)$&quot; remark=&quot;$r$&quot;/&gt;Update Remark&lt;/$button&gt;
 &lt;/$list&gt;
+&lt;$list filter=&quot;[[$(task-state)$]!note[$to$]]&quot;&gt;
+&lt;$button&gt;&lt;$action-setfield $tiddler=&quot;$(task-state)$&quot; note=&quot;$to$&quot;/&gt;Update Person&lt;/$button&gt;
+&lt;/$list&gt;
 \end
 
-\define step-open(step,tiddler,t,ms,r)
-@@color:brown;font-weight:bold;&lt;&lt;linkIfExists &quot;$step$&quot; &quot;$tiddler$&quot;&gt;&gt;@@
+\define step-open(step,tiddler,t,ms,r,to)
+@@color:brown;font-weight:bold;&lt;&lt;linkIfExists &quot;$step$&quot; &quot;$tiddler$&quot;&gt;&gt; &lt;$reveal default=&quot;$to$&quot; type=&quot;nomatch&quot; text=&quot;&quot;&gt;- __$to$__&lt;/$reveal&gt;@@
 &lt;$button class=&quot;tc-btn-invisible&quot; set=&lt;&lt;task-state&gt;&gt; setTo=&quot;doing&quot;&gt;@@color:orange;&amp;#11044;@@&lt;/$button&gt;
 &lt;$reveal default=&quot;$t$&quot; type=&quot;nomatch&quot; text=&quot;&quot;&gt;
-&lt;$macrocall $name=&quot;days-button&quot; value=&quot;$t$&quot; days=&quot;&quot;&quot;__&lt;$macrocall $name=&quot;days-left&quot; deadline=&quot;$t$&quot;/&gt;__&quot;&quot;&quot; step=&quot;$step$&quot; ms=&quot;$ms$&quot; r=&quot;$r$&quot;/&gt;
+&lt;$macrocall $name=&quot;days-button&quot; value=&quot;$t$&quot; days=&quot;&quot;&quot;__&lt;$macrocall $name=&quot;days-left&quot; deadline=&quot;$t$&quot;/&gt;__&quot;&quot;&quot; step=&quot;$step$&quot; ms=&quot;$ms$&quot; r=&quot;$r$&quot; to=&quot;$to$&quot;/&gt;
 &lt;/$reveal&gt;
 \end
 
-\define step-doing(step,tiddler,t,ms,r)
-@@color:green;font-weight:bold;&lt;&lt;linkIfExists &quot;$step$&quot; &quot;$tiddler$&quot;&gt;&gt;@@
+\define step-doing(step,tiddler,t,ms,r,to)
+@@color:green;font-weight:bold;&lt;&lt;linkIfExists &quot;$step$&quot; &quot;$tiddler$&quot;&gt;&gt; &lt;$reveal default=&quot;$to$&quot; type=&quot;nomatch&quot; text=&quot;&quot;&gt;- __$to$__&lt;/$reveal&gt;@@
 &lt;$button class=&quot;tc-btn-invisible&quot; message=&quot;tm-copy-to-clipboard&quot; param=&quot;$step$&quot;&gt;
 &lt;$action-setfield $tiddler=&quot;$:/state/sidebar&quot; text=&quot;yes&quot;/&gt;&lt;$action-setfield $tiddler=&quot;$:/state/tab/sidebar--595412856&quot; text=&quot;Editor&quot;/&gt;
 &lt;$action-deletetiddler $tiddler=&lt;&lt;task-state&gt;&gt;/&gt;&lt;$action-setfield $tiddler=&quot;$:/temp/Draft&quot; draft=&lt;&lt;currentTiddler&gt;&gt;/&gt;@@color:green;&amp;#10148;@@
 &lt;/$button&gt;
 &lt;$reveal default=&quot;$t$&quot; type=&quot;nomatch&quot; text=&quot;&quot;&gt;
-&lt;$macrocall $name=&quot;days-button&quot; value=&quot;$t$&quot; days=&quot;&quot;&quot;__&lt;$macrocall $name=&quot;days-passed&quot; start=&quot;$t$&quot;/&gt;__&quot;&quot;&quot; step=&quot;$step$&quot; ms=&quot;$ms$&quot; r=&quot;$r$&quot;/&gt;
+&lt;$macrocall $name=&quot;days-button&quot; value=&quot;$t$&quot; days=&quot;&quot;&quot;__&lt;$macrocall $name=&quot;days-passed&quot; start=&quot;$t$&quot;/&gt;__&quot;&quot;&quot; step=&quot;$step$&quot; ms=&quot;$ms$&quot; r=&quot;$r$&quot; to=&quot;$to$&quot;/&gt;
 &lt;/$reveal&gt;
 \end
 
-\define step-done(step,tiddler,t,d,ms)
-&lt;span style=&quot;color:#777;&quot;&gt;&lt;&lt;linkIfExists &quot;$step$&quot; &quot;$tiddler$&quot;&gt;&gt;&lt;/span&gt;
+\define step-done(step,tiddler,t,d,ms,to)
+&lt;span style=&quot;color:#777;&quot;&gt;&lt;&lt;linkIfExists &quot;$step$&quot; &quot;$tiddler$&quot;&gt;&gt; &lt;$reveal default=&quot;$to$&quot; type=&quot;nomatch&quot; text=&quot;&quot;&gt;- ''$to$''&lt;/$reveal&gt;&lt;/span&gt;
 &lt;$button class=&quot;tc-btn-invisible&quot; message=&quot;tm-copy-to-clipboard&quot; param=&quot;$step$&quot;&gt;@@color:green;&amp;#10003;@@&lt;/$button&gt;
 &lt;$set name=&quot;taskName&quot; value={{!!caption}}&gt;&lt;$set name=&quot;today&quot; value=&lt;&lt;now &quot;YYYY0MM0DD&quot;&gt;&gt;&gt;&lt;$list filter=&quot;[[$d$]regexp&lt;date-pattern&gt;]&quot;&gt;
 &lt;$button class=&quot;tc-btn-invisible&quot; style=&quot;font-size:smaller;color:#777;&quot; tooltip=&quot;$(format-t)$&quot;&gt;
@@ -12836,22 +12830,24 @@ $name$
 &lt;/$list&gt;&lt;/$set&gt;&lt;/$set&gt;
 \end
 
-\define a(step,tiddler,t,r,d:&quot;na&quot;,ms)
+\define a(step,tiddler,t,r,d:&quot;na&quot;,to,ms)
 &lt;$reveal default=&quot;$r$&quot; type=&quot;nomatch&quot; text=&quot;&quot; tag=&quot;small&quot; style=&quot;vertical-align:top;&quot;&gt;''$r$''&lt;/$reveal&gt;
 &lt;$set name=&quot;currTask&quot; value={{!!title}}&gt;&lt;$set name=&quot;currStep&quot; value=&quot;$step$&quot;&gt;&lt;$set name=&quot;format-t&quot; filter=&quot;[[$t$]format:date[YYYY-0MM-0DD]]&quot; select=&quot;0&quot;&gt;
-&lt;$list filter=&quot;[[$d$]!regexp&lt;date-pattern&gt;]&quot; emptyMessage=&quot;&lt;&lt;step-done '$step$' '$tiddler$' '$t$' '$d$' '$ms$'&gt;&gt;&quot; variable=&quot;NONE&quot;&gt;
-&lt;$list filter=&quot;[&lt;task-state&gt;has[title]]&quot; variable=&quot;NONE&quot; emptyMessage=&quot;&quot;&quot;''&lt;&lt;linkIfExists &quot;$step$&quot; &quot;$tiddler$&quot;&gt;&gt;''
-&lt;$button class=&quot;tc-btn-invisible&quot; set=&lt;&lt;task-state&gt;&gt; setTo=&quot;open&quot;&gt;&lt;$action-setfield $tiddler=&lt;&lt;task-state&gt;&gt; date=&quot;$t$&quot; caption=&quot;$step$&quot; belongs.to=&quot;$ms$&quot; remark=&quot;$r$&quot;/&gt;@@color:orange;&amp;#11096;@@&lt;/$button&gt;&quot;&quot;&quot;&gt;
-&lt;$reveal state=&lt;&lt;task-state&gt;&gt; type=&quot;match&quot; text=&quot;open&quot;&gt;&lt;&lt;step-open &quot;$step$&quot; &quot;$tiddler$&quot; &quot;$t$&quot; &quot;$ms$&quot; &quot;$r$&quot;&gt;&gt;&lt;/$reveal&gt;
-&lt;$reveal state=&lt;&lt;task-state&gt;&gt; type=&quot;match&quot; text=&quot;doing&quot;&gt;&lt;&lt;step-doing &quot;$step$&quot; &quot;$tiddler$&quot; &quot;$t$&quot; &quot;$ms$&quot; &quot;$r$&quot;&gt;&gt;&lt;/$reveal&gt;
+&lt;$list filter=&quot;[[$d$]!regexp&lt;date-pattern&gt;]&quot; emptyMessage=&quot;&lt;&lt;step-done '$step$' '$tiddler$' '$t$' '$d$' '$ms$' '$to$'&gt;&gt;&quot; variable=&quot;NONE&quot;&gt;
+&lt;$list filter=&quot;[&lt;task-state&gt;has[title]]&quot; variable=&quot;NONE&quot; emptyMessage=&quot;&quot;&quot;''&lt;&lt;linkIfExists &quot;$step$&quot; &quot;$tiddler$&quot;&gt;&gt; &lt;$reveal default=&quot;$to$&quot; type=&quot;nomatch&quot; text=&quot;&quot;&gt;- $to$&lt;/$reveal&gt;''
+&lt;$button class=&quot;tc-btn-invisible&quot; set=&lt;&lt;task-state&gt;&gt; setTo=&quot;open&quot;&gt;
+&lt;$action-setfield $tiddler=&lt;&lt;task-state&gt;&gt; date=&quot;$t$&quot; caption=&quot;$step$&quot; note=&quot;$to$&quot; belongs.to=&quot;$ms$&quot; remark=&quot;$r$&quot;/&gt;@@color:orange;&amp;#11096;@@
+&lt;/$button&gt;&quot;&quot;&quot;&gt;
+&lt;$reveal state=&lt;&lt;task-state&gt;&gt; type=&quot;match&quot; text=&quot;open&quot;&gt;&lt;&lt;step-open &quot;$step$&quot; &quot;$tiddler$&quot; &quot;$t$&quot; &quot;$ms$&quot; &quot;$r$&quot; &quot;$to$&quot;&gt;&gt;&lt;/$reveal&gt;
+&lt;$reveal state=&lt;&lt;task-state&gt;&gt; type=&quot;match&quot; text=&quot;doing&quot;&gt;&lt;&lt;step-doing &quot;$step$&quot; &quot;$tiddler$&quot; &quot;$t$&quot; &quot;$ms$&quot; &quot;$r$&quot; &quot;$to$&quot;&gt;&gt;&lt;/$reveal&gt;
 &lt;/$list&gt;
 &lt;/$list&gt;
 &lt;/$set&gt;&lt;/$set&gt;&lt;/$set&gt;
 \end
 
-\define c(step,tiddler,t,r,d,ms)
+\define c(step,tiddler,t,r,d,to,ms)
 &lt;$reveal default=&quot;$r$&quot; type=&quot;nomatch&quot; text=&quot;&quot; tag=&quot;small&quot; style=&quot;vertical-align:top;&quot;&gt;''$r$''&lt;/$reveal&gt;
-&lt;span style=&quot;color:#aaa;&quot;&gt;&lt;&lt;linkIfExists &quot;$step$&quot; &quot;$tiddler$&quot;&gt;&gt;&lt;/span&gt;
+&lt;span style=&quot;color:#aaa;&quot;&gt;&lt;&lt;linkIfExists &quot;$step$&quot; &quot;$tiddler$&quot;&gt;&gt; &lt;$reveal default=&quot;$to$&quot; type=&quot;nomatch&quot; text=&quot;&quot;&gt;- ''$to$''&lt;/$reveal&gt;&lt;/span&gt;
 &lt;$set name=&quot;currTask&quot; value={{!!title}}&gt;&lt;$set name=&quot;currStep&quot; value=&quot;$step$&quot;&gt;
 &lt;$list filter=&quot;[&lt;task-state&gt;has[title]]&quot; emptyMessage=&quot;@@color:red;&amp;#10005;@@&quot;&gt;
 &lt;$button&gt;&lt;$action-deletetiddler $tiddler=&lt;&lt;task-state&gt;&gt;/&gt;?&lt;/$button&gt;
@@ -12916,7 +12912,7 @@ $name$
 
 \define d(step,tiddler,t,r,d:&quot;na&quot;,to,ms)
 &lt;$reveal default=&quot;$r$&quot; type=&quot;nomatch&quot; text=&quot;&quot; tag=&quot;small&quot; style=&quot;vertical-align:top;&quot;&gt;''$r$''&lt;/$reveal&gt;
-&lt;$set name=&quot;currTask&quot; value={{!!title}}&gt;&lt;$set name=&quot;currStep&quot; value=&quot;$step$&quot;&gt;&lt;$set name=&quot;format-t&quot; filter=&quot;[[$t$]format:date[YYYY-0MM-0DD]]&quot; select=&quot;0&quot;&gt;@@color:red;&amp;#9873;@@
+&lt;$set name=&quot;currTask&quot; value={{!!title}}&gt;&lt;$set name=&quot;currStep&quot; value=&quot;$step$&quot;&gt;&lt;$set name=&quot;format-t&quot; filter=&quot;[[$t$]format:date[YYYY-0MM-0DD]]&quot; select=&quot;0&quot;&gt;
 &lt;$list filter=&quot;[[$d$]!regexp&lt;date-pattern&gt;]&quot; emptyMessage=&lt;&lt;waiting-done &quot;$step$&quot; &quot;$tiddler$&quot; &quot;$t$&quot; &quot;$d$&quot; &quot;$to$&quot; &quot;$ms$&quot;&gt;&gt; variable=&quot;NONE&quot;&gt;
 &lt;$macrocall $name=&quot;waiting-undone&quot; step=&quot;$step$&quot; tiddler=&quot;$tiddler$&quot; t=&quot;$t$&quot; to=&quot;$to$&quot; ms=&quot;$ms$&quot; symbol=&quot;&amp;#11044;&quot; days=&quot;&quot;&quot;__&lt;$macrocall $name=&quot;days-left&quot; deadline=&quot;$t$&quot;/&gt;__&quot;&quot;&quot; color=&quot;#cd23d8&quot; status=&quot;d&quot;/&gt;
 &lt;/$list&gt;
@@ -12928,17 +12924,17 @@ $name$
 ; 2. Sub-task，完成打个叉
 : `&lt;&lt;s step:&quot;下一步&quot; tiddler:&quot;指向某个 Tiddler&quot; field:&quot;对应字段&quot; filter:&quot;is[current]&quot;&gt;&gt;`
 ; 3. 在任务后面显示日期
-: `&lt;&lt;days-button value:&quot;20190102&quot; days:&quot;输入一个宏, 例如 days-passed&quot; step:&quot;任务名称&quot; ms:&quot;Milestone Name&quot; r:&quot;备注&quot;&gt;&gt;`
+: `&lt;&lt;days-button value:&quot;20190102&quot; days:&quot;输入一个宏, 例如 days-passed&quot; step:&quot;任务名称&quot; ms:&quot;Milestone Name&quot; r:&quot;备注&quot; to:&quot;委托人&quot;&gt;&gt;`
 ; 4. Step Open 任务启动，等待任务开始执行
-: `&lt;&lt;step-open step:&quot;下一步&quot; tiddler:&quot;指向某个 Tiddler&quot; t:&quot;20190102(Time reminder)&quot; ms:&quot;Milestone Name&quot; r:&quot;备注&quot;&gt;&gt;`
+: `&lt;&lt;step-open step:&quot;下一步&quot; tiddler:&quot;指向某个 Tiddler&quot; t:&quot;20190102(Time reminder)&quot; ms:&quot;Milestone Name&quot; r:&quot;备注&quot; to:&quot;委托人&quot;&gt;&gt;`
 ; 5. Step Doing 任务执行中, 并计算任务执行了多长时间
-: `&lt;&lt;step-doing step:&quot;下一步&quot; tiddler:&quot;指向某个 Tiddler&quot; t:&quot;20190102(start)&quot; ms:&quot;Milestone Name&quot; r:&quot;备注&quot;&gt;&gt;`
+: `&lt;&lt;step-doing step:&quot;下一步&quot; tiddler:&quot;指向某个 Tiddler&quot; t:&quot;20190102(start)&quot; ms:&quot;Milestone Name&quot; r:&quot;备注&quot; to:&quot;委托人&quot;&gt;&gt;`
 ; 6. Step Done 已完成的任务
-: `&lt;&lt;step-done step:&quot;下一步&quot; tiddler:&quot;指向某个 Tiddler&quot; t:&quot;20190102(start)&quot; d:&quot;20190201(end)&quot; ms:&quot;Milestone Name&quot;&gt;&gt;`
+: `&lt;&lt;step-done step:&quot;下一步&quot; tiddler:&quot;指向某个 Tiddler&quot; t:&quot;20190102(start)&quot; d:&quot;20190201(end)&quot; ms:&quot;Milestone Name&quot; to:&quot;委托人&quot;&gt;&gt;`
 ; 7. 整合 Open, Doing 和 Done 的功能, 同时增加了统计任务数量的功能
-: `&lt;&lt;a step:&quot;下一步&quot; tiddler:&quot;指向某个 Tiddler&quot; t:&quot;20190102(start)&quot; r:&quot;备注&quot; d:&quot;20190201(end)&quot; ms:&quot;Milestone Name&quot;&gt;&gt;`
+: `&lt;&lt;a step:&quot;下一步&quot; tiddler:&quot;指向某个 Tiddler&quot; t:&quot;20190102(start)&quot; r:&quot;备注&quot; d:&quot;20190201(end)&quot; to:&quot;委托人&quot; ms:&quot;Milestone Name&quot;&gt;&gt;`
 ; 8. Canceled 任务不可执行，已取消
-: `&lt;&lt;c step:&quot;下一步&quot; tiddler:&quot;指向某个 Tiddler&quot; t:&quot;20190102(start)&quot; r:&quot;备注&quot; d:&quot;20190201(end)&quot; ms:&quot;Milestone Name&quot;&gt;&gt;`
+: `&lt;&lt;c step:&quot;下一步&quot; tiddler:&quot;指向某个 Tiddler&quot; t:&quot;20190102(start)&quot; r:&quot;备注&quot; d:&quot;20190201(end)&quot; to:&quot;委托人&quot; ms:&quot;Milestone Name&quot;&gt;&gt;`
 ; 9. Migrated 今天没有执行，将任务转移到明天或未来
 : `&lt;&lt;m step:&quot;下一步&quot; tiddler:&quot;指向某个 Tiddler&quot; t:&quot;开始时间&quot; r:&quot;备注&quot;&gt;&gt;`
 ; 10. Waiting Undone 等待之中
@@ -13211,7 +13207,7 @@ $content$
 ; 12. table-edit 的行
 : `&lt;&lt;table-row-edit&gt;&gt;`</pre>
 </div>
-<div created="20191031101112843" creator="yuzijie" modified="20210819082054677" modifier="yuzijie" tags="$:/tags/Macro" title="$:/custom/macro/tasks" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20191031101112843" creator="yuzijie" modified="20210820184314911" modifier="yuzijie" tags="$:/tags/Macro" title="$:/custom/macro/tasks" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>\define task-state-prefix() $:/task-state/$(currentTiddler)$/
 
 \define task-num-today()
@@ -13299,9 +13295,9 @@ $content$
 &lt;$set name=&quot;widget&quot; value=&lt;&lt;key-results-table-widget&gt;&gt;&gt;
 &lt;&lt;table cfilter:&quot;完成率 Name Deadline&quot; rfilter:&quot;[tag&lt;currentTiddler&gt;index:Goal[$goal$]sortan[caption]]&quot; title:&quot;$importance$. 在 ''$deadline$'' 之前, ''$goal$''&quot; fields:&quot;text='Name: {{!!caption}}
 Goal: $goal$
-Remarks: 
 Deadline: &lt;$macrocall $name=key-results-table-deadline/&gt;
-完成率: &lt;$text text={{{[{##Task}percent&lt;currentTiddler&gt;]}}}/&gt;' caption='' deadline='' template='$:/custom/template/ticket'&quot; tag:&quot;Ticket&quot;&gt;&gt;
+完成率: &lt;$text text={{{[{##Task}percent&lt;currentTiddler&gt;]}}}/&gt;
+Remarks: ' caption='' deadline='' template='$:/custom/template/key-result'&quot; tag:&quot;Key Result&quot;&gt;&gt;
 &lt;/$set&gt;
 \end
 
@@ -13417,7 +13413,7 @@ Deadline: &lt;$macrocall $name=key-results-table-deadline/&gt;
 ; custom-toc 的目录名字
 : `&lt;&lt;custom-toc-caption&gt;&gt;`</pre>
 </div>
-<div created="20190928115034446" creator="yuzijie" modified="20210818193302730" modifier="yuzijie" tags="$:/tags/Macro" title="$:/custom/macro/tools" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20190928115034446" creator="yuzijie" modified="20210820173442968" modifier="yuzijie" tags="$:/tags/Macro" title="$:/custom/macro/tools" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>\define snippet(key, modal)
 &lt;$list filter=&quot;[belongs.to[$(currentTiddler)$]tag[Snippet]note[$key$]]&quot; emptyMessage=&quot;&quot;&quot;&lt;$macrocall $name=&quot;new&quot; name=&quot;Create Code Block&quot; template={{$:/config/defaultTemplate}} class=&quot;tc-btn-invisible tc-tiddlylink&quot; fields=&quot;tags='Snippet' date=&lt;&lt;now 'YYYY0MM0DD'&gt;&gt; belongs.to='$(currentTiddler)$' language={{##Language}} note='$key$' type='text/plain' caption=''&quot;/&gt;&quot;&quot;&quot;&gt;
 &lt;$reveal default=&quot;$modal$&quot; type=&quot;match&quot; text=&quot;yes&quot;&gt;
@@ -13497,6 +13493,22 @@ Deadline: &lt;$macrocall $name=key-results-table-deadline/&gt;
 &lt;/div&gt;
 \end
 
+\define collapse(title)
+&lt;$set name=&quot;state&quot; value=&lt;&lt;qualify &quot;$:/state/collapse/$title$&quot;&gt;&gt;&gt;
+&lt;$reveal type=&quot;nomatch&quot; state=&lt;&lt;state&gt;&gt; text=&quot;open&quot; tag=&quot;div&quot;&gt;
+&lt;$button set=&lt;&lt;state&gt;&gt; setTo=&quot;open&quot; dragTiddler=&quot;$title$&quot; class=&quot;tc-btn-invisible collapse-close&quot;&gt;
+{{$:/core/images/right-arrow}} &lt;$tiddler tiddler=&quot;$title$&quot;&gt;&lt;$transclude field=&quot;caption&quot;&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$transclude&gt;&lt;/$tiddler&gt;
+&lt;/$button&gt;
+&lt;/$reveal&gt;
+&lt;$reveal type=&quot;match&quot; state=&lt;&lt;state&gt;&gt; text=&quot;open&quot; tag=&quot;div&quot;&gt;
+&lt;$button dragTiddler=&quot;$title$&quot; class=&quot;tc-btn-invisible collapse-open&quot;&gt;&lt;$action-deletetiddler $tiddler=&lt;&lt;state&gt;&gt;/&gt;
+{{$:/core/images/down-arrow}} &lt;$tiddler tiddler=&quot;$title$&quot;&gt;&lt;$transclude field=&quot;caption&quot;&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$transclude&gt;&lt;/$tiddler&gt;
+&lt;/$button&gt;
+&lt;$transclude tiddler=&quot;$title$&quot; mode=&quot;block&quot;/&gt;
+&lt;/$reveal&gt;
+&lt;/$set&gt;
+\end
+
 \define tree-prefix-builder(separator:&quot;/&quot;) $(currentTiddler)$$separator$
 
 \define new-tags-builder(tag) [[$(current)$]] [[$tag$]]
@@ -13508,11 +13520,11 @@ Deadline: &lt;$macrocall $name=key-results-table-deadline/&gt;
 &lt;/$list&gt;
 &lt;/$set&gt;&lt;/$reveal&gt;
 &lt;$reveal default=&quot;$mode$&quot; type=&quot;match&quot; text=&quot;tag&quot;&gt;&lt;$set name=&quot;ref-title&quot; filter=&quot;[[$title$]is[blank]]&quot; value=&quot;$(currentTiddler)$&quot; emptyValue=&quot;$title$&quot;&gt;
-&lt;$list filter=&quot;[tag&lt;ref-title&gt;$sort$]&quot;&gt;&lt;$transclude mode=block/&gt;&lt;/$list&gt;
+&lt;$list filter=&quot;[tag&lt;ref-title&gt;$sort$]&quot;&gt;&lt;$macrocall $name=&quot;collapse&quot; title=&lt;&lt;currentTiddler&gt;&gt;/&gt;&lt;/$list&gt;
 &lt;/$set&gt;&lt;/$reveal&gt;
 &lt;$reveal default=&quot;$mode$&quot; type=&quot;match&quot; text=&quot;prefix&quot;&gt;&lt;$set name=&quot;ref-title&quot; filter=&quot;[[$title$]is[blank]]&quot; value=&quot;$(currentTiddler)$/&quot; emptyValue=&quot;$title$&quot;&gt;
 &lt;$set name=&quot;new-ref-title&quot; filter=&quot;[&lt;ref-title&gt;suffix[/]]&quot; value=&lt;&lt;ref-title&gt;&gt; emptyValue=&quot;$title$/&quot;&gt;&lt;$list filter=&quot;[prefix&lt;new-ref-title&gt;$sort$]&quot;&gt;
-&lt;$list filter=&quot;[all[current]removeprefix&lt;new-ref-title&gt;!search:title:literal[/]]&quot; variable=&quot;NONE&quot;&gt;&lt;$transclude mode=block/&gt;&lt;/$list&gt;
+&lt;$list filter=&quot;[all[current]removeprefix&lt;new-ref-title&gt;!search:title:literal[/]]&quot; variable=&quot;NONE&quot;&gt;&lt;$macrocall $name=&quot;collapse&quot; title=&lt;&lt;currentTiddler&gt;&gt;/&gt;&lt;/$list&gt;
 &lt;/$list&gt;&lt;/$set&gt;
 &lt;/$set&gt;&lt;/$reveal&gt;
 &lt;$reveal default=&quot;$mode$&quot; type=&quot;match&quot; text=&quot;tab&quot;&gt;&lt;$set name=&quot;ref-title&quot; filter=&quot;[[$title$]is[blank]]&quot; value=&quot;$(currentTiddler)$&quot; emptyValue=&quot;$title$&quot;&gt;
@@ -13603,6 +13615,7 @@ Deadline: &lt;$macrocall $name=key-results-table-deadline/&gt;
 # ''用于筛选 table 和 records 的清单''&lt;$macrocall $name=&quot;code&quot; content=&quot;&quot;&quot;&lt;&lt;filter-by-tags tiddler:&quot;parent tiddler&quot; title:&quot;title of the list&quot; filter:&quot;filter of table or records&quot;&gt;&gt;&quot;&quot;&quot;/&gt;
 # ''用于在一个普通的 Table 里面显示一个带背景颜色的 Cell''&lt;$macrocall $name=&quot;code&quot; content=&quot;&quot;&quot;&lt;&lt;cell tiddler:&quot;currentTiddler&quot; filter:&quot;get[caption]&quot; color:&quot;grey&quot;&gt;&gt;&quot;&quot;&quot;/&gt;
 # ''显示源代码, 并且可以一键复制''&lt;$macrocall $name=&quot;code&quot; content=&quot;&quot;&quot;&lt;&lt;code content:&quot;源代码&quot; language:&quot;编程语言&quot;&gt;&gt;&quot;&quot;&quot;/&gt;
+# ''生成一个 Collapse 组件''&lt;$macrocall $name=&quot;code&quot; content=&quot;&quot;&quot;&lt;&lt;collapse title:&quot;tiddler title&quot;&gt;&gt;&quot;&quot;&quot;/&gt;
 # ''用父 Tiddler 的名字组成 tree 的 prefix''&lt;$macrocall $name=&quot;code&quot; content=&quot;&quot;&quot;&lt;&lt;tree-prefix-builder separator:&quot;/&quot;&gt;&gt;&quot;&quot;&quot;/&gt;
 # ''用在 record 和 table 里面, 给新建的 Tiddler 增加额外的 tag''&lt;$macrocall $name=&quot;code&quot; content=&quot;&quot;&quot;&lt;&lt;new-tags-builder tag:&quot;Another Tag&quot;&gt;&gt;&quot;&quot;&quot;/&gt;
 # ''引用其他的 Tiddlers''&lt;$macrocall $name=&quot;code&quot; content=&quot;&quot;&quot;&lt;&lt;ref title:&quot;指向一个 Tiddler 或者一个 Tree Branch&quot; sort:&quot;Tree 的排序方法&quot;&gt;&gt;&quot;&quot;&quot;/&gt;
@@ -13895,7 +13908,7 @@ Description: ' caption=''&quot;&gt;&gt;
 
 &lt;/$transclude&gt;</pre>
 </div>
-<div created="20160605213910575" creator="yuzijie" modified="20210819135011788" modifier="yuzijie" tags="$:/tags/Stylesheet" title="$:/custom/style/body" type="text/css" revision="0" bag="default">
+<div created="20160605213910575" creator="yuzijie" modified="20210820163320281" modifier="yuzijie" tags="$:/tags/Stylesheet" title="$:/custom/style/body" type="text/css" revision="0" bag="default">
 <pre>.tc-btn-mini {border-radius: 2px; font-size: small;}
 
 .tc-view-field-name {width: auto; white-space: nowrap;}
@@ -13923,8 +13936,8 @@ Description: ' caption=''&quot;&gt;&gt;
 
 .tc-tag-list-item {margin-right: 3px;}
 .tc-tags-wrapper {margin: 3px 0 15px 0; min-height: 10px;}
-.tc-tags-wrapper button.tc-tag-label, .tc-tags-wrapper span.tc-tag-label {line-height: 1.3em; font-size: 0.85em; max-width: 154px; text-overflow: ellipsis; overflow: hidden; vertical-align: middle;}
-.tc-tags-wrapper button.tc-tag-label:hover, .tc-tags-wrapper span.tc-tag-label:hover {max-width: initial;}
+.tc-tags-wrapper button.tc-tag-label, .tc-tags-wrapper span.tc-tag-label {line-height: 1.3em; font-size: 0.85em; max-width: 154px; text-overflow: ellipsis; overflow: hidden; vertical-align: middle; transition: max-width 0.2s;}
+.tc-tags-wrapper button.tc-tag-label:hover, .tc-tags-wrapper span.tc-tag-label:hover {max-width: 300px;}
 .tc-tags-wrapper button.tc-tag-label svg, .tc-tags-wrapper span.tc-tag-label svg {margin-left: 2px;}
 
 .tc-menu-list-item a svg {height: 1em; width: 1em; fill: #333333; transform: translateY(2px);}
@@ -14102,7 +14115,7 @@ img {max-width: 100%;}
 
 label {display: inline-block;}</pre>
 </div>
-<div created="20160708093003717" creator="yuzijie" modified="20210815191331600" modifier="yuzijie" tags="$:/tags/Stylesheet" title="$:/custom/style/tools" type="text/css" revision="0" bag="default">
+<div created="20160708093003717" creator="yuzijie" modified="20210820173754502" modifier="yuzijie" tags="$:/tags/Stylesheet" title="$:/custom/style/tools" type="text/css" revision="0" bag="default">
 <pre>.section {border-bottom: 1px solid #DDD; text-transform: uppercase; font-weight: bold;}
 .select {background: #f5f5f5; padding: 0 10px; line-height: 1.5; border: 0; -webkit-appearance: none;}
 
@@ -14222,7 +14235,7 @@ blockquote.record {border-width: 1px 1px 1px 4px; border-color: #eee #eee #ddd #
 td span a.tc-tiddlylink-resolves {font-weight: 400;}
 
 /* For Macro: data-table */
-table.data-table {background: white; border: 1px solid #ccc;}
+table.data-table {background: white; border: 1px solid #ccc; border-top: none;}
 table.data-table th, table.data-table td, table.data-table tr th:last-child, table.data-table tr td:last-child, table.data-table tr:last-child th, table.data-table tr:last-child td {border: none;}
 table.data-table tr th {text-align: left; color: white; background-color: #ccc;}
 .tc-sidebar-header table.data-table tr th {color: unset;}
@@ -14263,6 +14276,10 @@ a.links svg {height: 1em; width: 1em; vertical-align: middle; max-width: none;}
 .code-macro pre {margin: 0;}
 .code-macro button {font-size: small;}
 li .code-macro {margin: 4px 0;}
+
+/* For Macro: collapse */
+button.collapse-close {background: #f5f5f5; width: 100%; text-align: left; padding: 8px; fill: #999; box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30);}
+button.collapse-open {background: #eee; width: 100%; text-align: left; padding: 8px; fill: #999; box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.30);}
 
 /* For Plugin: Tidgraph */
 .ihm-tgr-node {padding: 0.2em 0.4em; box-shadow: 2px 2px 4px #a0a0a0;}
@@ -14312,6 +14329,31 @@ Belongs to:
 </div>
 <div created="20190714192727848" creator="yuzijie" footer="&lt;$button message=&quot;tm-close-tiddler&quot;&gt;&lt;$action-navigate $to=&lt;&lt;mUrl&gt;&gt;/&gt;GO TO IMAGE&lt;/$button&gt; &lt;$button message=&quot;tm-close-tiddler&quot;&gt;CLOSE&lt;/$button&gt;" modified="20210416225448613" modifier="yuzijie" subtitle="&lt;&lt;mTitle&gt;&gt;" tags="" title="$:/custom/template/img-modal" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;div style=&quot;text-align:center;&quot;&gt;&lt;$image source=&lt;&lt;mUrl&gt;&gt; alt=&quot;Image is loading...&quot; tooltip=&lt;&lt;mUrl&gt;&gt;/&gt;&lt;/div&gt;</pre>
+</div>
+<div created="20210513194035738" creator="yuzijie" modified="20210820183937398" modifier="yuzijie" tags="" title="$:/custom/template/key-result" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;$macrocall $name=&quot;data-table&quot; template=&quot;$:/custom/template/key-result&quot; filter=&quot;[all[current]indexes[]] -[[Name]] -[[Open date]] -[[Close date]] -[[Task]] -[[Deadline]]&quot; content={{$:/custom/template/key-result/content}}/&gt;</pre>
+</div>
+<div created="20210817122416350" creator="yuzijie" modified="20210820183902651" modifier="yuzijie" tags="" title="$:/custom/template/key-result/content" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;table style=&quot;width:100%;font-size:small;text-align:center;table-layout:fixed;&quot;&gt;
+&lt;tr&gt;&lt;th&gt;Open Date&lt;/th&gt;&lt;th&gt;Close Date&lt;/th&gt;&lt;th&gt;Time Spent&lt;/th&gt;&lt;th&gt;Deadline&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;$list filter=&quot;[all[current]has[start]]&quot; emptyMessage=&quot;&quot;&quot;&lt;$button&gt;&lt;$action-setfield $index=&quot;Task State&quot; $value=&quot;Open&quot;/&gt;&lt;$action-setfield start=&lt;&lt;now YYYY0MM0DD&gt;&gt;/&gt;&lt;$action-setfield $index=&quot;Open date&quot; $value=&quot;&lt;$macrocall $name=format-date date={{!!start}} template=YYYY-0MM-0DD/&gt;&quot;/&gt;Open Task&lt;/$button&gt;&quot;&quot;&quot; variable=&quot;NONE&quot;&gt;{{##Open date}}&lt;/$list&gt;&lt;/td&gt;
+&lt;td&gt;&lt;$list filter=&quot;[all[current]has[finish]]&quot; emptyMessage=&quot;&quot;&quot;&lt;$button&gt;&lt;$action-setfield $index=&quot;Task State&quot; $value=&quot;Closed&quot;/&gt;&lt;$action-setfield finish=&lt;&lt;now YYYY0MM0DD&gt;&gt;/&gt;&lt;$action-setfield $index=&quot;Close date&quot; $value=&quot;&lt;$macrocall $name=format-date date={{!!finish}} template=YYYY-0MM-0DD/&gt;&quot;/&gt;Close Task&lt;/$button&gt;&quot;&quot;&quot; variable=&quot;NONE&quot;&gt;{{##Close date}}&lt;/$list&gt;&lt;/td&gt;
+&lt;td&gt;&lt;$list filter=&quot;[all[current]has[start]]&quot;&gt;&lt;$set name=&quot;last-day&quot; filter=&quot;[all[current]has[finish]]&quot; value={{!!finish}} emptyValue=&lt;&lt;now YYYY0MM0DD&gt;&gt;&gt;&lt;$macrocall $name=&quot;days-passed&quot; start={{!!start}} end=&lt;&lt;last-day&gt;&gt;/&gt;&lt;/$set&gt;&lt;/$list&gt;&lt;/td&gt;
+&lt;td&gt;&lt;$list filter=&quot;[all[current]getindex[Task State]!match[Closed]]&quot; emptyMessage=&quot;&lt;$macrocall $name=format-date date={{!!deadline}} template=YYYY-0MM-0DD/&gt;&quot; variable=&quot;NONE&quot;&gt;&lt;$list filter=&quot;[all[current]has[deadline]]&quot;&gt;&lt;$macrocall $name=&quot;days-left&quot; deadline={{!!deadline}}/&gt; (&lt;$macrocall $name=format-date date={{!!deadline}} template=0MM-0DD/&gt;)&lt;/$list&gt;&lt;/$list&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;$droppable actions=&quot;&quot;&quot;&lt;$action-setfield $index=&quot;Task&quot; $value=&lt;&lt;actionTiddler&gt;&gt;/&gt;&quot;&quot;&quot; tag=&quot;div&quot;&gt;
+&lt;$set name=&quot;edit&quot; value={{##Task}}&gt;&lt;$set name=&quot;today&quot; value=&lt;&lt;now YYYY0MM0DD&gt;&gt;&gt;
+&lt;$set name=&quot;copy&quot; filter=&quot;&quot;&quot;[[&lt;&lt;d &quot;&quot; &quot;&quot; t:]] [&lt;today&gt;] [[ ms:&quot;]] [&lt;currentTiddler&gt;] [[&quot;&gt;&gt;]] +[join[]]&quot;&quot;&quot; select=&quot;0&quot;&gt;
+&lt;h2&gt;&lt;$button class=&quot;tc-btn-invisible&quot;&gt;&lt;&lt;eocd-actions&gt;&gt;&lt;$transclude tiddler={{##Task}} field=&quot;caption&quot;/&gt;&lt;/$button&gt;&lt;/h2&gt;
+&lt;/$set&gt;
+&lt;/$set&gt;&lt;/$set&gt;
+&lt;/$droppable&gt;
+&lt;div class=&quot;macro-table&quot;&gt;&lt;table style=&quot;width:100%;background:white;&quot;&gt;
+&lt;tr&gt;&lt;th&gt;类型&lt;/th&gt;&lt;th colspan=&quot;3&quot;&gt;任务描述&lt;/th&gt;&lt;th&gt;开始&lt;/th&gt;&lt;th&gt;结束&lt;/th&gt;&lt;/tr&gt;
+&lt;$list filter=&quot;[{##Task}steps&lt;currentTiddler&gt;]&quot;&gt;&lt;&lt;currentTiddler&gt;&gt;&lt;/$list&gt;
+&lt;/table&gt;&lt;/div&gt;</pre>
 </div>
 <div created="20210516172453585" creator="yuzijie" footer="&lt;$list filter=&quot;[&lt;mTitle&gt;!is[missing]]&quot;&gt;&lt;$button message=&quot;tm-close-tiddler&quot;&gt;&lt;$action-sendmessage $message=&quot;tm-edit-tiddler&quot; $param=&lt;&lt;mTitle&gt;&gt;/&gt;EDIT&lt;/$button&gt;&lt;/$list&gt; &lt;$button message=&quot;tm-close-tiddler&quot;&gt;CLOSE&lt;/$button&gt;" modified="20210618201129156" modifier="yuzijie" subtitle="&lt;$list filter=&quot;[&lt;mTitle&gt;!is[missing]]&quot;&gt;&lt;$transclude field=&quot;caption&quot; tiddler=&lt;&lt;mTitle&gt;&gt;&gt;&lt;$view field=&quot;title&quot; tiddler=&lt;&lt;mTitle&gt;&gt;/&gt;&lt;/$transclude&gt;&lt;&lt;links&gt;&gt;&lt;div style=&quot;float:right;font-size:smaller;&quot;&gt;&lt;$button message=&quot;tm-copy-to-clipboard&quot; class=&quot;tc-btn-invisible&quot; param=&lt;&lt;mTitle&gt;&gt;&gt;{{$:/core/images/copy-clipboard}} copy title&lt;/$button&gt;&lt;/div&gt;&lt;/$list&gt;" tags="" title="$:/custom/template/normal-modal" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;section class=&quot;tc-tiddler-body snippet&quot;&gt;
@@ -14393,31 +14435,6 @@ C &lt;$count filter=&quot;[{!!text}matches&lt;pattern-cancel&gt;]&quot;/&gt;
 &lt;/$droppable&gt;
 &lt;/$set&gt;&lt;/div&gt;
 &lt;/$set&gt;&lt;/$list&gt;</pre>
-</div>
-<div created="20210513194035738" creator="yuzijie" modified="20210817104639763" modifier="yuzijie" tags="" title="$:/custom/template/ticket" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;$macrocall $name=&quot;data-table&quot; template=&quot;$:/custom/template/ticket&quot; filter=&quot;[all[current]indexes[]] -[[Name]] -[[Open date]] -[[Close date]] -[[Task]] -[[Deadline]]&quot; content={{$:/custom/template/ticket/content}}/&gt;</pre>
-</div>
-<div created="20210817122416350" creator="yuzijie" modified="20210819082103046" modifier="yuzijie" tags="" title="$:/custom/template/ticket/content" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;table style=&quot;width:100%;font-size:small;text-align:center;table-layout:fixed;&quot;&gt;
-&lt;tr&gt;&lt;th&gt;Open Date&lt;/th&gt;&lt;th&gt;Close Date&lt;/th&gt;&lt;th&gt;Time Spent&lt;/th&gt;&lt;th&gt;Deadline&lt;/th&gt;&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;$list filter=&quot;[all[current]has[start]]&quot; emptyMessage=&quot;&quot;&quot;&lt;$button&gt;&lt;$action-setfield $index=&quot;Task State&quot; $value=&quot;Open&quot;/&gt;&lt;$action-setfield start=&lt;&lt;now YYYY0MM0DD&gt;&gt;/&gt;&lt;$action-setfield $index=&quot;Open date&quot; $value=&quot;&lt;$macrocall $name=format-date date={{!!start}} template=YYYY-0MM-0DD/&gt;&quot;/&gt;Open Task&lt;/$button&gt;&quot;&quot;&quot; variable=&quot;NONE&quot;&gt;{{##Open date}}&lt;/$list&gt;&lt;/td&gt;
-&lt;td&gt;&lt;$list filter=&quot;[all[current]has[finish]]&quot; emptyMessage=&quot;&quot;&quot;&lt;$button&gt;&lt;$action-setfield $index=&quot;Task State&quot; $value=&quot;Closed&quot;/&gt;&lt;$action-setfield finish=&lt;&lt;now YYYY0MM0DD&gt;&gt;/&gt;&lt;$action-setfield $index=&quot;Close date&quot; $value=&quot;&lt;$macrocall $name=format-date date={{!!finish}} template=YYYY-0MM-0DD/&gt;&quot;/&gt;Close Task&lt;/$button&gt;&quot;&quot;&quot; variable=&quot;NONE&quot;&gt;{{##Close date}}&lt;/$list&gt;&lt;/td&gt;
-&lt;td&gt;&lt;$list filter=&quot;[all[current]has[start]]&quot;&gt;&lt;$set name=&quot;last-day&quot; filter=&quot;[all[current]has[finish]]&quot; value={{!!finish}} emptyValue=&lt;&lt;now YYYY0MM0DD&gt;&gt;&gt;&lt;$macrocall $name=&quot;days-passed&quot; start={{!!start}} end=&lt;&lt;last-day&gt;&gt;/&gt;&lt;/$set&gt;&lt;/$list&gt;&lt;/td&gt;
-&lt;td&gt;&lt;$list filter=&quot;[all[current]getindex[Task State]!match[Closed]]&quot; emptyMessage=&quot;&lt;$macrocall $name=format-date date={{!!deadline}} template=YYYY-0MM-0DD/&gt;&quot; variable=&quot;NONE&quot;&gt;&lt;$list filter=&quot;[all[current]has[deadline]]&quot;&gt;&lt;$macrocall $name=&quot;days-left&quot; deadline={{!!deadline}}/&gt; (&lt;$macrocall $name=format-date date={{!!deadline}} template=0MM-0DD/&gt;)&lt;/$list&gt;&lt;/$list&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;$droppable actions=&quot;&quot;&quot;&lt;$action-setfield $index=&quot;Task&quot; $value=&lt;&lt;actionTiddler&gt;&gt;/&gt;&quot;&quot;&quot; tag=&quot;div&quot;&gt;
-&lt;$set name=&quot;edit&quot; value={{##Task}}&gt;&lt;$set name=&quot;today&quot; value=&lt;&lt;now YYYY0MM0DD&gt;&gt;&gt;
-&lt;$set name=&quot;copy&quot; filter=&quot;&quot;&quot;[[&lt;&lt;d &quot;&quot; &quot;&quot; t:]] [&lt;today&gt;] [[ ms:&quot;]] [&lt;currentTiddler&gt;] [[&quot;&gt;&gt;]] +[join[]]&quot;&quot;&quot; select=&quot;0&quot;&gt;
-&lt;h2&gt;&lt;$button class=&quot;tc-btn-invisible&quot;&gt;&lt;&lt;eocd-actions&gt;&gt;&lt;$transclude tiddler={{##Task}} field=&quot;caption&quot;/&gt;&lt;/$button&gt;&lt;/h2&gt;
-&lt;/$set&gt;
-&lt;/$set&gt;&lt;/$set&gt;
-&lt;/$droppable&gt;
-&lt;div class=&quot;macro-table&quot;&gt;&lt;table style=&quot;width:100%;background:white;&quot;&gt;
-&lt;tr&gt;&lt;th&gt;类型&lt;/th&gt;&lt;th colspan=&quot;3&quot;&gt;任务描述&lt;/th&gt;&lt;th&gt;开始&lt;/th&gt;&lt;th&gt;结束&lt;/th&gt;&lt;/tr&gt;
-&lt;$list filter=&quot;[{##Task}steps&lt;currentTiddler&gt;]&quot;&gt;&lt;&lt;currentTiddler&gt;&gt;&lt;/$list&gt;
-&lt;/table&gt;&lt;/div&gt;</pre>
 </div>
 <div _tgr_node_class_add="tgr-style-branch" _tgr_node_filter="[search:title:literal[/]]" created="20210701063400695" creator="yuzijie" modified="20210710142040459" modifier="yuzijie" tags="" title="$:/custom/template/tidgraph/branch" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;$transclude tiddler={{!!icon}}/&gt;
@@ -14631,8 +14648,13 @@ $:/state/folded/$(currentTiddler)$
 <div created="20200616204510506" creator="yuzijie" modified="20210801192603835" modifier="yuzijie" title="$:/Draft" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre></pre>
 </div>
-<div created="20210731112541484" creator="yuzijie" modified="20210731113236934" modifier="yuzijie" title="$:/favicon.ico" type="image/x-icon" revision="0" bag="default">
-<pre>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//9d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//P7r//zKr/tkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMqz/RzOs//9b2v//Xdz//13c//9Ak8T/HDl5/1nR9v9d3P//Xdz//13c//9d3P//MWyk/yhVkf9d3P//Xdz//13c//8+uP//M6z+/i2t/hwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyq/6DM6z//1nX//9d3P//Xdz//zR0qv8TIWb/U8Tr/13c//9d3P//Xdz//13c//8jSoj/GjJ0/13c//9d3P//Xdz//zq0//8zrP//M6r/SwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADKr/7szrP//UM3//13c//9d3P//T7rj/ziAs/9c2v3/Xdz//13c//9d3P//Xdz//0ej0P9BlcX/XNv//13c//9a2f//NK3//zOs//8yq/9rAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMqz+4TOs//89t///Xdz//13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//Xdz//1fV//9Fwf//Xdz//0fD//8zrP//M6z//zKq/38AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzrP/wM6z//zOs//9Gwf//XNv//13c//9d3P//Xdz//13c//9d3P//Wtj//1HP//9Fwf//Na7//0/M//9Kx///M6z//zOs//8zrP//Maz+hQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADKs/uczrP//M6z//zOs//89t///Wdj//13c//9d3P//Tsr//zu1//8zrP//M6z//zOs//82r///N7H//zOs//8zrP//M6z//zOs//8zrP5yAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMqz+wzOs//8zrP//M6z//zOs//86tf//W9n//0K9//8zrP//M6z//zOs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AAAvr/8QUtD/f13c/v5d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9b2v//Qr7+3TOs/zsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACS2/wc1rf+AVdP+9V3c//9d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//Us///zKs/ssvqf4bAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC6r/zE7tv7rWdf//13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9c2P3/VJDW/1F6yv9Resr/U5LX/13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//XNv//zex/vkzrf53Var/AwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADKr/5JBvP//W9n//13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9d2v7/WLbr/1er5P9Xq+T/WLfr/13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//Xdz//0C7//8zrP7LMbD+GgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//ATKr/uJEwP//XNv//13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//Xdz//0bB//8yq/77Mqr/UQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMab+GjOs//9Gwf//XNv//13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//Xdz//0fD//8zrP//Mqz+qwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM63/SzOs//9Gwv//XNv//13c//9d3P//Xdz//1rU+f9DnMr/RZ/N/13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9b1/v/RZ/N/0GWxv9Y0PX/Xdz//13c//9d3P//Xdz//0fC//8zrP//Mqz+7iec/g0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM63+hjOs//9Gwv//XNv//13c//9d3P//Xdz//0613/8XLG//Fyxv/1K/5/9d3P//Xdz//13c//9d3P//Xdz//13c//9Nst3/HDl5/xgvcf9EnMv/Xdz//13c//9d3P//Xdz//0XA//8zrP//M6z//zKr/z0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/v/8EMqv/xDOs//9FwP//XNv//13c//9d3P//Xdz//0mq1v8TIWb/EyFm/0yz3f9d3P//Xdz//13c//9d3P//Xdz//13c//9Ip9T/GC9x/xUna/8/j8D/Xdz//13c//9d3P//Xdz//0C8//8zrP//M6z//zGr/nEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAuqv8hM6z+3zOs//9Bu///W9n//13c//9d3P//Xdz//0+44v8YL3H/GC9y/1TG7P9d3P//Xdz//13c//9d3P//Xdz//13c//9PuOL/HDl5/xgucP9GotD/Xdz//13c//9d3P//Xdz//zmz//8zrP//M6z//zOs/5oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAxq/9DMqv+6zOs//84sv//WNb//13c//9d3P//Xdz//1vY/P9OtuD/ULzk/13b/v9d3P//Xdz//13c//9d3P//Xdz//13c//9c2fz/ULvk/02z3v9a1fr/XNr//13c//9d3P//VdT//zOt//8zrP//M6z//zKr/7oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwqv9eM6v+9DOs//8zrP//SsX//13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//Xdz//1zb//9Qzv//SMX//13c//9c2v//Qr3//zOs//8zrP//M6z//zOs/8wAf/8CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAxrP5sM6z++DOs//8zrP//NrD//1LQ//9d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9d3P//V9X//0nF//85s///T8z//1zb//9Myf//Na///zOs//8zrP//M6z//zKs/tMktv8HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAxq/5xM6z/+jOs//8zrP//M6z//zmz//9Rz///Xdz//13c//9d3P//Xdz//13c//9d3P//Xdz//13c//9c2///VtP//0zJ//9BvP//OLL//zSt//9Au///Wdb//0jE//82sP//M6z//zOs//8zrP//M6z//zKr/tMktv8HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyq/9rM6v++DOs//8zrP//M6z//zOs//81r///S8f//1va//9d3P//Xdz//13c//9b2v//VdL//0TA//84sf//M6z//zOs//8zrP//M6z//zWu//89uP//NrD//zOs//8zrP//M6z//zOs//8zrP//M6z//zOr/scA//8BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzq/9ZMqv+8jOs//8zrP//M6z//zOs//8zrP//M6z//0TA//9Z2P//Xdz//1nY//9Gwv//NrD//zOs//8zrP//M6z//zOs//8zrP//M6z//zOs//8zrP//M6z//zOs//8zrP//M6z//zOs//8zrP//M6z//zKs/p0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzrP87Mqz+6DOs//8zrP//M6z//zOs//8zrP//M6z//zSt//9Jxf//W9n//z+6//80rf//M6z//zOs//8zrP//M6z//zOs//8zrP//M6z//zOs//8zrP//M6z//zOs//8zrP//M6z//zOs//8zrP//M6z//zOs/1oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2tv8OM6z/zDOs//8zrP//M6z//zOs//8zrP//M6z//zOs//86tP//P7r//zOs//8zrP//M6z//zOs//8zrP//M6z//zOs//8zrP//M6z//zOs//8zrP//M6z//zOs//8zrP//M6z//zOs//8zrP//Mqz+7Ta2/w4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMqr/YDOs//0zrP//M6z//zOs//8zrP//M6z//zOs//8zrP//M6z//zOs//8zrP//M6z//zOs//8zrP//M6z//zOs//8zrP//M6z//zOs//8zrP//M6z//zOs//8zrP//M6z//zOs//8zq/7+Mav/gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA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</pre>
+<div created="20200502212013157" creator="yuzijie" modified="20210820190503377" modifier="yuzijie" title="$:/favicon.ico" type="image/x-icon" revision="0" bag="default">
+<pre>AAABAAEAQEAAAAEAIAAoQgAAFgAAACgAAABAAAAAgAAAAAEAIAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAApJyNAKSckzyknI7EAAAAAAAAAAAAAAAAAAAAAKSckRiknJM8pJyStAAAAAAAAAAAAAAAAAAAAACknJDgpJySxKSck6yknJPcpJyTbKSckiygnIxAAAAAAKSckAiknJLcpJyTPKSckQgAAAAAAAAAAAAAAAAAAAAAAAAAAKSckQiknJM8pJyS/KSckBgAAAAApJyQiKSckzygnI7soJyMCAAAAAAAAAAAAAAAAKSckfCknJM8oJiRmAAAAAAAAAAAAAAAAAAAAACknJDopJyTPKSckzyknJM8pJyTPKSckzyknJM8pJyTPKScklQAAAAAAAAAAKSckmyknJMsoJyRUKSckTiknJP8pJyTZAAAAAAAAAAAAAAAAAAAAACgnI1YpJyT/KSck1QAAAAAAAAAAAAAAACknJEQpJyT5KSck/yknJP8pJyT/KSck/yknJP8pJyTRKCYkCgAAAAApJyN8KSck/yknJLkAAAAAAAAAAAAAAAAAAAAAKSckACknI7UpJyT/KSckjQAAAAAAAAAAKSckeiknJP8pJyT/KSYkOgAAAAAAAAAAKSckBCgmJOUpJyT/KSckzyknJAAAAAAAAAAAAAAAAAApJyRIKSck/yknJP8pJyT/KSck/yknJP8pJyT/KSck/yknJLUAAAAAAAAAACknJMUpJyT/KSckaiknJE4pJyT/KSck2QAAAAAAAAAAAAAAAAAAAAAoJyNWKSck/yknJNUAAAAAAAAAACknJAIpJyTTKSck/ygnJMkpJyQ2KSckGiknJFgpJyTxKSck/ygnJHQAAAAAKSckFiknJPUpJyT9KSckoyknJJ8pJySfKScknygnI6MpJiT9KSck+yknJCIAAAAAKSckACknJNMpJyT/KSck/yknJJMAAAAAAAAAACkmJEIpJyT/KSck/yknJP0pJyQqAAAAAAAAAAAAAAAAKSckSCknJP8pJyTbKScjICknJCApJyQgKSckICknJCApJyQYAAAAAAAAAAApJyTFKSck/yknJGopJyROKSck/yknJNkAAAAAAAAAAAAAAAAAAAAAKCcjViknJP8pJyTVAAAAAAAAAAApJyMgKSck/yknJP0pJyQoAAAAAAAAAAAAAAAAKSckfCknJP8pJyTBAAAAAAAAAAApJySbKSck/yknJP8pJyT/KSck/yknJP8pJyT/KSck/yknJK0pJyQAAAAAACknJC4pJyT/KSck7yknJP0pJyTlKSckBAAAAAApJySbKSck/yknI+spJyT/KSckgQAAAAAAAAAAAAAAACknJEgpJyT/KCck1wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKSckxSknJP8pJyRqKSckTiknJP8pJyTtKSckiyknJIspJySLKSckiyknJLEpJyT/KSck1QAAAAAAAAAAKSckOiknJP8oJyTxKCckAAAAAAAAAAAAAAAAACknJEwpJyT/KSck3SknJAAAAAAAKSckLCknJP0pJyT7KSckWCkmJEwpJyRWKSck+SknJP8pJyM8AAAAAAAAAAApJySHKSck/ygmJJspJyTDKSck/ykmJEQpJyQGKCck6yknJP0pJyReKSck/yknJNkpJiQAAAAAAAAAAAApJyRIKSck/yknJOEpJyREKSckRCknJEQpJyQ0AAAAAAAAAAAAAAAAAAAAACknJMUpJyT/KSckaiknJE4pJyT/KSck/yknJP8pJyT/KSck/yknJP8pJyT/KSck/yknJNUAAAAAAAAAACknJDwpJyT/KSck7wAAAAAAAAAAAAAAAAAAAAApJyRKKSck/yknJN8pJyQAAAAAACknJAApJyS5KSck/yknJGoAAAAAKSckZiknJP8pJyTLKSckAAAAAAApJyQCKSck3SknI/8pJyRIKSckbiknJP8pJySdKSckTCknJP8pJyTNKCckBCknJOUpJyT/KSckNAAAAAAAAAAAKSckSCknJP8pJyT/KSck/yknJP8pJyT/KSYkvwAAAAAAAAAAAAAAAAAAAAApJyTFKSck/yknJGopJyROKSck/yknJOspJyR8KSckfCknJHwpJyR8KSckqSknJP8pJyTVAAAAAAAAAAApJyQ8KSck/yknJO8AAAAAAAAAAAAAAAAAAAAAKSckSiknJP8pJyTfKSckAAAAAAAAAAAAKSckSCknJP8pJyTVKSckBCknJNMpJyT/KSckXAAAAAAAAAAAKSckOikmJP8pJyTvKSckBiknJBwpJyT7KSck7SknI6spJyT/KSckeAAAAAApJySXKSck/yknJI0AAAAAAAAAACknJEgpJyT/KCcj8SknJK0pJyStKSckrSknJIEAAAAAAAAAAAAAAAAAAAAAKSckxSknJP8pJyRqKSckTiknJP8pJyTZAAAAAAAAAAAAAAAAAAAAACgnI1YpJyT/KSck1QAAAAAAAAAAKSckPCknJP8pJyTvAAAAAAAAAAAAAAAAAAAAACknJEopJyT/KSck3yknJAAAAAAAAAAAACkmIwIpJyTVKSck/ygnJIkpJyT/KSck4ygnJAYAAAAAAAAAACknJJMpJyT/KCYkpQAAAAApJyQAKSckxSknJP8pJyT/KSck/yknJCYAAAAAKSckRCknJP8pJyTjKSckAgAAAAApJyRIKSck/ygnJNcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACknJMUpJyT/KSckaiknJE4pJyT/KSck2QAAAAAAAAAAAAAAAAAAAAAoJyNWKSck/yknJNUAAAAAAAAAACknJDwpJyT/KSck7wAAAAAAAAAAAAAAAAAAAAApJyRKKSck/yknJN8pJyQAAAAAAAAAAAAAAAAAKSckZiknJP8pJyT/KSck/yknJHoAAAAAAAAAACknJAQpJyTnKSck/yknJFIAAAAAAAAAACknJHApJyT/KSck/yknJM8oJyMAAAAAACknJAYpJyTrKSck/yknJD4AAAAAKSckSCknJP8pJyTfKSckMiknJDIpJyQyKSckMiknJDIpJyQaAAAAAAAAAAApJyTFKSck/yknJGopJyROKSck/yknJNkAAAAAAAAAAAAAAAAAAAAAKCcjViknJP8pJyTVAAAAAAAAAAApJyQ8KSck/yknJO8AAAAAAAAAAAAAAAAAAAAAKSckSiknJP8pJyTfKSckAAAAAAAAAAAAAAAAACknJAopJyTrKSck/yknJPUpJyQUAAAAAAAAAAApJyREKCck/yknJPMpJyQMAAAAAAAAAAAoJiMeKSck/SknJP8pJyR8AAAAAAAAAAAAAAAAKCcknyknJP8pJySXAAAAACknJEgpJyT/KSck/yknJP8pJyT/KSck/yknJP8pJyT/KScjgQAAAAAAAAAAKSckxSknJP8pJyRqKSckOiknJL0pJyShAAAAAAAAAAAAAAAAAAAAACknJEApJyS9KCcjnQAAAAAAAAAAKSckLCknJL0pJySxAAAAAAAAAAAAAAAAAAAAACkmJDgpJyS9KSckpSknJAAAAAAAAAAAAAAAAAAAAAAAKSckbiknJL0oJyR8AAAAAAAAAAAAAAAAKSckbCknJL0pJySJAAAAAAAAAAAAAAAAKSckACknJJspJyS9KScjJAAAAAAAAAAAAAAAACknJEApJyS9KCckqSknIwIpJyQ0KSckvSknJL0pJyS9KSckvSknJL0pJyS9KSckvSknJGAAAAAAAAAAACknJJEpJyS9KCYjTgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALRfBAC0WwRAtF8IYLRfCBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALRfCCi0XwiAtF8ISLRfCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtF8IMLRfCdi0XwtctF8L9LRbC/y0XwfEtFsGjLRfCMi0XwQAAAAAAAAAAAAAA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wsEtFsIALRfCCi0XwtktF8L/LBfBjwAAAAAAAAAALRfCmy0Xwv8tF8LTLRfCCC0XwgAtF8LHLRfC/y0Xwv8tF8L/LRfC/y0Xwv0tFsGfLRfBGi0XwgAtF8E4LRfCyy0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8JUAAAAAAAAAAAtF8LDLRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8LhLRfCWC0XwgAsFsEILRfCei0XwvMtF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8E+AAAAAC0Xwo0tF8L/LRfC/y0XwqUAAAAAAAAAAC0Xwq8tF8L/LRfC/y0XwoMAAAAALRfCRi0Wwf8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0XwvEtF8J2LRfCBi0XwgItF8JgLRfC5S0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfBuwAAAAAtF8ISLRfC+y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0XwvMtF8J8LRfCCiwWwQAtF8JGLBbC2S0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8K3LRfCAC0XwjQtF8L7LRfC/y0Xwv8tF8K5AAAAAAAAAAAsF8LDLRfC/y0Xwv8tF8L5LRfCLCwXwgAtF8K/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0XwtUtF8JALRfBAC0Xwg4tF8KFLRfC9S0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0WwvctF8IMLRfBQC0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC+y0XwZ0tF8IaAAAAAC0XwhQtF8KjLRfC/S0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L9LRfCMi0XwgQtFsHNLRfC/y0Xwv8tF8L/LBfByQAAAAAAAAAALBfC1S0Xwv8tF8L/LRfC/y0XwsUtF8ICLRfCOi0Xwv0tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/S0Xwp0tF8ISAAAAAC0XwiAtF8KnLRfC/S0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfCNi0XwmYtF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfCuywXwjAAAAAALRfCAC0Xwk4tFsLnLRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfCpS0XwgAtF8JwLRfC/y0Xwv8tF8L/LRfC/ywWwdsAAAAAAAAAAC0XwuUtF8L/LRfC/y0Xwv8tF8L/LRfCZiwXwQAtF8KtLRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC4y0XwkotF8IAAAAAAC0XwjotF8LFLRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0XwlgtF8JuLRfC/y0Xwv8tF8L/LRfC/y0Xwv8tFsHTLRfCSiwXwQAAAAAALRfCCi0XwpktF8L9LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC9y0XwiAtF8IaLRfC8S0Xwv8tF8L/LRfC/y0Xwv8tF8LpAAAAAC0WwgAtF8LzLRfC/y0Xwv8tF8L/LRfC/ywXwu0tF8IWLRfCJi0XwvktF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L9LBfCky0XwggAAAAALRfCAi0XwlQsFsLbLRfC/y0Xwv8tF8L/LRfC/y0Xwv8sFsJiLRfCUi0Xwv8tF8L/LRfC/y0XwuMsF8JiLBfCBAAAAAAAAAAALRfCIC0Xws8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0XwoctF8IALRfCpS0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRbC8y0XwgAtF8IGLRbC+y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfBmwAAAAAtF8KPLRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8LLLRfCHgAAAAAAAAAALRfCBi0Xwm4tF8LrLRfC/y0Xwv8tF8L/LRfBSi0XwiYtFsL/LRfB7y0XwnotF8IKAAAAAAAAAAAAAAAALRfCNi0XwuktF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0XweUsFsIOLBbBPC0Xwv0tF8L/LRfC/y0Xwv8tF8L/LRfC/y0XwvstFsEGLBfCDi0Xwv0tF8L/LRfC/y0Xwv8tF8L/LRfC/y0XwvstF8I0LRfBECwXwuktF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0XwuUtF8IyAAAAAAAAAAAAAAAALRfCEC0XwoctF8L1LRfC/y0XwiAtF8ICLRfCfi0XwhQAAAAAAAAAAAAAAAAAAAAALRfCPi0XwvEtF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8JcLRfCAiwWwsktF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L7LRfBDC0XwhYtF8L9LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRbBwy0XwgItF8JkLRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC7y0XwjgAAAAAAAAAAAAAAAAAAAAALRfCHC0XwocsF8IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALRfCIiwXwe0tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8LBLRfCAi0XwlotF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/S0XwhItF8IaLRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tFsJSLRfCAiwXwsktF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8LpLRfCHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALRfCAC0XwrktF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tFsH5LRfCLi0XwggtF8LdLRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv0tF8IWLRfCIC0Xwf8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LBfC2S0XwgQtF8I0LRfC+y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/ywWwq8tF8IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC0XwjgtF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRbBiQAAAAAtF8JsLRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfBGC0XwiItF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tFsJkAAAAAC0XwpEtF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L9LRbCMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtF8KRLRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC2y0XwgosF8EILRfC5S0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0XwRgtF8IiLRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfB4S0WwgYsF8IOLRfC4S0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0XwokAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALRfCyS0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/SwWwUQAAAAALBbCai0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv0sFsIWLRfCIC0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8JiAAAAAC0XwkwtF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8K/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALRfCAC0Xwd8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Wwp0tF8IALRfCBC0Xwt0tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L9LBbBEi0XwhotF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC1y0XwgQtF8IALRbCoy0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC1QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwXwgAtF8LZLRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0XwuMtFsIQAAAAAC0WwlQtF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC+y0XwQwsFsIULRfC/S0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8sF8JMAAAAAC0XwhQsF8LlLRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0XwtEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALRfCtS0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8sFsFGAAAAAC0XwgAtF8K9LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0XwvktF8EELRfCDC0XwvstF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfCtQAAAAAAAAAALRfCTiwXwf8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8KtAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC0XwnItF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8sF8GVAAAAAAAAAAAtF8IiLRfC/S0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8LvLBbCAC0XwgItFsL3LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/ywXwvstF8IcAAAAAAAAAAAtF8KdLRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LBfCbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtF8IaLRbC+S0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8LXLRfCDAAAAAAAAAAALRfCeC0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC3wAAAAAAAAAALRfC6S0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfCcAAAAAAAAAAALRfCDi0Wwt0tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC+SwWwhgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC0Xwp8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L5LRfCNAAAAAAAAAAAAAAAAC0WwsUtF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0XwssAAAAAAAAAAC0XwtUtF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwr0AAAAAAAAAAAAAAAAsFsE6LRfC+S0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwp8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtF8IeLRfC8y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfCdAAAAAAAAAAAAAAAAC0Xwg4tF8L5LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8GzAAAAAAAAAAAtF8K9LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L1LBfBCAAAAAAAAAAAAAAAACwXwnotF8L/LRfC/y0Xwv8tF8L/LRfC/y0XwvMtFsIeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC0XwmwtF8L/LRfC/y0Xwv8tF8L/LRfBtSwWwQIAAAAAAAAAAAAAAAAtF8I8LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LBfCmQAAAAAAAAAALRfCoS0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwi4AAAAAAAAAAAAAAAAsF8IELRfCuy0Xwv8tF8L/LRfC/y0Xwv8tF8JwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsF8ICLRfBsS0Xwv8tF8L/LRfC4S0XwhQAAAAAAAAAAAAAAAAAAAAALRfCXi0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0XwngAAAAAAAAAAC0XwoEtF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8sFsJOAAAAAAAAAAAAAAAAAAAAAC0XwhgtF8LlLRfC/y0Xwv8tF8KzLRfCAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC0XwRAtF8LTLRfC+S0WwjgAAAAAAAAAAAAAAAAAAAAAAAAAAC0XwmotF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8JUAAAAAAAAAAAtF8FcLRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LBbCXgAAAAAAAAAAAAAAAAAAAAAAAAAALRfCPi0XwvktF8LRLRfCEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALRfCGi0XwlYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtF8JiLRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfCLAAAAAAAAAAALRfCMi0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0XwloAAAAAAAAAAAAAAAAAAAAAAAAAACwXwgAtF8JYLRfCGgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALRfCQC0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRbC8y0XwggAAAAAAAAAAC0XwgwtF8L3LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tFsE8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwWwgwtF8LzLRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0XwscAAAAAAAAAAAAAAAAAAAAALRfCzy0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8LxLRfCCgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALRfCmy0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8KLAAAAAAAAAAAAAAAAAAAAAC0XwpMtF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LBbBlQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC0Xwh4tFsLxLRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfCRgAAAAAAAAAAAAAAAAAAAAAtF8JOLRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LBfC7S0XwhoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALRfCVi0Xwv0tF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC7y0XwgoAAAAAAAAAAAAAAAAAAAAALRfCDC0XwvMtF8L/LRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC+y0WwVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC0XwgAsFsJgLRfC9y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC/y0XwqEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtF8KnLRfC/y0Xwv8tF8L/LRfC/y0Xwv8tF8L/LRfC9S0XwVgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC0Xwi4tF8K7LBbC/S0Xwv8tF8L/LRfC/y0Xwv8tF8I4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALRbCPi0Xwv8tF8L/LRfC/y0Xwv8tF8L9LRfCtS0XwioAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALBbCAC0XwigtF8JwLRfCpywXwtktF8KzLRfCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC0XwgAtF8K1LRfC1y0XwqUtFsJsLRfCJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnz4Ofzn34BmfPAc+OePgGZ845wBw4+f5nznzAHDB5/mAOfOc4Mnn+YA585zmSeB5njnzyeYY4HmfOfPBxhzn+Z858+PPHOf5nznz4888YBmfOfP3zz5gOf/////////////////////////////////////////////////////////////////wf////g///8Af///4A///gA///+AB//8AA///wAD//gAA//8AAH/+AAB//gAAf///////////////////////AAA//AAA//wAAP//AAA/+AAB//+AAB/wAAef+eAAD+AAHhvYeAAHwAA4O5wcAAPAAOAxjAcAA4ADwGGGA8ABgA8AYYYA4AGAHADBgwA4AYB4AMGDAB4BgeABgYGAB4GHwAEBgIAD4Z+AAwGAwAHx/wAGAYBgAP3+AAYBgGAAf/wADAGAMAA//AAMAYAwAD/4ABgBgBgAH/gAOAGAHAAf+AAwAYAMAB/4AHABgA4AH/gA4AGABwAf/ADgAYAHAD/8AeABgAeAP/wDwAGAA8A//gfAAYAD4H//B8ABgAPg//8PwAOAA/D//5/AA8AD+f///8ADwAP/////wAPAA//////AA8AD/////8ADwAP/////4AfgB//////wB+AP//////gH4B///////A/wP///////j/H///8=</pre>
+</div>
+<div created="20210820190503404" modified="20210820190503404" status="complete" title="$:/Import" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>The following tiddlers were imported:
+
+# [[$:/favicon.ico]]</pre>
 </div>
 <div title="$:/isEncrypted" revision="0" bag="default">
 <pre>no</pre>
@@ -15271,11 +15293,11 @@ very-muted-foreground: #888888</pre>
 &lt;/$vars&gt;
 </pre>
 </div>
-<div created="20161029063922368" creator="yuzijie" modified="20210815164131968" modifier="yuzijie" title="$:/SiteSubtitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>The manual of computer technologies</pre>
+<div created="20161029063922368" creator="yuzijie" modified="20210820190048287" modifier="yuzijie" title="$:/SiteSubtitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>User guide for new employees</pre>
 </div>
-<div created="20161029063855693" creator="yuzijie" modified="20210808194836212" modifier="yuzijie" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>Wiki for coders [img width=27 [$:/favicon.ico]]</pre>
+<div created="20161029063855693" creator="yuzijie" modified="20210820190549393" modifier="yuzijie" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>Welcome [img width=26 [$:/favicon.ico]]</pre>
 </div>
 <div title="$:/status/IsAnonymous" revision="1" bag="default">
 <pre>yes</pre>
@@ -15709,13 +15731,18 @@ Drag the tiddler over to delete it, and its sub tiddlers
 
 &lt;$list filter=&quot;[enlist{$:/StoryList!!list}prefix[Draft of]limit[1]]&quot;&gt;&lt;$button&gt;&lt;$list filter=&quot;[enlist{$:/StoryList!!list}prefix[Draft of]]&quot;&gt;&lt;$action-sendmessage $message=&quot;tm-save-tiddler&quot; $param=&lt;&lt;currentTiddler&gt;&gt;/&gt;&lt;/$list&gt;Save All Drafts&lt;/$button&gt;&lt;/$list&gt;</pre>
 </div>
-<div created="20160817211338221" creator="yuzijie" list-before="Editor" modified="20210817134835471" modifier="yuzijie" tags="$:/tags/SideBar customized" title="Index" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>&lt;$list filter=&quot;[all[tiddlers]tags[]!is[tiddler]!is[system]] [tag[Task]onlyone[tags]] [untagged[]!is[system]!is[image]] -[[R]] -[[yuzijie]] -[[Task]] -[[Comment]] -[[Snippet]] -[[Ticket]] -[[customized]] [tag[Comment]!has[belongs.to]] [tag[Snippet]get[belongs.to]is[missing]] [!is[system]get[list]enlist-input[]is[missing]]&quot;&gt;&lt;$link to={{!!title}}&gt;{{!!title}}&lt;/$link&gt;&lt;br&gt;&lt;/$list&gt;&lt;$list filter=&quot;[!is[system]get[belongs.to]is[missing]]&quot;&gt;&lt;$list filter=&quot;[belongs.to{!!title}]&quot;&gt;&lt;$macrocall $name=&quot;l&quot; title={{!!title}}/&gt;&lt;br&gt;&lt;/$list&gt;&lt;/$list&gt;
+<div created="20160817211338221" creator="yuzijie" list-before="Editor" modified="20210820190355725" modifier="Rome IT" tags="$:/tags/SideBar customized" title="Index" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;$list filter=&quot;[all[tiddlers]tags[]!is[tiddler]!is[system]] [tag[Task]onlyone[tags]] [untagged[]!is[system]!is[image]] -[[R]] -[[Task]] -[[Comment]] -[[Snippet]] -[[Key Result]] -[[customized]] [tag[Comment]!has[belongs.to]] [tag[Snippet]get[belongs.to]is[missing]] [!is[system]get[list]enlist-input[]is[missing]]&quot;&gt;&lt;$link to={{!!title}}&gt;{{!!title}}&lt;/$link&gt;&lt;br&gt;&lt;/$list&gt;&lt;$list filter=&quot;[!is[system]get[belongs.to]is[missing]]&quot;&gt;&lt;$list filter=&quot;[belongs.to{!!title}]&quot;&gt;&lt;$macrocall $name=&quot;l&quot; title={{!!title}}/&gt;&lt;br&gt;&lt;/$list&gt;&lt;/$list&gt;
 
 &lt;&lt;index-tree&gt;&gt;</pre>
 </div>
 <div created="20181118152027267" creator="yuzijie" modified="20210718161342058" modifier="yuzijie" status="未完待续" title="R" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>!! {{!!caption}}</pre>
+</div>
+<div created="20160601080354556" creator="yuzijie" modified="20210820190300303" modifier="Rome IT" title="Rome IT" type="application/x-tiddler-dictionary" revision="0" bag="default">
+<pre>Username: rome IT WX549317
+Phone: 0039 3667567941
+Email: rome.it@huawei.com</pre>
 </div>
 <div created="20200321191916029" creator="yuzijie" list-before="Index" modified="20210720021945675" modifier="yuzijie" tags="$:/tags/SideBar customized" title="Tasks" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;div style=&quot;font-size:small;max-width:650px;&quot; class=&quot;tc-more-sidebar&quot;&gt;
@@ -15778,9 +15805,6 @@ Drag the tiddler over to delete it, and its sub tiddlers
 &lt;p style=&quot;margin-top:20px;&quot;&gt;&lt;$macrocall $name=&quot;ref&quot; title=&lt;&lt;period&gt;&gt;/&gt;&lt;/p&gt;
 &lt;/$set&gt;&lt;/$set&gt;
 &lt;/$list&gt;</pre>
-</div>
-<div created="20160601080354556" creator="yuzijie" modified="20160601080406056" modifier="yuzijie" title="yuzijie" type="text/vnd.tiddlywiki" revision="0" bag="default">
-<pre>作者：于子杰</pre>
 </div>
 
 
